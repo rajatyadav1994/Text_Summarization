@@ -1,1 +1,1 @@
-# Text_Summarization
+# Extractive Text Summarization
