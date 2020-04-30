@@ -1,0 +1,164 @@
+[2020-04-12 07:29:22,602 INFO] Loading checkpoint from ../models/bert_classifier/model_step_1000.pt
+[2020-04-12 07:29:41,929 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 07:29:41,930 INFO] * number of parameters: 109483009
+[2020-04-12 07:30:51,970 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 07:32:02,254 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 07:33:15,732 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 07:34:43,465 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 07:36:19,030 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 07:38:00,835 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 07:39:12,007 INFO] Validation xent: 6.58587 at step 1000
+[2020-04-12 07:39:12,042 INFO] Loading checkpoint from ../models/bert_classifier/model_step_2000.pt
+[2020-04-12 07:39:30,094 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 07:39:30,096 INFO] * number of parameters: 109483009
+[2020-04-12 07:41:05,192 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 07:42:54,822 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 07:44:44,735 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 07:46:35,838 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 07:48:28,619 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 07:50:25,519 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 07:51:41,354 INFO] Validation xent: 6.15057 at step 2000
+[2020-04-12 07:51:41,363 INFO] Loading checkpoint from ../models/bert_classifier/model_step_3000.pt
+[2020-04-12 07:51:56,871 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 07:51:56,873 INFO] * number of parameters: 109483009
+[2020-04-12 07:53:39,719 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 07:55:35,363 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 07:57:32,689 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 07:59:29,293 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 08:01:25,321 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 08:03:22,027 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 08:04:40,272 INFO] Validation xent: 5.933 at step 3000
+[2020-04-12 08:04:40,277 INFO] Loading checkpoint from ../models/bert_classifier/model_step_4000.pt
+[2020-04-12 08:04:57,940 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 08:04:57,942 INFO] * number of parameters: 109483009
+[2020-04-12 08:06:44,342 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 08:08:48,035 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 08:10:51,993 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 08:13:00,035 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 08:15:06,952 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 08:17:11,955 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 08:18:36,650 INFO] Validation xent: 5.86071 at step 4000
+[2020-04-12 08:18:36,652 INFO] Loading checkpoint from ../models/bert_classifier/model_step_5000.pt
+[2020-04-12 08:18:53,535 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 08:18:53,536 INFO] * number of parameters: 109483009
+[2020-04-12 08:20:38,190 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 08:22:36,847 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 08:24:35,859 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 08:26:36,762 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 08:28:36,454 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 08:30:32,908 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 08:31:55,347 INFO] Validation xent: 5.86677 at step 5000
+[2020-04-12 08:31:55,349 INFO] Loading checkpoint from ../models/bert_classifier/model_step_6000.pt
+[2020-04-12 08:32:11,820 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 08:32:11,822 INFO] * number of parameters: 109483009
+[2020-04-12 08:33:57,555 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 08:35:54,096 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 08:37:49,347 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 08:39:45,812 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 08:41:41,500 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 08:43:38,228 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 08:44:56,542 INFO] Validation xent: 5.74948 at step 6000
+[2020-04-12 08:44:56,544 INFO] Loading checkpoint from ../models/bert_classifier/model_step_7000.pt
+[2020-04-12 08:45:12,832 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 08:45:12,834 INFO] * number of parameters: 109483009
+[2020-04-12 08:46:56,297 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 08:48:51,902 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 08:50:48,041 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 08:52:44,303 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 08:54:39,601 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 08:56:35,903 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 08:57:54,038 INFO] Validation xent: 5.79692 at step 7000
+[2020-04-12 08:57:54,039 INFO] Loading checkpoint from ../models/bert_classifier/model_step_8000.pt
+[2020-04-12 08:58:10,326 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 08:58:10,328 INFO] * number of parameters: 109483009
+[2020-04-12 08:59:54,592 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 09:01:54,061 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 09:03:57,123 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 09:06:01,644 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 09:08:05,252 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 09:10:09,643 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 09:11:33,209 INFO] Validation xent: 5.79867 at step 8000
+[2020-04-12 09:11:33,211 INFO] Loading checkpoint from ../models/bert_classifier/model_step_9000.pt
+[2020-04-12 09:11:49,115 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 09:11:49,116 INFO] * number of parameters: 109483009
+[2020-04-12 09:13:34,711 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 09:15:35,305 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 09:17:33,330 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 09:19:31,480 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 09:21:30,340 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 09:23:29,878 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 09:24:50,176 INFO] Validation xent: 5.95281 at step 9000
+[2020-04-12 09:24:50,177 INFO] Loading checkpoint from ../models/bert_classifier/model_step_10000.pt
+[2020-04-12 09:24:51,693 INFO] Loading valid dataset from ../bert_data/cnndm.valid.0.bert.pt, number of examples: 2001
+[2020-04-12 09:24:51,695 INFO] * number of parameters: 109483009
+[2020-04-12 09:26:48,911 INFO] Loading valid dataset from ../bert_data/cnndm.valid.1.bert.pt, number of examples: 2001
+[2020-04-12 09:28:48,777 INFO] Loading valid dataset from ../bert_data/cnndm.valid.2.bert.pt, number of examples: 2001
+[2020-04-12 09:30:48,224 INFO] Loading valid dataset from ../bert_data/cnndm.valid.3.bert.pt, number of examples: 2000
+[2020-04-12 09:32:53,107 INFO] Loading valid dataset from ../bert_data/cnndm.valid.4.bert.pt, number of examples: 2001
+[2020-04-12 09:35:00,677 INFO] Loading valid dataset from ../bert_data/cnndm.valid.5.bert.pt, number of examples: 2001
+[2020-04-12 09:37:05,391 INFO] Loading valid dataset from ../bert_data/cnndm.valid.6.bert.pt, number of examples: 1362
+[2020-04-12 09:38:29,976 INFO] Validation xent: 5.7184 at step 10000
+[2020-04-12 09:38:29,977 INFO] PPL [(5.718397921164587, '../models/bert_classifier/model_step_10000.pt'), (5.749477845083011, '../models/bert_classifier/model_step_6000.pt'), (5.7969222597812955, '../models/bert_classifier/model_step_7000.pt')]
+[2020-04-12 09:38:29,977 INFO] Loading checkpoint from ../models/bert_classifier/model_step_10000.pt
+[2020-04-12 09:38:31,567 INFO] Loading test dataset from ../bert_data/cnndm.test.0.bert.pt, number of examples: 2001
+[2020-04-12 09:38:31,571 INFO] * number of parameters: 109483009
+[2020-04-12 09:40:31,817 INFO] Loading test dataset from ../bert_data/cnndm.test.1.bert.pt, number of examples: 2001
+[2020-04-12 09:42:30,712 INFO] Loading test dataset from ../bert_data/cnndm.test.2.bert.pt, number of examples: 2001
+[2020-04-12 09:44:28,514 INFO] Loading test dataset from ../bert_data/cnndm.test.3.bert.pt, number of examples: 2001
+[2020-04-12 09:46:26,994 INFO] Loading test dataset from ../bert_data/cnndm.test.4.bert.pt, number of examples: 2000
+[2020-04-12 09:48:25,001 INFO] Loading test dataset from ../bert_data/cnndm.test.5.bert.pt, number of examples: 1485
+[2020-04-12 09:49:55,111 INFO] Writing summaries.
+[2020-04-12 09:49:55,111 INFO] Processing summaries. Saving system files to ../temp/tmpfhxw9_be/system and model files to ../temp/tmpfhxw9_be/model.
+[2020-04-12 09:49:55,111 INFO] Processing files in ../temp/rouge-tmp-2020-04-12-09-49-54/candidate/.
+[2020-04-12 09:49:55,858 INFO] Saved processed files to ../temp/tmpfhxw9_be/system.
+[2020-04-12 09:49:55,858 INFO] Processing files in ../temp/rouge-tmp-2020-04-12-09-49-54/reference/.
+[2020-04-12 09:49:56,602 INFO] Saved processed files to ../temp/tmpfhxw9_be/model.
+[2020-04-12 09:49:56,686 INFO] Written ROUGE configuration to ../temp/tmpva134hvz/rouge_conf.xml
+[2020-04-12 09:49:56,686 INFO] Running ROUGE with command /home/shad3/rouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/shad3/rouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmpva134hvz/rouge_conf.xml
+[2020-04-12 09:51:22,339 INFO] Rouges at step 10000 
+>> ROUGE-F(1/2/3/l): 41.78/19.10/38.25
+ROUGE-R(1/2/3/l): 52.25/23.88/47.78
+
+[2020-04-12 09:51:22,340 INFO] Validation xent: 5.67286 at step 10000
+[2020-04-12 09:51:22,343 INFO] Loading checkpoint from ../models/bert_classifier/model_step_6000.pt
+[2020-04-12 09:51:23,924 INFO] Loading test dataset from ../bert_data/cnndm.test.0.bert.pt, number of examples: 2001
+[2020-04-12 09:51:23,926 INFO] * number of parameters: 109483009
+[2020-04-12 09:52:36,690 INFO] Loading test dataset from ../bert_data/cnndm.test.1.bert.pt, number of examples: 2001
+[2020-04-12 09:54:25,214 INFO] Loading test dataset from ../bert_data/cnndm.test.2.bert.pt, number of examples: 2001
+[2020-04-12 09:56:15,413 INFO] Loading test dataset from ../bert_data/cnndm.test.3.bert.pt, number of examples: 2001
+[2020-04-12 09:58:13,156 INFO] Loading test dataset from ../bert_data/cnndm.test.4.bert.pt, number of examples: 2000
+[2020-04-12 10:00:09,736 INFO] Loading test dataset from ../bert_data/cnndm.test.5.bert.pt, number of examples: 1485
+[2020-04-12 10:01:37,439 INFO] Writing summaries.
+[2020-04-12 10:01:37,439 INFO] Processing summaries. Saving system files to ../temp/tmps1fm0ce1/system and model files to ../temp/tmps1fm0ce1/model.
+[2020-04-12 10:01:37,439 INFO] Processing files in ../temp/rouge-tmp-2020-04-12-10-01-36/candidate/.
+[2020-04-12 10:01:38,244 INFO] Saved processed files to ../temp/tmps1fm0ce1/system.
+[2020-04-12 10:01:38,244 INFO] Processing files in ../temp/rouge-tmp-2020-04-12-10-01-36/reference/.
+[2020-04-12 10:01:39,028 INFO] Saved processed files to ../temp/tmps1fm0ce1/model.
+[2020-04-12 10:01:39,102 INFO] Written ROUGE configuration to ../temp/tmpc1427kt6/rouge_conf.xml
+[2020-04-12 10:01:39,102 INFO] Running ROUGE with command /home/shad3/rouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/shad3/rouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmpc1427kt6/rouge_conf.xml
+[2020-04-12 10:03:04,722 INFO] Rouges at step 6000 
+>> ROUGE-F(1/2/3/l): 41.65/18.93/38.06
+ROUGE-R(1/2/3/l): 53.18/24.19/48.54
+
+[2020-04-12 10:03:04,722 INFO] Validation xent: 5.7078 at step 6000
+[2020-04-12 10:03:04,726 INFO] Loading checkpoint from ../models/bert_classifier/model_step_7000.pt
+[2020-04-12 10:03:06,286 INFO] Loading test dataset from ../bert_data/cnndm.test.0.bert.pt, number of examples: 2001
+[2020-04-12 10:03:06,288 INFO] * number of parameters: 109483009
+[2020-04-12 10:04:18,942 INFO] Loading test dataset from ../bert_data/cnndm.test.1.bert.pt, number of examples: 2001
+[2020-04-12 10:06:03,475 INFO] Loading test dataset from ../bert_data/cnndm.test.2.bert.pt, number of examples: 2001
+[2020-04-12 10:08:01,305 INFO] Loading test dataset from ../bert_data/cnndm.test.3.bert.pt, number of examples: 2001
+[2020-04-12 10:10:00,380 INFO] Loading test dataset from ../bert_data/cnndm.test.4.bert.pt, number of examples: 2000
+[2020-04-12 10:11:58,895 INFO] Loading test dataset from ../bert_data/cnndm.test.5.bert.pt, number of examples: 1485
+[2020-04-12 10:13:28,228 INFO] Writing summaries.
+[2020-04-12 10:13:28,229 INFO] Processing summaries. Saving system files to ../temp/tmpwerzgn4o/system and model files to ../temp/tmpwerzgn4o/model.
+[2020-04-12 10:13:28,229 INFO] Processing files in ../temp/rouge-tmp-2020-04-12-10-13-27/candidate/.
+[2020-04-12 10:13:28,970 INFO] Saved processed files to ../temp/tmpwerzgn4o/system.
+[2020-04-12 10:13:28,970 INFO] Processing files in ../temp/rouge-tmp-2020-04-12-10-13-27/reference/.
+[2020-04-12 10:13:29,709 INFO] Saved processed files to ../temp/tmpwerzgn4o/model.
+[2020-04-12 10:13:29,806 INFO] Written ROUGE configuration to ../temp/tmp6l2h751n/rouge_conf.xml
+[2020-04-12 10:13:29,806 INFO] Running ROUGE with command /home/shad3/rouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/shad3/rouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmp6l2h751n/rouge_conf.xml
+[2020-04-12 10:14:55,967 INFO] Rouges at step 7000 
+>> ROUGE-F(1/2/3/l): 41.56/18.88/37.95
+ROUGE-R(1/2/3/l): 53.51/24.31/48.80
+
+[2020-04-12 10:14:55,967 INFO] Validation xent: 5.75449 at step 7000

@@ -1,0 +1,22 @@
+[2020-04-30 00:00:04,894 INFO] Loading checkpoint from ../models/bert_classifier/model_step_1000.pt
+[2020-04-30 00:00:39,454 INFO] Loading checkpoint from ../models/bert_classifier/model_step_1000.pt
+[2020-04-30 00:00:44,399 INFO] Loading test dataset from ../bert_data/cnndm.test.0.bert.pt, number of examples: 2001
+[2020-04-30 00:00:44,401 INFO] * number of parameters: 109483009
+[2020-04-30 00:01:53,965 INFO] Loading test dataset from ../bert_data/cnndm.test.1.bert.pt, number of examples: 2001
+[2020-04-30 00:03:21,550 INFO] Loading test dataset from ../bert_data/cnndm.test.2.bert.pt, number of examples: 2001
+[2020-04-30 00:05:48,013 INFO] Loading test dataset from ../bert_data/cnndm.test.3.bert.pt, number of examples: 2001
+[2020-04-30 00:08:55,743 INFO] Loading test dataset from ../bert_data/cnndm.test.4.bert.pt, number of examples: 2000
+[2020-04-30 00:12:12,990 INFO] Loading test dataset from ../bert_data/cnndm.test.5.bert.pt, number of examples: 1485
+[2020-04-30 00:14:45,161 INFO] Writing summaries.
+[2020-04-30 00:14:45,172 INFO] Processing summaries. Saving system files to ../temp/tmp8l_hg2bi/system and model files to ../temp/tmp8l_hg2bi/model.
+[2020-04-30 00:14:45,172 INFO] Processing files in ../temp/rouge-tmp-2020-04-30-00-14-44/candidate/.
+[2020-04-30 00:14:45,944 INFO] Saved processed files to ../temp/tmp8l_hg2bi/system.
+[2020-04-30 00:14:45,945 INFO] Processing files in ../temp/rouge-tmp-2020-04-30-00-14-44/reference/.
+[2020-04-30 00:14:46,707 INFO] Saved processed files to ../temp/tmp8l_hg2bi/model.
+[2020-04-30 00:14:46,786 INFO] Written ROUGE configuration to ../temp/tmpk670r9rr/rouge_conf.xml
+[2020-04-30 00:14:46,786 INFO] Running ROUGE with command /home/shad3/rouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/shad3/rouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmpk670r9rr/rouge_conf.xml
+[2020-04-30 00:16:14,643 INFO] Rouges at step 1000 
+>> ROUGE-F(1/2/3/l): 37.50/15.40/34.07
+ROUGE-R(1/2/3/l): 46.62/19.12/42.32
+
+[2020-04-30 00:16:14,644 INFO] Validation xent: 6.54131 at step 1000

@@ -1,0 +1,21 @@
+[2020-04-30 01:04:56,162 INFO] Loading checkpoint from ../models/baseline/model_step_10000.pt
+[2020-04-30 01:04:58,765 INFO] Loading test dataset from ../bert_data/cnndm.test.0.bert.pt, number of examples: 2001
+[2020-04-30 01:04:58,767 INFO] * number of parameters: 5179137
+[2020-04-30 01:05:06,591 INFO] Loading test dataset from ../bert_data/cnndm.test.1.bert.pt, number of examples: 2001
+[2020-04-30 01:05:14,420 INFO] Loading test dataset from ../bert_data/cnndm.test.2.bert.pt, number of examples: 2001
+[2020-04-30 01:05:22,193 INFO] Loading test dataset from ../bert_data/cnndm.test.3.bert.pt, number of examples: 2001
+[2020-04-30 01:05:30,032 INFO] Loading test dataset from ../bert_data/cnndm.test.4.bert.pt, number of examples: 2000
+[2020-04-30 01:05:37,812 INFO] Loading test dataset from ../bert_data/cnndm.test.5.bert.pt, number of examples: 1485
+[2020-04-30 01:05:44,244 INFO] Writing summaries.
+[2020-04-30 01:05:44,245 INFO] Processing summaries. Saving system files to ../temp/tmpymnahybd/system and model files to ../temp/tmpymnahybd/model.
+[2020-04-30 01:05:44,245 INFO] Processing files in ../temp/rouge-tmp-2020-04-30-01-05-43/candidate/.
+[2020-04-30 01:05:44,996 INFO] Saved processed files to ../temp/tmpymnahybd/system.
+[2020-04-30 01:05:44,996 INFO] Processing files in ../temp/rouge-tmp-2020-04-30-01-05-43/reference/.
+[2020-04-30 01:05:45,723 INFO] Saved processed files to ../temp/tmpymnahybd/model.
+[2020-04-30 01:05:45,794 INFO] Written ROUGE configuration to ../temp/tmpracfsfgy/rouge_conf.xml
+[2020-04-30 01:05:45,794 INFO] Running ROUGE with command /home/shad3/rouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/shad3/rouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmpracfsfgy/rouge_conf.xml
+[2020-04-30 01:07:07,284 INFO] Rouges at step 10000 
+>> ROUGE-F(1/2/3/l): 39.43/17.08/35.88
+ROUGE-R(1/2/3/l): 50.37/21.81/45.80
+
+[2020-04-30 01:07:07,285 INFO] Validation xent: 6.14077 at step 10000

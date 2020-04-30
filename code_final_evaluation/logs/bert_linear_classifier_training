@@ -1,0 +1,1862 @@
+[2020-04-11 21:43:07,758 INFO] Device ID 0
+[2020-04-11 21:43:07,759 INFO] Device cuda
+[2020-04-11 21:48:51,851 INFO] Device ID 0
+[2020-04-11 21:48:51,851 INFO] Device cuda
+[2020-04-11 21:54:19,905 INFO] Device ID 0
+[2020-04-11 21:54:19,905 INFO] Device cuda
+[2020-04-11 21:58:32,049 INFO] Device ID 0
+[2020-04-11 21:58:32,049 INFO] Device cuda
+[2020-04-11 21:58:34,419 INFO] https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz not found in cache, downloading to /tmp/tmp8_2beemg
+[2020-04-11 22:43:35,725 INFO] copying /tmp/tmp8_2beemg to cache at ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+[2020-04-11 22:43:35,977 INFO] creating metadata file for ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+[2020-04-11 22:43:35,977 INFO] removing temp file /tmp/tmp8_2beemg
+[2020-04-11 22:43:36,010 INFO] loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+[2020-04-11 22:43:36,010 INFO] extracting archive file ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpoh4gb_ry
+[2020-04-11 22:43:38,605 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-11 22:43:50,735 INFO] Summarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): BertLayerNorm()
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (encoder): Classifier(
+    (linear1): Linear(in_features=768, out_features=1, bias=True)
+    (sigmoid): Sigmoid()
+  )
+)
+[2020-04-11 22:43:50,748 INFO] * number of parameters: 109483009
+[2020-04-11 22:43:50,748 INFO] Start training...
+[2020-04-11 22:43:50,955 INFO] Loading train dataset from ../bert_data/cnndm.train.123.bert.pt, number of examples: 2001
+[2020-04-11 23:21:20,771 INFO] Device ID 0
+[2020-04-11 23:21:20,771 INFO] Device cuda
+[2020-04-11 23:21:21,885 INFO] loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+[2020-04-11 23:21:21,888 INFO] extracting archive file ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpv_gmbg45
+[2020-04-11 23:21:24,556 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-11 23:21:27,307 INFO] Summarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): BertLayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (encoder): Classifier(
+    (linear1): Linear(in_features=768, out_features=1, bias=True)
+    (sigmoid): Sigmoid()
+  )
+)
+[2020-04-11 23:21:27,310 INFO] * number of parameters: 109483009
+[2020-04-11 23:21:27,310 INFO] Start training...
+[2020-04-11 23:21:27,381 INFO] Loading train dataset from ../bert_data/cnndm.train.123.bert.pt, number of examples: 2001
+[2020-04-11 23:22:22,253 INFO] Step 50/50000; xent: 7.27; lr: 0.0000001;  18 docs/s;     55 sec
+[2020-04-11 23:23:16,301 INFO] Step 100/50000; xent: 6.35; lr: 0.0000002;  19 docs/s;    109 sec
+[2020-04-11 23:24:19,622 INFO] Step 150/50000; xent: 4.90; lr: 0.0000003;  16 docs/s;    172 sec
+[2020-04-11 23:41:14,059 INFO] Device ID 0
+[2020-04-11 23:41:14,127 INFO] Device cuda
+[2020-04-11 23:41:15,916 INFO] loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+[2020-04-11 23:41:15,916 INFO] extracting archive file ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpmvhfy5fg
+[2020-04-11 23:41:22,895 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-11 23:41:36,220 INFO] Summarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): BertLayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (encoder): Classifier(
+    (linear1): Linear(in_features=768, out_features=1, bias=True)
+    (sigmoid): Sigmoid()
+  )
+)
+[2020-04-11 23:41:36,235 INFO] * number of parameters: 109483009
+[2020-04-11 23:41:36,236 INFO] Start training...
+[2020-04-11 23:41:36,470 INFO] Loading train dataset from ../bert_data/cnndm.train.123.bert.pt, number of examples: 2001
+[2020-04-11 23:41:53,445 INFO] Step 50/50000; xent: 7.47; lr: 0.0000001;  12 docs/s;     17 sec
+[2020-04-11 23:42:08,460 INFO] Step 100/50000; xent: 6.40; lr: 0.0000002;  14 docs/s;     32 sec
+[2020-04-11 23:42:24,462 INFO] Step 150/50000; xent: 5.31; lr: 0.0000003;  13 docs/s;     48 sec
+[2020-04-11 23:42:46,555 INFO] Step 200/50000; xent: 3.98; lr: 0.0000004;   9 docs/s;     70 sec
+[2020-04-11 23:43:17,847 INFO] Step 250/50000; xent: 3.56; lr: 0.0000005;   7 docs/s;    101 sec
+[2020-04-11 23:44:00,818 INFO] Step 300/50000; xent: 3.21; lr: 0.0000006;   5 docs/s;    144 sec
+[2020-04-11 23:44:50,452 INFO] Step 350/50000; xent: 3.47; lr: 0.0000007;   4 docs/s;    194 sec
+[2020-04-11 23:45:47,194 INFO] Step 400/50000; xent: 3.35; lr: 0.0000008;   4 docs/s;    251 sec
+[2020-04-11 23:46:45,259 INFO] Step 450/50000; xent: 3.33; lr: 0.0000009;   4 docs/s;    309 sec
+[2020-04-11 23:47:47,318 INFO] Step 500/50000; xent: 3.27; lr: 0.0000010;   3 docs/s;    371 sec
+[2020-04-11 23:48:54,985 INFO] Step 550/50000; xent: 3.27; lr: 0.0000011;   3 docs/s;    439 sec
+[2020-04-11 23:50:02,949 INFO] Step 600/50000; xent: 3.49; lr: 0.0000012;   3 docs/s;    506 sec
+[2020-04-11 23:51:23,852 INFO] Step 650/50000; xent: 3.31; lr: 0.0000013;   3 docs/s;    587 sec
+[2020-04-11 23:52:46,042 INFO] Device ID 0
+[2020-04-11 23:52:46,042 INFO] Device cuda
+[2020-04-11 23:53:08,836 INFO] Device ID 0
+[2020-04-11 23:53:08,836 INFO] Device cuda
+[2020-04-11 23:53:10,157 INFO] loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+[2020-04-11 23:53:10,159 INFO] extracting archive file ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpbf6_rl35
+[2020-04-11 23:53:13,263 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-11 23:53:16,380 INFO] Summarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): BertLayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (encoder): Classifier(
+    (linear1): Linear(in_features=768, out_features=1, bias=True)
+    (sigmoid): Sigmoid()
+  )
+)
+[2020-04-11 23:53:16,384 INFO] * number of parameters: 109483009
+[2020-04-11 23:53:16,384 INFO] Start training...
+[2020-04-11 23:53:16,461 INFO] Loading train dataset from ../bert_data/cnndm.train.123.bert.pt, number of examples: 2001
+[2020-04-11 23:53:32,707 INFO] Step 50/50000; xent: 7.47; lr: 0.0000001;  12 docs/s;     16 sec
+[2020-04-11 23:54:13,680 INFO] Step 100/50000; xent: 6.40; lr: 0.0000002;   5 docs/s;     57 sec
+[2020-04-11 23:54:49,108 INFO] Device ID 0
+[2020-04-11 23:54:49,109 INFO] Device cuda
+[2020-04-11 23:54:50,407 INFO] loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+[2020-04-11 23:54:50,409 INFO] extracting archive file ../temp/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp5oma8ac3
+[2020-04-11 23:54:53,439 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-11 23:54:56,607 INFO] Summarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): BertLayerNorm()
+        (dropout): Dropout(p=0.1)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): BertLayerNorm()
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): BertLayerNorm()
+              (dropout): Dropout(p=0.1)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (encoder): Classifier(
+    (linear1): Linear(in_features=768, out_features=1, bias=True)
+    (sigmoid): Sigmoid()
+  )
+)
+[2020-04-11 23:54:56,611 INFO] * number of parameters: 109483009
+[2020-04-11 23:54:56,611 INFO] Start training...
+[2020-04-11 23:54:56,688 INFO] Loading train dataset from ../bert_data/cnndm.train.123.bert.pt, number of examples: 2001
+[2020-04-11 23:55:25,498 INFO] Step 50/10000; xent: 7.20; lr: 0.0000003;   7 docs/s;     29 sec
+[2020-04-11 23:56:25,166 INFO] Step 100/10000; xent: 5.15; lr: 0.0000006;   4 docs/s;     88 sec
+[2020-04-11 23:57:23,572 INFO] Step 150/10000; xent: 3.71; lr: 0.0000008;   4 docs/s;    147 sec
+[2020-04-11 23:58:37,077 INFO] Step 200/10000; xent: 3.14; lr: 0.0000011;   3 docs/s;    220 sec
+[2020-04-11 23:59:47,514 INFO] Step 250/10000; xent: 3.35; lr: 0.0000014;   3 docs/s;    291 sec
+[2020-04-12 00:00:59,357 INFO] Step 300/10000; xent: 3.17; lr: 0.0000017;   3 docs/s;    363 sec
+[2020-04-12 00:02:15,480 INFO] Step 350/10000; xent: 3.46; lr: 0.0000020;   3 docs/s;    439 sec
+[2020-04-12 00:03:31,865 INFO] Step 400/10000; xent: 3.34; lr: 0.0000023;   3 docs/s;    515 sec
+[2020-04-12 00:04:48,067 INFO] Step 450/10000; xent: 3.32; lr: 0.0000025;   3 docs/s;    591 sec
+[2020-04-12 00:06:02,003 INFO] Step 500/10000; xent: 3.24; lr: 0.0000028;   3 docs/s;    665 sec
+[2020-04-12 00:07:23,539 INFO] Step 550/10000; xent: 3.25; lr: 0.0000031;   3 docs/s;    747 sec
+[2020-04-12 00:08:40,823 INFO] Step 600/10000; xent: 3.47; lr: 0.0000034;   3 docs/s;    824 sec
+[2020-04-12 00:10:02,674 INFO] Step 650/10000; xent: 3.29; lr: 0.0000037;   3 docs/s;    906 sec
+[2020-04-12 00:11:14,643 INFO] Step 700/10000; xent: 3.29; lr: 0.0000040;   3 docs/s;    978 sec
+[2020-04-12 00:12:38,657 INFO] Step 750/10000; xent: 3.31; lr: 0.0000042;   2 docs/s;   1062 sec
+[2020-04-12 00:13:56,679 INFO] Step 800/10000; xent: 3.20; lr: 0.0000045;   3 docs/s;   1140 sec
+[2020-04-12 00:15:17,783 INFO] Step 850/10000; xent: 3.34; lr: 0.0000048;   3 docs/s;   1221 sec
+[2020-04-12 00:16:40,510 INFO] Step 900/10000; xent: 3.27; lr: 0.0000051;   3 docs/s;   1304 sec
+[2020-04-12 00:17:59,175 INFO] Step 950/10000; xent: 3.25; lr: 0.0000054;   3 docs/s;   1382 sec
+[2020-04-12 00:18:06,410 INFO] Loading train dataset from ../bert_data/cnndm.train.91.bert.pt, number of examples: 1998
+[2020-04-12 00:19:13,878 INFO] Step 1000/10000; xent: 3.20; lr: 0.0000057;   3 docs/s;   1457 sec
+[2020-04-12 00:19:13,879 INFO] Saving checkpoint ../models/bert_classifier/model_step_1000.pt
+[2020-04-12 00:20:39,321 INFO] Step 1050/10000; xent: 3.15; lr: 0.0000059;   2 docs/s;   1543 sec
+[2020-04-12 00:22:05,747 INFO] Step 1100/10000; xent: 3.24; lr: 0.0000062;   2 docs/s;   1629 sec
+[2020-04-12 00:23:22,909 INFO] Step 1150/10000; xent: 3.13; lr: 0.0000065;   3 docs/s;   1706 sec
+[2020-04-12 00:24:41,679 INFO] Step 1200/10000; xent: 3.18; lr: 0.0000068;   3 docs/s;   1785 sec
+[2020-04-12 00:26:07,628 INFO] Step 1250/10000; xent: 3.22; lr: 0.0000071;   2 docs/s;   1871 sec
+[2020-04-12 00:27:29,069 INFO] Step 1300/10000; xent: 3.13; lr: 0.0000074;   3 docs/s;   1952 sec
+[2020-04-12 00:28:46,644 INFO] Step 1350/10000; xent: 3.09; lr: 0.0000076;   3 docs/s;   2030 sec
+[2020-04-12 00:30:08,398 INFO] Step 1400/10000; xent: 3.15; lr: 0.0000079;   3 docs/s;   2112 sec
+[2020-04-12 00:31:32,620 INFO] Step 1450/10000; xent: 3.38; lr: 0.0000082;   3 docs/s;   2196 sec
+[2020-04-12 00:32:52,230 INFO] Step 1500/10000; xent: 3.02; lr: 0.0000085;   3 docs/s;   2276 sec
+[2020-04-12 00:34:10,203 INFO] Step 1550/10000; xent: 2.91; lr: 0.0000088;   3 docs/s;   2354 sec
+[2020-04-12 00:35:33,079 INFO] Step 1600/10000; xent: 3.07; lr: 0.0000091;   3 docs/s;   2436 sec
+[2020-04-12 00:36:58,126 INFO] Step 1650/10000; xent: 3.00; lr: 0.0000093;   3 docs/s;   2521 sec
+[2020-04-12 00:38:23,281 INFO] Step 1700/10000; xent: 3.16; lr: 0.0000096;   2 docs/s;   2607 sec
+[2020-04-12 00:39:44,167 INFO] Step 1750/10000; xent: 2.93; lr: 0.0000099;   3 docs/s;   2687 sec
+[2020-04-12 00:41:04,449 INFO] Step 1800/10000; xent: 3.10; lr: 0.0000102;   3 docs/s;   2768 sec
+[2020-04-12 00:42:34,893 INFO] Step 1850/10000; xent: 3.07; lr: 0.0000105;   2 docs/s;   2858 sec
+[2020-04-12 00:43:59,494 INFO] Step 1900/10000; xent: 3.09; lr: 0.0000107;   3 docs/s;   2943 sec
+[2020-04-12 00:44:09,174 INFO] Loading train dataset from ../bert_data/cnndm.train.39.bert.pt, number of examples: 2000
+[2020-04-12 00:45:14,301 INFO] Step 1950/10000; xent: 3.02; lr: 0.0000110;   3 docs/s;   3018 sec
+[2020-04-12 00:46:33,859 INFO] Step 2000/10000; xent: 2.91; lr: 0.0000113;   3 docs/s;   3097 sec
+[2020-04-12 00:46:33,860 INFO] Saving checkpoint ../models/bert_classifier/model_step_2000.pt
+[2020-04-12 00:47:54,542 INFO] Step 2050/10000; xent: 3.00; lr: 0.0000116;   3 docs/s;   3178 sec
+[2020-04-12 00:49:19,066 INFO] Step 2100/10000; xent: 3.06; lr: 0.0000119;   2 docs/s;   3262 sec
+[2020-04-12 00:50:42,227 INFO] Step 2150/10000; xent: 3.01; lr: 0.0000122;   2 docs/s;   3346 sec
+[2020-04-12 00:52:15,232 INFO] Step 2200/10000; xent: 3.03; lr: 0.0000124;   2 docs/s;   3439 sec
+[2020-04-12 00:53:36,259 INFO] Step 2250/10000; xent: 2.99; lr: 0.0000127;   3 docs/s;   3520 sec
+[2020-04-12 00:54:58,373 INFO] Step 2300/10000; xent: 2.95; lr: 0.0000130;   3 docs/s;   3602 sec
+[2020-04-12 00:56:18,620 INFO] Step 2350/10000; xent: 2.83; lr: 0.0000133;   3 docs/s;   3682 sec
+[2020-04-12 00:57:37,981 INFO] Step 2400/10000; xent: 2.97; lr: 0.0000136;   3 docs/s;   3761 sec
+[2020-04-12 00:58:57,783 INFO] Step 2450/10000; xent: 2.96; lr: 0.0000139;   3 docs/s;   3841 sec
+[2020-04-12 01:00:21,940 INFO] Step 2500/10000; xent: 3.15; lr: 0.0000141;   3 docs/s;   3925 sec
+[2020-04-12 01:01:47,824 INFO] Step 2550/10000; xent: 3.04; lr: 0.0000144;   2 docs/s;   4011 sec
+[2020-04-12 01:03:14,499 INFO] Step 2600/10000; xent: 2.89; lr: 0.0000147;   2 docs/s;   4098 sec
+[2020-04-12 01:04:35,009 INFO] Step 2650/10000; xent: 3.08; lr: 0.0000150;   3 docs/s;   4178 sec
+[2020-04-12 01:05:59,065 INFO] Step 2700/10000; xent: 3.06; lr: 0.0000153;   3 docs/s;   4262 sec
+[2020-04-12 01:07:22,888 INFO] Step 2750/10000; xent: 2.84; lr: 0.0000156;   2 docs/s;   4346 sec
+[2020-04-12 01:08:41,432 INFO] Step 2800/10000; xent: 3.01; lr: 0.0000158;   3 docs/s;   4425 sec
+[2020-04-12 01:10:03,742 INFO] Step 2850/10000; xent: 2.91; lr: 0.0000161;   3 docs/s;   4507 sec
+[2020-04-12 01:10:26,662 INFO] Loading train dataset from ../bert_data/cnndm.train.6.bert.pt, number of examples: 2001
+[2020-04-12 01:11:26,974 INFO] Step 2900/10000; xent: 3.07; lr: 0.0000164;   3 docs/s;   4590 sec
+[2020-04-12 01:12:45,068 INFO] Step 2950/10000; xent: 3.21; lr: 0.0000167;   3 docs/s;   4668 sec
+[2020-04-12 01:13:59,352 INFO] Step 3000/10000; xent: 3.18; lr: 0.0000170;   3 docs/s;   4743 sec
+[2020-04-12 01:13:59,353 INFO] Saving checkpoint ../models/bert_classifier/model_step_3000.pt
+[2020-04-12 01:15:14,731 INFO] Step 3050/10000; xent: 2.98; lr: 0.0000173;   3 docs/s;   4818 sec
+[2020-04-12 01:16:31,705 INFO] Step 3100/10000; xent: 2.89; lr: 0.0000175;   3 docs/s;   4895 sec
+[2020-04-12 01:17:50,710 INFO] Step 3150/10000; xent: 3.12; lr: 0.0000178;   3 docs/s;   4974 sec
+[2020-04-12 01:19:07,849 INFO] Step 3200/10000; xent: 2.91; lr: 0.0000181;   3 docs/s;   5051 sec
+[2020-04-12 01:20:22,275 INFO] Step 3250/10000; xent: 3.04; lr: 0.0000184;   3 docs/s;   5126 sec
+[2020-04-12 01:21:38,962 INFO] Step 3300/10000; xent: 2.93; lr: 0.0000187;   3 docs/s;   5202 sec
+[2020-04-12 01:22:56,961 INFO] Step 3350/10000; xent: 3.01; lr: 0.0000190;   3 docs/s;   5280 sec
+[2020-04-12 01:24:16,679 INFO] Step 3400/10000; xent: 2.93; lr: 0.0000192;   3 docs/s;   5360 sec
+[2020-04-12 01:25:34,985 INFO] Step 3450/10000; xent: 2.90; lr: 0.0000195;   3 docs/s;   5438 sec
+[2020-04-12 01:26:50,988 INFO] Step 3500/10000; xent: 3.00; lr: 0.0000198;   3 docs/s;   5514 sec
+[2020-04-12 01:28:08,399 INFO] Step 3550/10000; xent: 2.83; lr: 0.0000201;   3 docs/s;   5592 sec
+[2020-04-12 01:29:16,118 INFO] Step 3600/10000; xent: 2.83; lr: 0.0000204;   3 docs/s;   5659 sec
+[2020-04-12 01:30:36,538 INFO] Step 3650/10000; xent: 3.04; lr: 0.0000206;   3 docs/s;   5740 sec
+[2020-04-12 01:32:01,162 INFO] Step 3700/10000; xent: 3.01; lr: 0.0000209;   3 docs/s;   5824 sec
+[2020-04-12 01:33:20,771 INFO] Step 3750/10000; xent: 2.91; lr: 0.0000212;   3 docs/s;   5904 sec
+[2020-04-12 01:34:41,862 INFO] Step 3800/10000; xent: 2.92; lr: 0.0000215;   3 docs/s;   5985 sec
+[2020-04-12 01:35:14,723 INFO] Loading train dataset from ../bert_data/cnndm.train.81.bert.pt, number of examples: 2000
+[2020-04-12 01:35:58,870 INFO] Step 3850/10000; xent: 2.95; lr: 0.0000218;   3 docs/s;   6062 sec
+[2020-04-12 01:37:10,950 INFO] Step 3900/10000; xent: 2.90; lr: 0.0000221;   3 docs/s;   6134 sec
+[2020-04-12 01:38:27,335 INFO] Step 3950/10000; xent: 2.67; lr: 0.0000223;   3 docs/s;   6211 sec
+[2020-04-12 01:39:43,084 INFO] Step 4000/10000; xent: 2.96; lr: 0.0000226;   3 docs/s;   6286 sec
+[2020-04-12 01:39:43,085 INFO] Saving checkpoint ../models/bert_classifier/model_step_4000.pt
+[2020-04-12 01:40:58,376 INFO] Step 4050/10000; xent: 3.02; lr: 0.0000229;   3 docs/s;   6362 sec
+[2020-04-12 01:42:21,271 INFO] Step 4100/10000; xent: 3.03; lr: 0.0000232;   3 docs/s;   6445 sec
+[2020-04-12 01:43:28,783 INFO] Step 4150/10000; xent: 2.82; lr: 0.0000235;   3 docs/s;   6512 sec
+[2020-04-12 01:44:44,067 INFO] Step 4200/10000; xent: 2.96; lr: 0.0000238;   3 docs/s;   6587 sec
+[2020-04-12 01:45:53,548 INFO] Step 4250/10000; xent: 2.97; lr: 0.0000240;   3 docs/s;   6657 sec
+[2020-04-12 01:47:03,005 INFO] Step 4300/10000; xent: 2.91; lr: 0.0000243;   3 docs/s;   6726 sec
+[2020-04-12 01:48:17,750 INFO] Step 4350/10000; xent: 2.92; lr: 0.0000246;   3 docs/s;   6801 sec
+[2020-04-12 01:49:37,374 INFO] Step 4400/10000; xent: 3.01; lr: 0.0000249;   3 docs/s;   6881 sec
+[2020-04-12 01:51:00,014 INFO] Step 4450/10000; xent: 2.79; lr: 0.0000252;   3 docs/s;   6963 sec
+[2020-04-12 01:52:17,049 INFO] Step 4500/10000; xent: 2.88; lr: 0.0000255;   3 docs/s;   7040 sec
+[2020-04-12 01:53:36,519 INFO] Step 4550/10000; xent: 2.85; lr: 0.0000257;   3 docs/s;   7120 sec
+[2020-04-12 01:54:48,193 INFO] Step 4600/10000; xent: 2.82; lr: 0.0000260;   3 docs/s;   7192 sec
+[2020-04-12 01:56:07,042 INFO] Step 4650/10000; xent: 3.03; lr: 0.0000263;   3 docs/s;   7270 sec
+[2020-04-12 01:57:25,515 INFO] Step 4700/10000; xent: 2.86; lr: 0.0000266;   3 docs/s;   7349 sec
+[2020-04-12 01:58:33,479 INFO] Step 4750/10000; xent: 2.87; lr: 0.0000269;   3 docs/s;   7417 sec
+[2020-04-12 01:59:01,174 INFO] Loading train dataset from ../bert_data/cnndm.train.98.bert.pt, number of examples: 2000
+[2020-04-12 01:59:51,857 INFO] Step 4800/10000; xent: 2.90; lr: 0.0000272;   3 docs/s;   7495 sec
+[2020-04-12 02:01:07,747 INFO] Step 4850/10000; xent: 3.00; lr: 0.0000274;   3 docs/s;   7571 sec
+[2020-04-12 02:02:17,541 INFO] Step 4900/10000; xent: 3.01; lr: 0.0000277;   3 docs/s;   7641 sec
+[2020-04-12 02:03:23,617 INFO] Step 4950/10000; xent: 2.93; lr: 0.0000280;   3 docs/s;   7707 sec
+[2020-04-12 02:04:29,968 INFO] Step 5000/10000; xent: 3.16; lr: 0.0000283;   3 docs/s;   7773 sec
+[2020-04-12 02:04:29,970 INFO] Saving checkpoint ../models/bert_classifier/model_step_5000.pt
+[2020-04-12 02:05:46,090 INFO] Step 5050/10000; xent: 2.98; lr: 0.0000281;   3 docs/s;   7849 sec
+[2020-04-12 02:06:57,551 INFO] Step 5100/10000; xent: 3.11; lr: 0.0000280;   3 docs/s;   7921 sec
+[2020-04-12 02:08:10,131 INFO] Step 5150/10000; xent: 2.81; lr: 0.0000279;   3 docs/s;   7993 sec
+[2020-04-12 02:09:15,303 INFO] Step 5200/10000; xent: 2.90; lr: 0.0000277;   3 docs/s;   8059 sec
+[2020-04-12 02:10:23,735 INFO] Step 5250/10000; xent: 2.91; lr: 0.0000276;   3 docs/s;   8127 sec
+[2020-04-12 02:11:43,629 INFO] Step 5300/10000; xent: 2.93; lr: 0.0000275;   3 docs/s;   8207 sec
+[2020-04-12 02:12:58,876 INFO] Step 5350/10000; xent: 3.00; lr: 0.0000273;   3 docs/s;   8282 sec
+[2020-04-12 02:14:18,661 INFO] Step 5400/10000; xent: 3.03; lr: 0.0000272;   3 docs/s;   8362 sec
+[2020-04-12 02:15:39,274 INFO] Step 5450/10000; xent: 3.00; lr: 0.0000271;   3 docs/s;   8443 sec
+[2020-04-12 02:16:58,251 INFO] Step 5500/10000; xent: 2.92; lr: 0.0000270;   3 docs/s;   8522 sec
+[2020-04-12 02:18:13,842 INFO] Step 5550/10000; xent: 2.78; lr: 0.0000268;   3 docs/s;   8597 sec
+[2020-04-12 02:19:38,347 INFO] Step 5600/10000; xent: 2.97; lr: 0.0000267;   2 docs/s;   8682 sec
+[2020-04-12 02:20:54,124 INFO] Step 5650/10000; xent: 2.90; lr: 0.0000266;   3 docs/s;   8757 sec
+[2020-04-12 02:22:08,881 INFO] Step 5700/10000; xent: 2.94; lr: 0.0000265;   3 docs/s;   8832 sec
+[2020-04-12 02:22:39,957 INFO] Loading train dataset from ../bert_data/cnndm.train.93.bert.pt, number of examples: 1997
+[2020-04-12 02:23:28,665 INFO] Step 5750/10000; xent: 2.91; lr: 0.0000264;   3 docs/s;   8912 sec
+[2020-04-12 02:24:48,633 INFO] Step 5800/10000; xent: 2.75; lr: 0.0000263;   3 docs/s;   8992 sec
+[2020-04-12 02:26:12,827 INFO] Step 5850/10000; xent: 2.88; lr: 0.0000261;   3 docs/s;   9076 sec
+[2020-04-12 02:27:23,030 INFO] Step 5900/10000; xent: 3.02; lr: 0.0000260;   3 docs/s;   9146 sec
+[2020-04-12 02:28:29,251 INFO] Step 5950/10000; xent: 2.99; lr: 0.0000259;   3 docs/s;   9213 sec
+[2020-04-12 02:29:35,389 INFO] Step 6000/10000; xent: 2.87; lr: 0.0000258;   3 docs/s;   9279 sec
+[2020-04-12 02:29:35,390 INFO] Saving checkpoint ../models/bert_classifier/model_step_6000.pt
+[2020-04-12 02:30:49,063 INFO] Step 6050/10000; xent: 2.94; lr: 0.0000257;   3 docs/s;   9352 sec
+[2020-04-12 02:31:58,980 INFO] Step 6100/10000; xent: 2.75; lr: 0.0000256;   3 docs/s;   9422 sec
+[2020-04-12 02:33:14,452 INFO] Step 6150/10000; xent: 2.71; lr: 0.0000255;   3 docs/s;   9498 sec
+[2020-04-12 02:34:23,560 INFO] Step 6200/10000; xent: 3.00; lr: 0.0000254;   3 docs/s;   9567 sec
+[2020-04-12 02:35:30,126 INFO] Step 6250/10000; xent: 2.80; lr: 0.0000253;   3 docs/s;   9633 sec
+[2020-04-12 02:36:39,788 INFO] Step 6300/10000; xent: 2.93; lr: 0.0000252;   3 docs/s;   9703 sec
+[2020-04-12 02:37:53,260 INFO] Step 6350/10000; xent: 2.81; lr: 0.0000251;   3 docs/s;   9777 sec
+[2020-04-12 02:39:07,441 INFO] Step 6400/10000; xent: 2.80; lr: 0.0000250;   3 docs/s;   9851 sec
+[2020-04-12 02:40:18,957 INFO] Step 6450/10000; xent: 2.80; lr: 0.0000249;   3 docs/s;   9922 sec
+[2020-04-12 02:41:39,253 INFO] Step 6500/10000; xent: 3.06; lr: 0.0000248;   3 docs/s;  10003 sec
+[2020-04-12 02:42:55,335 INFO] Step 6550/10000; xent: 2.76; lr: 0.0000247;   3 docs/s;  10079 sec
+[2020-04-12 02:44:15,015 INFO] Step 6600/10000; xent: 2.78; lr: 0.0000246;   3 docs/s;  10158 sec
+[2020-04-12 02:45:38,371 INFO] Step 6650/10000; xent: 3.01; lr: 0.0000245;   3 docs/s;  10242 sec
+[2020-04-12 02:46:10,026 INFO] Loading train dataset from ../bert_data/cnndm.train.63.bert.pt, number of examples: 2001
+[2020-04-12 02:46:48,729 INFO] Step 6700/10000; xent: 3.02; lr: 0.0000244;   3 docs/s;  10312 sec
+[2020-04-12 02:48:02,780 INFO] Step 6750/10000; xent: 3.06; lr: 0.0000243;   3 docs/s;  10386 sec
+[2020-04-12 02:49:12,014 INFO] Step 6800/10000; xent: 2.88; lr: 0.0000243;   3 docs/s;  10455 sec
+[2020-04-12 02:50:18,037 INFO] Step 6850/10000; xent: 2.92; lr: 0.0000242;   3 docs/s;  10521 sec
+[2020-04-12 02:51:30,901 INFO] Step 6900/10000; xent: 2.78; lr: 0.0000241;   3 docs/s;  10594 sec
+[2020-04-12 02:52:35,758 INFO] Step 6950/10000; xent: 2.96; lr: 0.0000240;   3 docs/s;  10659 sec
+[2020-04-12 02:53:49,165 INFO] Step 7000/10000; xent: 2.85; lr: 0.0000239;   3 docs/s;  10732 sec
+[2020-04-12 02:53:49,166 INFO] Saving checkpoint ../models/bert_classifier/model_step_7000.pt
+[2020-04-12 02:55:02,389 INFO] Step 7050/10000; xent: 2.82; lr: 0.0000238;   3 docs/s;  10806 sec
+[2020-04-12 02:56:15,345 INFO] Step 7100/10000; xent: 2.95; lr: 0.0000237;   3 docs/s;  10879 sec
+[2020-04-12 02:57:32,695 INFO] Step 7150/10000; xent: 2.82; lr: 0.0000237;   3 docs/s;  10956 sec
+[2020-04-12 02:58:43,238 INFO] Step 7200/10000; xent: 2.81; lr: 0.0000236;   3 docs/s;  11027 sec
+[2020-04-12 02:59:57,789 INFO] Step 7250/10000; xent: 2.92; lr: 0.0000235;   3 docs/s;  11101 sec
+[2020-04-12 03:01:10,250 INFO] Step 7300/10000; xent: 2.77; lr: 0.0000234;   3 docs/s;  11174 sec
+[2020-04-12 03:02:26,478 INFO] Step 7350/10000; xent: 2.78; lr: 0.0000233;   3 docs/s;  11250 sec
+[2020-04-12 03:03:35,378 INFO] Step 7400/10000; xent: 2.94; lr: 0.0000232;   3 docs/s;  11319 sec
+[2020-04-12 03:04:49,357 INFO] Step 7450/10000; xent: 2.92; lr: 0.0000232;   3 docs/s;  11393 sec
+[2020-04-12 03:06:07,096 INFO] Step 7500/10000; xent: 2.94; lr: 0.0000231;   3 docs/s;  11470 sec
+[2020-04-12 03:07:16,396 INFO] Step 7550/10000; xent: 2.92; lr: 0.0000230;   3 docs/s;  11540 sec
+[2020-04-12 03:08:25,256 INFO] Step 7600/10000; xent: 3.02; lr: 0.0000229;   3 docs/s;  11609 sec
+[2020-04-12 03:08:58,692 INFO] Loading train dataset from ../bert_data/cnndm.train.15.bert.pt, number of examples: 1999
+[2020-04-12 03:09:43,069 INFO] Step 7650/10000; xent: 2.85; lr: 0.0000229;   3 docs/s;  11686 sec
+[2020-04-12 03:11:01,200 INFO] Step 7700/10000; xent: 2.86; lr: 0.0000228;   3 docs/s;  11765 sec
+[2020-04-12 03:12:19,535 INFO] Step 7750/10000; xent: 2.83; lr: 0.0000227;   3 docs/s;  11843 sec
+[2020-04-12 03:13:34,140 INFO] Step 7800/10000; xent: 2.82; lr: 0.0000226;   3 docs/s;  11917 sec
+[2020-04-12 03:14:48,401 INFO] Step 7850/10000; xent: 2.91; lr: 0.0000226;   3 docs/s;  11992 sec
+[2020-04-12 03:16:07,304 INFO] Step 7900/10000; xent: 2.97; lr: 0.0000225;   3 docs/s;  12071 sec
+[2020-04-12 03:17:23,295 INFO] Step 7950/10000; xent: 2.86; lr: 0.0000224;   3 docs/s;  12147 sec
+[2020-04-12 03:18:59,712 INFO] Step 8000/10000; xent: 2.94; lr: 0.0000224;   2 docs/s;  12243 sec
+[2020-04-12 03:18:59,713 INFO] Saving checkpoint ../models/bert_classifier/model_step_8000.pt
+[2020-04-12 03:20:33,428 INFO] Step 8050/10000; xent: 2.69; lr: 0.0000223;   2 docs/s;  12337 sec
+[2020-04-12 03:22:17,959 INFO] Step 8100/10000; xent: 2.91; lr: 0.0000222;   2 docs/s;  12441 sec
+[2020-04-12 03:23:59,237 INFO] Step 8150/10000; xent: 2.92; lr: 0.0000222;   2 docs/s;  12543 sec
+[2020-04-12 03:25:46,422 INFO] Step 8200/10000; xent: 2.71; lr: 0.0000221;   2 docs/s;  12650 sec
+[2020-04-12 03:27:45,051 INFO] Step 8250/10000; xent: 2.91; lr: 0.0000220;   2 docs/s;  12768 sec
+[2020-04-12 03:29:36,278 INFO] Step 8300/10000; xent: 2.82; lr: 0.0000220;   2 docs/s;  12880 sec
+[2020-04-12 03:31:25,295 INFO] Step 8350/10000; xent: 2.85; lr: 0.0000219;   2 docs/s;  12989 sec
+[2020-04-12 03:33:23,258 INFO] Step 8400/10000; xent: 2.81; lr: 0.0000218;   2 docs/s;  13107 sec
+[2020-04-12 03:35:09,606 INFO] Step 8450/10000; xent: 2.89; lr: 0.0000218;   2 docs/s;  13213 sec
+[2020-04-12 03:36:42,339 INFO] Step 8500/10000; xent: 2.97; lr: 0.0000217;   2 docs/s;  13306 sec
+[2020-04-12 03:38:14,138 INFO] Step 8550/10000; xent: 2.94; lr: 0.0000216;   2 docs/s;  13397 sec
+[2020-04-12 03:38:56,119 INFO] Loading train dataset from ../bert_data/cnndm.train.64.bert.pt, number of examples: 2001
+[2020-04-12 03:39:35,791 INFO] Step 8600/10000; xent: 2.80; lr: 0.0000216;   3 docs/s;  13479 sec
+[2020-04-12 03:40:58,126 INFO] Step 8650/10000; xent: 2.75; lr: 0.0000215;   3 docs/s;  13561 sec
+[2020-04-12 03:42:08,267 INFO] Step 8700/10000; xent: 2.78; lr: 0.0000214;   3 docs/s;  13632 sec
+[2020-04-12 03:43:18,893 INFO] Step 8750/10000; xent: 2.87; lr: 0.0000214;   3 docs/s;  13702 sec
+[2020-04-12 03:44:32,023 INFO] Step 8800/10000; xent: 2.86; lr: 0.0000213;   3 docs/s;  13775 sec
+[2020-04-12 03:45:47,079 INFO] Step 8850/10000; xent: 2.74; lr: 0.0000213;   3 docs/s;  13850 sec
+[2020-04-12 03:47:03,148 INFO] Step 8900/10000; xent: 2.88; lr: 0.0000212;   3 docs/s;  13926 sec
+[2020-04-12 03:48:02,584 INFO] Step 8950/10000; xent: 2.80; lr: 0.0000211;   4 docs/s;  13986 sec
+[2020-04-12 03:49:00,910 INFO] Step 9000/10000; xent: 3.00; lr: 0.0000211;   4 docs/s;  14044 sec
+[2020-04-12 03:49:00,912 INFO] Saving checkpoint ../models/bert_classifier/model_step_9000.pt
+[2020-04-12 03:50:05,631 INFO] Step 9050/10000; xent: 2.85; lr: 0.0000210;   3 docs/s;  14109 sec
+[2020-04-12 03:51:05,058 INFO] Step 9100/10000; xent: 2.94; lr: 0.0000210;   4 docs/s;  14168 sec
+[2020-04-12 03:52:04,531 INFO] Step 9150/10000; xent: 2.88; lr: 0.0000209;   4 docs/s;  14228 sec
+[2020-04-12 03:53:03,272 INFO] Step 9200/10000; xent: 2.79; lr: 0.0000209;   4 docs/s;  14287 sec
+[2020-04-12 03:54:02,871 INFO] Step 9250/10000; xent: 2.89; lr: 0.0000208;   4 docs/s;  14346 sec
+[2020-04-12 03:55:02,482 INFO] Step 9300/10000; xent: 2.72; lr: 0.0000207;   4 docs/s;  14406 sec
+[2020-04-12 03:56:00,211 INFO] Step 9350/10000; xent: 2.97; lr: 0.0000207;   4 docs/s;  14464 sec
+[2020-04-12 03:56:58,930 INFO] Step 9400/10000; xent: 2.88; lr: 0.0000206;   4 docs/s;  14522 sec
+[2020-04-12 03:57:57,773 INFO] Step 9450/10000; xent: 2.95; lr: 0.0000206;   4 docs/s;  14581 sec
+[2020-04-12 03:58:56,736 INFO] Step 9500/10000; xent: 3.10; lr: 0.0000205;   4 docs/s;  14640 sec
+[2020-04-12 03:59:29,075 INFO] Loading train dataset from ../bert_data/cnndm.train.28.bert.pt, number of examples: 2000
+[2020-04-12 03:59:55,502 INFO] Step 9550/10000; xent: 2.75; lr: 0.0000205;   4 docs/s;  14699 sec
+[2020-04-12 04:00:53,975 INFO] Step 9600/10000; xent: 2.91; lr: 0.0000204;   4 docs/s;  14757 sec
+[2020-04-12 04:01:52,343 INFO] Step 9650/10000; xent: 2.89; lr: 0.0000204;   4 docs/s;  14816 sec
+[2020-04-12 04:02:52,097 INFO] Step 9700/10000; xent: 2.62; lr: 0.0000203;   4 docs/s;  14875 sec
+[2020-04-12 04:03:51,148 INFO] Step 9750/10000; xent: 3.09; lr: 0.0000203;   4 docs/s;  14934 sec
+[2020-04-12 04:04:47,993 INFO] Step 9800/10000; xent: 2.75; lr: 0.0000202;   4 docs/s;  14991 sec
+[2020-04-12 04:05:45,590 INFO] Step 9850/10000; xent: 2.94; lr: 0.0000202;   4 docs/s;  15049 sec
+[2020-04-12 04:06:43,774 INFO] Step 9900/10000; xent: 2.92; lr: 0.0000201;   4 docs/s;  15107 sec
+[2020-04-12 04:07:40,405 INFO] Step 9950/10000; xent: 2.80; lr: 0.0000201;   4 docs/s;  15164 sec
+[2020-04-12 04:08:36,465 INFO] Step 10000/10000; xent: 2.83; lr: 0.0000200;   4 docs/s;  15220 sec
+[2020-04-12 04:08:36,466 INFO] Saving checkpoint ../models/bert_classifier/model_step_10000.pt
+[2020-04-12 04:08:38,148 INFO] Loading train dataset from ../bert_data/cnndm.train.10.bert.pt, number of examples: 2001
+[2020-04-12 04:28:56,778 INFO] Loading checkpoint from 

@@ -1,0 +1,21 @@
+[2020-04-30 00:26:54,246 INFO] Loading checkpoint from ../models/bert_transformer/model_step_1000.pt
+[2020-04-30 00:27:13,783 INFO] Loading test dataset from ../bert_data/cnndm.test.0.bert.pt, number of examples: 2001
+[2020-04-30 00:27:13,798 INFO] * number of parameters: 120512513
+[2020-04-30 00:28:23,244 INFO] Loading test dataset from ../bert_data/cnndm.test.1.bert.pt, number of examples: 2001
+[2020-04-30 00:29:40,299 INFO] Loading test dataset from ../bert_data/cnndm.test.2.bert.pt, number of examples: 2001
+[2020-04-30 00:31:47,355 INFO] Loading test dataset from ../bert_data/cnndm.test.3.bert.pt, number of examples: 2001
+[2020-04-30 00:34:37,301 INFO] Loading test dataset from ../bert_data/cnndm.test.4.bert.pt, number of examples: 2000
+[2020-04-30 00:37:50,934 INFO] Loading test dataset from ../bert_data/cnndm.test.5.bert.pt, number of examples: 1485
+[2020-04-30 00:40:22,675 INFO] Writing summaries.
+[2020-04-30 00:40:22,675 INFO] Processing summaries. Saving system files to ../temp/tmpfelu7in3/system and model files to ../temp/tmpfelu7in3/model.
+[2020-04-30 00:40:22,675 INFO] Processing files in ../temp/rouge-tmp-2020-04-30-00-40-21/candidate/.
+[2020-04-30 00:40:23,506 INFO] Saved processed files to ../temp/tmpfelu7in3/system.
+[2020-04-30 00:40:23,507 INFO] Processing files in ../temp/rouge-tmp-2020-04-30-00-40-21/reference/.
+[2020-04-30 00:40:24,330 INFO] Saved processed files to ../temp/tmpfelu7in3/model.
+[2020-04-30 00:40:24,403 INFO] Written ROUGE configuration to ../temp/tmpcoy0414j/rouge_conf.xml
+[2020-04-30 00:40:24,403 INFO] Running ROUGE with command /home/shad3/rouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/shad3/rouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmpcoy0414j/rouge_conf.xml
+[2020-04-30 00:41:54,559 INFO] Rouges at step 1000 
+>> ROUGE-F(1/2/3/l): 40.06/17.37/36.38
+ROUGE-R(1/2/3/l): 51.98/22.64/47.16
+
+[2020-04-30 00:41:54,559 INFO] Validation xent: 6.3385 at step 1000
