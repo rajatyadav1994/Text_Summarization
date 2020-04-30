@@ -1,0 +1,2458 @@
+[2020-04-29 16:34:18,937 INFO] Device ID -1
+[2020-04-29 16:34:18,937 INFO] Device cpu
+[2020-04-29 16:34:22,265 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-config.json from cache at ../temp/6dfaed860471b03ab5b9acb6153bea82b6632fb9bbe514d3fff050fe1319ee6d.788fed32bb8481a9b15ce726d41c53d5d5066b04c667e34ce3a7a3826d1573d8
+[2020-04-29 16:34:22,267 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-29 16:34:23,644 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-pytorch_model.bin from cache at ../temp/54da47087cc86ce75324e4dc9bbb5f66c6e83a7c6bd23baea8b489acc8d09aa4.4d5343a4b979c4beeaadef17a0453d1bb183dd9b084f58b84c7cc781df343ae6
+[2020-04-29 16:34:29,303 INFO] ExtSummarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 1024, padding_idx=0)
+        (position_embeddings): Embedding(512, 1024)
+        (token_type_embeddings): Embedding(2, 1024)
+        (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (12): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (13): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (14): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (15): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (16): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (17): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (18): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (19): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (20): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (21): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (22): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (23): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=1024, out_features=1024, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (ext_layer): ExtTransformerEncoder(
+    (pos_emb): PositionalEncoding(
+      (dropout): Dropout(p=0.1)
+    )
+    (transformer_inter): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=1024, out_features=1024, bias=True)
+          (linear_values): Linear(in_features=1024, out_features=1024, bias=True)
+          (linear_query): Linear(in_features=1024, out_features=1024, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=1024, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=1024, bias=True)
+          (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1)
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=1024, out_features=1024, bias=True)
+          (linear_values): Linear(in_features=1024, out_features=1024, bias=True)
+          (linear_query): Linear(in_features=1024, out_features=1024, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=1024, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=1024, bias=True)
+          (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1)
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+    )
+    (dropout): Dropout(p=0.1)
+    (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+    (wo): Linear(in_features=1024, out_features=1, bias=True)
+    (sigmoid): Sigmoid()
+  )
+)
+[2020-04-29 16:34:29,309 INFO] * number of parameters: 351944705
+[2020-04-29 16:34:29,310 INFO] Start training...
+[2020-04-29 16:34:29,470 INFO] Loading train dataset from ../bert_data/cnndm.train.123.bert.pt, number of examples: 2001
+[2020-04-29 16:34:42,377 INFO] Step  1/ 1000; xent: 12.53; lr: 0.0000020;   0 docs/s;     13 sec
+[2020-04-29 16:34:53,129 INFO] Step  2/ 1000; xent: 7.46; lr: 0.0000040;   0 docs/s;     24 sec
+[2020-04-29 16:35:02,977 INFO] Step  3/ 1000; xent: 8.29; lr: 0.0000060;   0 docs/s;     34 sec
+[2020-04-29 16:35:12,041 INFO] Step  4/ 1000; xent: 5.05; lr: 0.0000080;   0 docs/s;     43 sec
+[2020-04-29 16:35:21,780 INFO] Step  5/ 1000; xent: 4.19; lr: 0.0000100;   0 docs/s;     52 sec
+[2020-04-29 16:35:31,555 INFO] Step  6/ 1000; xent: 2.53; lr: 0.0000120;   0 docs/s;     62 sec
+[2020-04-29 16:35:41,479 INFO] Step  7/ 1000; xent: 5.27; lr: 0.0000140;   0 docs/s;     72 sec
+[2020-04-29 16:35:51,228 INFO] Step  8/ 1000; xent: 5.94; lr: 0.0000160;   0 docs/s;     82 sec
+[2020-04-29 16:36:00,971 INFO] Step  9/ 1000; xent: 7.34; lr: 0.0000180;   0 docs/s;     92 sec
+[2020-04-29 16:36:10,763 INFO] Step 10/ 1000; xent: 10.11; lr: 0.0000200;   0 docs/s;    101 sec
+[2020-04-29 16:36:20,468 INFO] Step 11/ 1000; xent: 8.18; lr: 0.0000220;   0 docs/s;    111 sec
+[2020-04-29 16:36:29,489 INFO] Step 12/ 1000; xent: 7.52; lr: 0.0000240;   0 docs/s;    120 sec
+[2020-04-29 16:36:39,259 INFO] Step 13/ 1000; xent: 11.45; lr: 0.0000260;   0 docs/s;    130 sec
+[2020-04-29 16:36:47,007 INFO] Step 14/ 1000; xent: 9.18; lr: 0.0000280;   1 docs/s;    138 sec
+[2020-04-29 16:36:56,775 INFO] Step 15/ 1000; xent: 2.96; lr: 0.0000300;   0 docs/s;    147 sec
+[2020-04-29 16:37:06,591 INFO] Step 16/ 1000; xent: 8.09; lr: 0.0000320;   0 docs/s;    157 sec
+[2020-04-29 16:37:16,425 INFO] Step 17/ 1000; xent: 5.25; lr: 0.0000340;   0 docs/s;    167 sec
+[2020-04-29 16:37:26,110 INFO] Step 18/ 1000; xent: 4.03; lr: 0.0000360;   0 docs/s;    177 sec
+[2020-04-29 16:37:35,955 INFO] Step 19/ 1000; xent: 3.27; lr: 0.0000380;   0 docs/s;    186 sec
+[2020-04-29 16:37:45,863 INFO] Step 20/ 1000; xent: 4.85; lr: 0.0000400;   0 docs/s;    196 sec
+[2020-04-29 16:37:55,740 INFO] Step 21/ 1000; xent: 4.53; lr: 0.0000420;   0 docs/s;    206 sec
+[2020-04-29 16:38:05,670 INFO] Step 22/ 1000; xent: 5.56; lr: 0.0000440;   0 docs/s;    216 sec
+[2020-04-29 16:38:15,630 INFO] Step 23/ 1000; xent: 4.18; lr: 0.0000460;   0 docs/s;    226 sec
+[2020-04-29 16:38:25,564 INFO] Step 24/ 1000; xent: 3.76; lr: 0.0000480;   0 docs/s;    236 sec
+[2020-04-29 16:38:35,546 INFO] Step 25/ 1000; xent: 3.28; lr: 0.0000500;   0 docs/s;    246 sec
+[2020-04-29 16:38:45,520 INFO] Step 26/ 1000; xent: 3.34; lr: 0.0000520;   0 docs/s;    256 sec
+[2020-04-29 16:38:55,486 INFO] Step 27/ 1000; xent: 5.35; lr: 0.0000540;   0 docs/s;    266 sec
+[2020-04-29 16:39:03,883 INFO] Step 28/ 1000; xent: 3.97; lr: 0.0000560;   0 docs/s;    274 sec
+[2020-04-29 16:39:13,907 INFO] Step 29/ 1000; xent: 5.52; lr: 0.0000580;   0 docs/s;    284 sec
+[2020-04-29 16:39:23,895 INFO] Step 30/ 1000; xent: 4.64; lr: 0.0000600;   0 docs/s;    294 sec
+[2020-04-29 16:39:33,848 INFO] Step 31/ 1000; xent: 3.26; lr: 0.0000620;   0 docs/s;    304 sec
+[2020-04-29 16:39:43,770 INFO] Step 32/ 1000; xent: 3.82; lr: 0.0000640;   0 docs/s;    314 sec
+[2020-04-29 16:39:51,758 INFO] Step 33/ 1000; xent: 3.15; lr: 0.0000660;   1 docs/s;    322 sec
+[2020-04-29 16:40:01,274 INFO] Step 34/ 1000; xent: 5.09; lr: 0.0000680;   0 docs/s;    332 sec
+[2020-04-29 16:40:11,176 INFO] Step 35/ 1000; xent: 3.98; lr: 0.0000700;   0 docs/s;    342 sec
+[2020-04-29 16:40:21,190 INFO] Step 36/ 1000; xent: 2.54; lr: 0.0000720;   0 docs/s;    352 sec
+[2020-04-29 16:40:30,506 INFO] Step 37/ 1000; xent: 2.96; lr: 0.0000740;   0 docs/s;    361 sec
+[2020-04-29 16:40:40,668 INFO] Step 38/ 1000; xent: 3.07; lr: 0.0000760;   0 docs/s;    371 sec
+[2020-04-29 16:40:50,661 INFO] Step 39/ 1000; xent: 4.86; lr: 0.0000780;   0 docs/s;    381 sec
+[2020-04-29 16:41:00,655 INFO] Step 40/ 1000; xent: 4.00; lr: 0.0000800;   0 docs/s;    391 sec
+[2020-04-29 16:41:10,514 INFO] Step 41/ 1000; xent: 3.58; lr: 0.0000820;   0 docs/s;    401 sec
+[2020-04-29 16:41:20,435 INFO] Step 42/ 1000; xent: 2.10; lr: 0.0000840;   0 docs/s;    411 sec
+[2020-04-29 16:41:29,783 INFO] Step 43/ 1000; xent: 2.15; lr: 0.0000860;   0 docs/s;    420 sec
+[2020-04-29 16:41:39,739 INFO] Step 44/ 1000; xent: 3.82; lr: 0.0000880;   0 docs/s;    430 sec
+[2020-04-29 16:41:47,362 INFO] Step 45/ 1000; xent: 2.23; lr: 0.0000900;   1 docs/s;    438 sec
+[2020-04-29 16:41:57,289 INFO] Step 46/ 1000; xent: 3.34; lr: 0.0000920;   0 docs/s;    448 sec
+[2020-04-29 16:42:06,962 INFO] Step 47/ 1000; xent: 3.88; lr: 0.0000940;   0 docs/s;    457 sec
+[2020-04-29 16:42:16,851 INFO] Step 48/ 1000; xent: 3.18; lr: 0.0000960;   0 docs/s;    467 sec
+[2020-04-29 16:42:26,777 INFO] Step 49/ 1000; xent: 3.01; lr: 0.0000980;   0 docs/s;    477 sec
+[2020-04-29 16:42:36,728 INFO] Step 50/ 1000; xent: 4.48; lr: 0.0001000;   0 docs/s;    487 sec
+[2020-04-29 16:42:36,768 INFO] Saving checkpoint ../models/bert_large/model_step_50.pt
+[2020-04-29 16:43:28,870 INFO] Step 51/ 1000; xent: 3.22; lr: 0.0001020;   0 docs/s;    539 sec
+[2020-04-29 16:43:39,388 INFO] Step 52/ 1000; xent: 3.76; lr: 0.0001040;   0 docs/s;    550 sec
+[2020-04-29 16:43:48,068 INFO] Step 53/ 1000; xent: 3.50; lr: 0.0001060;   0 docs/s;    559 sec
+[2020-04-29 16:43:57,951 INFO] Step 54/ 1000; xent: 3.24; lr: 0.0001080;   0 docs/s;    568 sec
+[2020-04-29 16:44:07,843 INFO] Step 55/ 1000; xent: 2.30; lr: 0.0001100;   0 docs/s;    578 sec
+[2020-04-29 16:44:17,538 INFO] Step 56/ 1000; xent: 3.94; lr: 0.0001120;   0 docs/s;    588 sec
+[2020-04-29 16:44:27,479 INFO] Step 57/ 1000; xent: 3.78; lr: 0.0001140;   0 docs/s;    598 sec
+[2020-04-29 16:44:37,445 INFO] Step 58/ 1000; xent: 2.51; lr: 0.0001160;   0 docs/s;    608 sec
+[2020-04-29 16:44:47,344 INFO] Step 59/ 1000; xent: 2.26; lr: 0.0001180;   0 docs/s;    618 sec
+[2020-04-29 16:44:57,247 INFO] Step 60/ 1000; xent: 4.85; lr: 0.0001200;   0 docs/s;    628 sec
+[2020-04-29 16:45:07,184 INFO] Step 61/ 1000; xent: 1.37; lr: 0.0001220;   0 docs/s;    638 sec
+[2020-04-29 16:45:17,139 INFO] Step 62/ 1000; xent: 3.89; lr: 0.0001240;   0 docs/s;    648 sec
+[2020-04-29 16:45:27,082 INFO] Step 63/ 1000; xent: 4.09; lr: 0.0001260;   0 docs/s;    658 sec
+[2020-04-29 16:45:37,081 INFO] Step 64/ 1000; xent: 3.54; lr: 0.0001280;   0 docs/s;    668 sec
+[2020-04-29 16:45:47,477 INFO] Step 65/ 1000; xent: 3.48; lr: 0.0001300;   0 docs/s;    678 sec
+[2020-04-29 16:45:56,947 INFO] Step 66/ 1000; xent: 3.64; lr: 0.0001320;   0 docs/s;    687 sec
+[2020-04-29 16:46:06,879 INFO] Step 67/ 1000; xent: 3.07; lr: 0.0001340;   0 docs/s;    697 sec
+[2020-04-29 16:46:16,793 INFO] Step 68/ 1000; xent: 4.62; lr: 0.0001360;   0 docs/s;    707 sec
+[2020-04-29 16:46:26,752 INFO] Step 69/ 1000; xent: 2.88; lr: 0.0001380;   0 docs/s;    717 sec
+[2020-04-29 16:46:36,697 INFO] Step 70/ 1000; xent: 3.66; lr: 0.0001400;   0 docs/s;    727 sec
+[2020-04-29 16:46:46,703 INFO] Step 71/ 1000; xent: 3.66; lr: 0.0001420;   0 docs/s;    737 sec
+[2020-04-29 16:46:56,590 INFO] Step 72/ 1000; xent: 4.00; lr: 0.0001440;   0 docs/s;    747 sec
+[2020-04-29 16:47:05,211 INFO] Step 73/ 1000; xent: 3.27; lr: 0.0001460;   0 docs/s;    756 sec
+[2020-04-29 16:47:15,168 INFO] Step 74/ 1000; xent: 3.68; lr: 0.0001480;   0 docs/s;    766 sec
+[2020-04-29 16:47:25,096 INFO] Step 75/ 1000; xent: 3.29; lr: 0.0001500;   0 docs/s;    776 sec
+[2020-04-29 16:47:35,032 INFO] Step 76/ 1000; xent: 2.78; lr: 0.0001520;   0 docs/s;    786 sec
+[2020-04-29 16:47:44,958 INFO] Step 77/ 1000; xent: 3.48; lr: 0.0001540;   0 docs/s;    795 sec
+[2020-04-29 16:47:54,895 INFO] Step 78/ 1000; xent: 3.27; lr: 0.0001560;   0 docs/s;    805 sec
+[2020-04-29 16:48:02,754 INFO] Step 79/ 1000; xent: 3.26; lr: 0.0001580;   1 docs/s;    813 sec
+[2020-04-29 16:48:12,656 INFO] Step 80/ 1000; xent: 4.21; lr: 0.0001600;   0 docs/s;    823 sec
+[2020-04-29 16:48:20,888 INFO] Step 81/ 1000; xent: 3.08; lr: 0.0001620;   0 docs/s;    831 sec
+[2020-04-29 16:48:30,807 INFO] Step 82/ 1000; xent: 2.85; lr: 0.0001640;   0 docs/s;    841 sec
+[2020-04-29 16:48:40,509 INFO] Step 83/ 1000; xent: 3.14; lr: 0.0001660;   0 docs/s;    851 sec
+[2020-04-29 16:48:50,552 INFO] Step 84/ 1000; xent: 5.50; lr: 0.0001680;   0 docs/s;    861 sec
+[2020-04-29 16:48:59,459 INFO] Step 85/ 1000; xent: 4.36; lr: 0.0001700;   0 docs/s;    870 sec
+[2020-04-29 16:49:07,845 INFO] Step 86/ 1000; xent: 2.79; lr: 0.0001720;   0 docs/s;    878 sec
+[2020-04-29 16:49:17,727 INFO] Step 87/ 1000; xent: 3.96; lr: 0.0001740;   0 docs/s;    888 sec
+[2020-04-29 16:49:27,670 INFO] Step 88/ 1000; xent: 4.21; lr: 0.0001760;   0 docs/s;    898 sec
+[2020-04-29 16:49:37,611 INFO] Step 89/ 1000; xent: 4.11; lr: 0.0001780;   0 docs/s;    908 sec
+[2020-04-29 16:49:47,546 INFO] Step 90/ 1000; xent: 4.27; lr: 0.0001800;   0 docs/s;    918 sec
+[2020-04-29 16:49:57,495 INFO] Step 91/ 1000; xent: 2.07; lr: 0.0001820;   0 docs/s;    928 sec
+[2020-04-29 16:50:07,454 INFO] Step 92/ 1000; xent: 5.22; lr: 0.0001840;   0 docs/s;    938 sec
+[2020-04-29 16:50:17,281 INFO] Step 93/ 1000; xent: 4.00; lr: 0.0001860;   0 docs/s;    948 sec
+[2020-04-29 16:50:27,258 INFO] Step 94/ 1000; xent: 4.13; lr: 0.0001880;   0 docs/s;    958 sec
+[2020-04-29 16:50:37,163 INFO] Step 95/ 1000; xent: 3.78; lr: 0.0001900;   0 docs/s;    968 sec
+[2020-04-29 16:50:46,467 INFO] Step 96/ 1000; xent: 3.60; lr: 0.0001920;   0 docs/s;    977 sec
+[2020-04-29 16:50:56,372 INFO] Step 97/ 1000; xent: 3.83; lr: 0.0001940;   0 docs/s;    987 sec
+[2020-04-29 16:51:05,777 INFO] Step 98/ 1000; xent: 2.35; lr: 0.0001960;   0 docs/s;    996 sec
+[2020-04-29 16:51:15,683 INFO] Step 99/ 1000; xent: 3.88; lr: 0.0001980;   0 docs/s;   1006 sec
+[2020-04-29 16:51:25,085 INFO] Step 100/ 1000; xent: 4.00; lr: 0.0002000;   0 docs/s;   1016 sec
+[2020-04-29 16:51:25,101 INFO] Saving checkpoint ../models/bert_large/model_step_100.pt
+[2020-04-29 16:52:13,853 INFO] Step 101/ 1000; xent: 2.15; lr: 0.0001990;   0 docs/s;   1064 sec
+[2020-04-29 16:52:22,792 INFO] Step 102/ 1000; xent: 2.19; lr: 0.0001980;   0 docs/s;   1073 sec
+[2020-04-29 16:52:30,141 INFO] Step 103/ 1000; xent: 3.66; lr: 0.0001971;   1 docs/s;   1081 sec
+[2020-04-29 16:52:37,797 INFO] Step 104/ 1000; xent: 2.97; lr: 0.0001961;   1 docs/s;   1088 sec
+[2020-04-29 16:52:47,673 INFO] Step 105/ 1000; xent: 3.73; lr: 0.0001952;   0 docs/s;   1098 sec
+[2020-04-29 16:52:57,651 INFO] Step 106/ 1000; xent: 3.52; lr: 0.0001943;   0 docs/s;   1108 sec
+[2020-04-29 16:53:06,026 INFO] Step 107/ 1000; xent: 2.97; lr: 0.0001933;   0 docs/s;   1117 sec
+[2020-04-29 16:53:15,968 INFO] Step 108/ 1000; xent: 3.86; lr: 0.0001925;   0 docs/s;   1126 sec
+[2020-04-29 16:53:25,847 INFO] Step 109/ 1000; xent: 3.88; lr: 0.0001916;   0 docs/s;   1136 sec
+[2020-04-29 16:53:35,849 INFO] Step 110/ 1000; xent: 3.68; lr: 0.0001907;   0 docs/s;   1146 sec
+[2020-04-29 16:53:45,876 INFO] Step 111/ 1000; xent: 4.07; lr: 0.0001898;   0 docs/s;   1156 sec
+[2020-04-29 16:53:55,861 INFO] Step 112/ 1000; xent: 3.26; lr: 0.0001890;   0 docs/s;   1166 sec
+[2020-04-29 16:54:04,621 INFO] Step 113/ 1000; xent: 2.77; lr: 0.0001881;   0 docs/s;   1175 sec
+[2020-04-29 16:54:14,596 INFO] Step 114/ 1000; xent: 2.43; lr: 0.0001873;   0 docs/s;   1185 sec
+[2020-04-29 16:54:24,568 INFO] Step 115/ 1000; xent: 3.25; lr: 0.0001865;   0 docs/s;   1195 sec
+[2020-04-29 16:54:34,564 INFO] Step 116/ 1000; xent: 3.45; lr: 0.0001857;   0 docs/s;   1205 sec
+[2020-04-29 16:54:44,646 INFO] Step 117/ 1000; xent: 2.86; lr: 0.0001849;   0 docs/s;   1215 sec
+[2020-04-29 16:54:54,619 INFO] Step 118/ 1000; xent: 3.34; lr: 0.0001841;   0 docs/s;   1225 sec
+[2020-04-29 16:55:04,607 INFO] Step 119/ 1000; xent: 4.29; lr: 0.0001833;   0 docs/s;   1235 sec
+[2020-04-29 16:55:14,595 INFO] Step 120/ 1000; xent: 2.87; lr: 0.0001826;   0 docs/s;   1245 sec
+[2020-04-29 16:55:23,331 INFO] Step 121/ 1000; xent: 2.97; lr: 0.0001818;   0 docs/s;   1254 sec
+[2020-04-29 16:55:33,322 INFO] Step 122/ 1000; xent: 4.16; lr: 0.0001811;   0 docs/s;   1264 sec
+[2020-04-29 16:55:43,604 INFO] Step 123/ 1000; xent: 4.39; lr: 0.0001803;   0 docs/s;   1274 sec
+[2020-04-29 16:55:53,607 INFO] Step 124/ 1000; xent: 3.25; lr: 0.0001796;   0 docs/s;   1284 sec
+[2020-04-29 16:56:03,596 INFO] Step 125/ 1000; xent: 3.30; lr: 0.0001789;   0 docs/s;   1294 sec
+[2020-04-29 16:56:13,657 INFO] Step 126/ 1000; xent: 2.59; lr: 0.0001782;   0 docs/s;   1304 sec
+[2020-04-29 16:56:23,656 INFO] Step 127/ 1000; xent: 3.47; lr: 0.0001775;   0 docs/s;   1314 sec
+[2020-04-29 16:56:33,668 INFO] Step 128/ 1000; xent: 4.17; lr: 0.0001768;   0 docs/s;   1324 sec
+[2020-04-29 16:56:43,752 INFO] Step 129/ 1000; xent: 3.83; lr: 0.0001761;   0 docs/s;   1334 sec
+[2020-04-29 16:56:51,573 INFO] Step 130/ 1000; xent: 4.12; lr: 0.0001754;   1 docs/s;   1342 sec
+[2020-04-29 16:57:00,646 INFO] Step 131/ 1000; xent: 3.78; lr: 0.0001747;   0 docs/s;   1351 sec
+[2020-04-29 16:57:10,696 INFO] Step 132/ 1000; xent: 4.35; lr: 0.0001741;   0 docs/s;   1361 sec
+[2020-04-29 16:57:20,688 INFO] Step 133/ 1000; xent: 3.79; lr: 0.0001734;   0 docs/s;   1371 sec
+[2020-04-29 16:57:28,924 INFO] Step 134/ 1000; xent: 2.67; lr: 0.0001728;   0 docs/s;   1379 sec
+[2020-04-29 16:57:35,896 INFO] Step 135/ 1000; xent: 3.21; lr: 0.0001721;   1 docs/s;   1386 sec
+[2020-04-29 16:57:45,915 INFO] Step 136/ 1000; xent: 3.67; lr: 0.0001715;   0 docs/s;   1396 sec
+[2020-04-29 16:57:55,304 INFO] Step 137/ 1000; xent: 2.83; lr: 0.0001709;   0 docs/s;   1406 sec
+[2020-04-29 16:58:04,971 INFO] Step 138/ 1000; xent: 2.72; lr: 0.0001703;   0 docs/s;   1416 sec
+[2020-04-29 16:58:14,960 INFO] Step 139/ 1000; xent: 3.73; lr: 0.0001696;   0 docs/s;   1425 sec
+[2020-04-29 16:58:24,958 INFO] Step 140/ 1000; xent: 3.23; lr: 0.0001690;   0 docs/s;   1435 sec
+[2020-04-29 16:58:34,923 INFO] Step 141/ 1000; xent: 3.98; lr: 0.0001684;   0 docs/s;   1445 sec
+[2020-04-29 16:58:44,894 INFO] Step 142/ 1000; xent: 3.30; lr: 0.0001678;   0 docs/s;   1455 sec
+[2020-04-29 16:58:54,932 INFO] Step 143/ 1000; xent: 2.62; lr: 0.0001672;   0 docs/s;   1465 sec
+[2020-04-29 16:59:03,708 INFO] Step 144/ 1000; xent: 2.18; lr: 0.0001667;   0 docs/s;   1474 sec
+[2020-04-29 16:59:13,689 INFO] Step 145/ 1000; xent: 3.94; lr: 0.0001661;   0 docs/s;   1484 sec
+[2020-04-29 16:59:23,718 INFO] Step 146/ 1000; xent: 3.50; lr: 0.0001655;   0 docs/s;   1494 sec
+[2020-04-29 16:59:33,557 INFO] Step 147/ 1000; xent: 1.87; lr: 0.0001650;   0 docs/s;   1504 sec
+[2020-04-29 16:59:43,494 INFO] Step 148/ 1000; xent: 3.74; lr: 0.0001644;   0 docs/s;   1514 sec
+[2020-04-29 16:59:53,518 INFO] Step 149/ 1000; xent: 2.07; lr: 0.0001638;   0 docs/s;   1524 sec
+[2020-04-29 17:00:01,993 INFO] Step 150/ 1000; xent: 2.49; lr: 0.0001633;   0 docs/s;   1533 sec
+[2020-04-29 17:00:02,014 INFO] Saving checkpoint ../models/bert_large/model_step_150.pt
+[2020-04-29 17:00:55,094 INFO] Step 151/ 1000; xent: 4.26; lr: 0.0001628;   0 docs/s;   1586 sec
+[2020-04-29 17:01:05,328 INFO] Step 152/ 1000; xent: 2.99; lr: 0.0001622;   0 docs/s;   1596 sec
+[2020-04-29 17:01:15,309 INFO] Step 153/ 1000; xent: 2.64; lr: 0.0001617;   0 docs/s;   1606 sec
+[2020-04-29 17:01:25,252 INFO] Step 154/ 1000; xent: 5.24; lr: 0.0001612;   0 docs/s;   1616 sec
+[2020-04-29 17:01:33,581 INFO] Step 155/ 1000; xent: 2.50; lr: 0.0001606;   0 docs/s;   1624 sec
+[2020-04-29 17:01:43,461 INFO] Step 156/ 1000; xent: 1.77; lr: 0.0001601;   0 docs/s;   1634 sec
+[2020-04-29 17:01:53,408 INFO] Step 157/ 1000; xent: 4.22; lr: 0.0001596;   0 docs/s;   1644 sec
+[2020-04-29 17:02:03,387 INFO] Step 158/ 1000; xent: 2.73; lr: 0.0001591;   0 docs/s;   1654 sec
+[2020-04-29 17:02:13,303 INFO] Step 159/ 1000; xent: 2.83; lr: 0.0001586;   0 docs/s;   1664 sec
+[2020-04-29 17:02:23,321 INFO] Step 160/ 1000; xent: 3.83; lr: 0.0001581;   0 docs/s;   1674 sec
+[2020-04-29 17:02:33,212 INFO] Step 161/ 1000; xent: 5.51; lr: 0.0001576;   0 docs/s;   1684 sec
+[2020-04-29 17:02:43,196 INFO] Step 162/ 1000; xent: 3.56; lr: 0.0001571;   0 docs/s;   1694 sec
+[2020-04-29 17:02:53,132 INFO] Step 163/ 1000; xent: 3.32; lr: 0.0001567;   0 docs/s;   1704 sec
+[2020-04-29 17:03:03,075 INFO] Step 164/ 1000; xent: 3.17; lr: 0.0001562;   0 docs/s;   1714 sec
+[2020-04-29 17:03:13,043 INFO] Step 165/ 1000; xent: 2.82; lr: 0.0001557;   0 docs/s;   1724 sec
+[2020-04-29 17:03:22,181 INFO] Step 166/ 1000; xent: 2.94; lr: 0.0001552;   0 docs/s;   1733 sec
+[2020-04-29 17:03:32,111 INFO] Step 167/ 1000; xent: 3.20; lr: 0.0001548;   0 docs/s;   1743 sec
+[2020-04-29 17:03:42,089 INFO] Step 168/ 1000; xent: 3.80; lr: 0.0001543;   0 docs/s;   1753 sec
+[2020-04-29 17:03:52,002 INFO] Step 169/ 1000; xent: 2.43; lr: 0.0001538;   0 docs/s;   1763 sec
+[2020-04-29 17:04:01,276 INFO] Step 170/ 1000; xent: 3.20; lr: 0.0001534;   0 docs/s;   1772 sec
+[2020-04-29 17:04:11,234 INFO] Step 171/ 1000; xent: 3.29; lr: 0.0001529;   0 docs/s;   1782 sec
+[2020-04-29 17:04:21,193 INFO] Step 172/ 1000; xent: 3.31; lr: 0.0001525;   0 docs/s;   1792 sec
+[2020-04-29 17:04:31,127 INFO] Step 173/ 1000; xent: 4.29; lr: 0.0001521;   0 docs/s;   1802 sec
+[2020-04-29 17:04:41,095 INFO] Step 174/ 1000; xent: 3.60; lr: 0.0001516;   0 docs/s;   1812 sec
+[2020-04-29 17:04:51,057 INFO] Step 175/ 1000; xent: 3.65; lr: 0.0001512;   0 docs/s;   1822 sec
+[2020-04-29 17:05:01,056 INFO] Step 176/ 1000; xent: 2.37; lr: 0.0001508;   0 docs/s;   1832 sec
+[2020-04-29 17:05:10,274 INFO] Step 177/ 1000; xent: 3.79; lr: 0.0001503;   0 docs/s;   1841 sec
+[2020-04-29 17:05:20,245 INFO] Step 178/ 1000; xent: 2.78; lr: 0.0001499;   0 docs/s;   1851 sec
+[2020-04-29 17:05:30,217 INFO] Step 179/ 1000; xent: 2.37; lr: 0.0001495;   0 docs/s;   1861 sec
+[2020-04-29 17:05:39,495 INFO] Step 180/ 1000; xent: 2.26; lr: 0.0001491;   0 docs/s;   1870 sec
+[2020-04-29 17:05:48,979 INFO] Step 181/ 1000; xent: 2.44; lr: 0.0001487;   0 docs/s;   1880 sec
+[2020-04-29 17:05:59,023 INFO] Step 182/ 1000; xent: 5.63; lr: 0.0001482;   0 docs/s;   1890 sec
+[2020-04-29 17:06:08,976 INFO] Step 183/ 1000; xent: 2.98; lr: 0.0001478;   0 docs/s;   1900 sec
+[2020-04-29 17:06:19,006 INFO] Step 184/ 1000; xent: 2.97; lr: 0.0001474;   0 docs/s;   1910 sec
+[2020-04-29 17:06:27,698 INFO] Step 185/ 1000; xent: 3.98; lr: 0.0001470;   0 docs/s;   1918 sec
+[2020-04-29 17:06:37,662 INFO] Step 186/ 1000; xent: 3.70; lr: 0.0001466;   0 docs/s;   1928 sec
+[2020-04-29 17:06:47,691 INFO] Step 187/ 1000; xent: 3.69; lr: 0.0001463;   0 docs/s;   1938 sec
+[2020-04-29 17:06:57,659 INFO] Step 188/ 1000; xent: 3.59; lr: 0.0001459;   0 docs/s;   1948 sec
+[2020-04-29 17:07:07,630 INFO] Step 189/ 1000; xent: 3.06; lr: 0.0001455;   0 docs/s;   1958 sec
+[2020-04-29 17:07:16,854 INFO] Step 190/ 1000; xent: 2.75; lr: 0.0001451;   0 docs/s;   1967 sec
+[2020-04-29 17:07:26,813 INFO] Step 191/ 1000; xent: 3.36; lr: 0.0001447;   0 docs/s;   1977 sec
+[2020-04-29 17:07:36,796 INFO] Step 192/ 1000; xent: 4.24; lr: 0.0001443;   0 docs/s;   1987 sec
+[2020-04-29 17:07:46,181 INFO] Step 193/ 1000; xent: 2.69; lr: 0.0001440;   0 docs/s;   1997 sec
+[2020-04-29 17:07:55,209 INFO] Step 194/ 1000; xent: 4.37; lr: 0.0001436;   0 docs/s;   2006 sec
+[2020-04-29 17:08:05,210 INFO] Step 195/ 1000; xent: 3.55; lr: 0.0001432;   0 docs/s;   2016 sec
+[2020-04-29 17:08:13,835 INFO] Step 196/ 1000; xent: 2.85; lr: 0.0001429;   0 docs/s;   2024 sec
+[2020-04-29 17:08:23,458 INFO] Step 197/ 1000; xent: 2.03; lr: 0.0001425;   0 docs/s;   2034 sec
+[2020-04-29 17:08:33,433 INFO] Step 198/ 1000; xent: 1.84; lr: 0.0001421;   0 docs/s;   2044 sec
+[2020-04-29 17:08:41,454 INFO] Step 199/ 1000; xent: 1.66; lr: 0.0001418;   0 docs/s;   2052 sec
+[2020-04-29 17:08:51,398 INFO] Step 200/ 1000; xent: 2.57; lr: 0.0001414;   0 docs/s;   2062 sec
+[2020-04-29 17:08:51,436 INFO] Saving checkpoint ../models/bert_large/model_step_200.pt
+[2020-04-29 17:09:47,896 INFO] Step 201/ 1000; xent: 5.39; lr: 0.0001411;   0 docs/s;   2118 sec
+[2020-04-29 17:09:58,253 INFO] Step 202/ 1000; xent: 2.25; lr: 0.0001407;   0 docs/s;   2129 sec
+[2020-04-29 17:10:08,213 INFO] Step 203/ 1000; xent: 1.88; lr: 0.0001404;   0 docs/s;   2139 sec
+[2020-04-29 17:10:18,110 INFO] Step 204/ 1000; xent: 3.22; lr: 0.0001400;   0 docs/s;   2149 sec
+[2020-04-29 17:10:28,007 INFO] Step 205/ 1000; xent: 3.73; lr: 0.0001397;   0 docs/s;   2159 sec
+[2020-04-29 17:10:37,128 INFO] Step 206/ 1000; xent: 3.14; lr: 0.0001393;   0 docs/s;   2168 sec
+[2020-04-29 17:10:46,162 INFO] Step 207/ 1000; xent: 3.30; lr: 0.0001390;   0 docs/s;   2177 sec
+[2020-04-29 17:10:56,085 INFO] Step 208/ 1000; xent: 3.16; lr: 0.0001387;   0 docs/s;   2187 sec
+[2020-04-29 17:11:05,781 INFO] Step 209/ 1000; xent: 4.54; lr: 0.0001383;   0 docs/s;   2196 sec
+[2020-04-29 17:11:15,740 INFO] Step 210/ 1000; xent: 2.33; lr: 0.0001380;   0 docs/s;   2206 sec
+[2020-04-29 17:11:25,588 INFO] Step 211/ 1000; xent: 2.69; lr: 0.0001377;   0 docs/s;   2216 sec
+[2020-04-29 17:11:35,518 INFO] Step 212/ 1000; xent: 5.59; lr: 0.0001374;   0 docs/s;   2226 sec
+[2020-04-29 17:11:44,074 INFO] Step 213/ 1000; xent: 3.57; lr: 0.0001370;   0 docs/s;   2235 sec
+[2020-04-29 17:11:54,020 INFO] Step 214/ 1000; xent: 2.82; lr: 0.0001367;   0 docs/s;   2245 sec
+[2020-04-29 17:12:03,910 INFO] Step 215/ 1000; xent: 1.46; lr: 0.0001364;   0 docs/s;   2254 sec
+[2020-04-29 17:12:14,332 INFO] Step 216/ 1000; xent: 3.22; lr: 0.0001361;   0 docs/s;   2265 sec
+[2020-04-29 17:12:24,311 INFO] Step 217/ 1000; xent: 3.48; lr: 0.0001358;   0 docs/s;   2275 sec
+[2020-04-29 17:12:32,674 INFO] Step 218/ 1000; xent: 2.90; lr: 0.0001355;   0 docs/s;   2283 sec
+[2020-04-29 17:12:43,097 INFO] Step 219/ 1000; xent: 2.50; lr: 0.0001351;   0 docs/s;   2294 sec
+[2020-04-29 17:12:53,194 INFO] Step 220/ 1000; xent: 2.25; lr: 0.0001348;   0 docs/s;   2304 sec
+[2020-04-29 17:13:02,057 INFO] Step 221/ 1000; xent: 2.71; lr: 0.0001345;   0 docs/s;   2313 sec
+[2020-04-29 17:13:12,886 INFO] Step 222/ 1000; xent: 1.98; lr: 0.0001342;   0 docs/s;   2323 sec
+[2020-04-29 17:13:24,665 INFO] Step 223/ 1000; xent: 2.12; lr: 0.0001339;   0 docs/s;   2335 sec
+[2020-04-29 17:13:37,931 INFO] Step 224/ 1000; xent: 5.83; lr: 0.0001336;   0 docs/s;   2348 sec
+[2020-04-29 17:13:48,368 INFO] Step 225/ 1000; xent: 4.25; lr: 0.0001333;   0 docs/s;   2359 sec
+[2020-04-29 17:13:57,174 INFO] Step 226/ 1000; xent: 3.78; lr: 0.0001330;   0 docs/s;   2368 sec
+[2020-04-29 17:14:07,262 INFO] Step 227/ 1000; xent: 3.83; lr: 0.0001327;   0 docs/s;   2378 sec
+[2020-04-29 17:14:16,942 INFO] Step 228/ 1000; xent: 5.42; lr: 0.0001325;   0 docs/s;   2387 sec
+[2020-04-29 17:14:25,945 INFO] Step 229/ 1000; xent: 4.42; lr: 0.0001322;   0 docs/s;   2396 sec
+[2020-04-29 17:14:34,442 INFO] Step 230/ 1000; xent: 3.53; lr: 0.0001319;   0 docs/s;   2405 sec
+[2020-04-29 17:14:44,461 INFO] Step 231/ 1000; xent: 3.70; lr: 0.0001316;   0 docs/s;   2415 sec
+[2020-04-29 17:14:54,540 INFO] Step 232/ 1000; xent: 2.01; lr: 0.0001313;   0 docs/s;   2425 sec
+[2020-04-29 17:15:04,554 INFO] Step 233/ 1000; xent: 1.71; lr: 0.0001310;   0 docs/s;   2435 sec
+[2020-04-29 17:15:14,570 INFO] Step 234/ 1000; xent: 3.43; lr: 0.0001307;   0 docs/s;   2445 sec
+[2020-04-29 17:15:24,579 INFO] Step 235/ 1000; xent: 3.18; lr: 0.0001305;   0 docs/s;   2455 sec
+[2020-04-29 17:15:34,562 INFO] Step 236/ 1000; xent: 3.55; lr: 0.0001302;   0 docs/s;   2465 sec
+[2020-04-29 17:15:43,085 INFO] Step 237/ 1000; xent: 4.41; lr: 0.0001299;   0 docs/s;   2474 sec
+[2020-04-29 17:15:53,041 INFO] Step 238/ 1000; xent: 2.52; lr: 0.0001296;   0 docs/s;   2484 sec
+[2020-04-29 17:16:03,260 INFO] Step 239/ 1000; xent: 3.67; lr: 0.0001294;   0 docs/s;   2494 sec
+[2020-04-29 17:16:12,752 INFO] Step 240/ 1000; xent: 3.56; lr: 0.0001291;   0 docs/s;   2503 sec
+[2020-04-29 17:16:22,734 INFO] Step 241/ 1000; xent: 3.60; lr: 0.0001288;   0 docs/s;   2513 sec
+[2020-04-29 17:16:32,791 INFO] Step 242/ 1000; xent: 3.89; lr: 0.0001286;   0 docs/s;   2523 sec
+[2020-04-29 17:16:42,797 INFO] Step 243/ 1000; xent: 2.57; lr: 0.0001283;   0 docs/s;   2533 sec
+[2020-04-29 17:16:52,782 INFO] Step 244/ 1000; xent: 3.42; lr: 0.0001280;   0 docs/s;   2543 sec
+[2020-04-29 17:17:02,768 INFO] Step 245/ 1000; xent: 2.29; lr: 0.0001278;   0 docs/s;   2553 sec
+[2020-04-29 17:17:12,779 INFO] Step 246/ 1000; xent: 3.13; lr: 0.0001275;   0 docs/s;   2563 sec
+[2020-04-29 17:17:22,697 INFO] Step 247/ 1000; xent: 3.96; lr: 0.0001273;   0 docs/s;   2573 sec
+[2020-04-29 17:17:30,234 INFO] Step 248/ 1000; xent: 3.81; lr: 0.0001270;   1 docs/s;   2581 sec
+[2020-04-29 17:17:40,193 INFO] Step 249/ 1000; xent: 3.11; lr: 0.0001267;   0 docs/s;   2591 sec
+[2020-04-29 17:17:48,267 INFO] Step 250/ 1000; xent: 2.11; lr: 0.0001265;   0 docs/s;   2599 sec
+[2020-04-29 17:17:48,269 INFO] Saving checkpoint ../models/bert_large/model_step_250.pt
+[2020-04-29 17:18:42,433 INFO] Step 251/ 1000; xent: 3.86; lr: 0.0001262;   0 docs/s;   2653 sec
+[2020-04-29 17:18:53,070 INFO] Step 252/ 1000; xent: 3.56; lr: 0.0001260;   0 docs/s;   2664 sec
+[2020-04-29 17:19:02,956 INFO] Step 253/ 1000; xent: 2.72; lr: 0.0001257;   0 docs/s;   2673 sec
+[2020-04-29 17:19:12,824 INFO] Step 254/ 1000; xent: 1.93; lr: 0.0001255;   0 docs/s;   2683 sec
+[2020-04-29 17:19:22,749 INFO] Step 255/ 1000; xent: 2.94; lr: 0.0001252;   0 docs/s;   2693 sec
+[2020-04-29 17:19:32,710 INFO] Step 256/ 1000; xent: 3.32; lr: 0.0001250;   0 docs/s;   2703 sec
+[2020-04-29 17:19:42,641 INFO] Step 257/ 1000; xent: 3.68; lr: 0.0001248;   0 docs/s;   2713 sec
+[2020-04-29 17:19:52,580 INFO] Step 258/ 1000; xent: 3.49; lr: 0.0001245;   0 docs/s;   2723 sec
+[2020-04-29 17:20:00,891 INFO] Step 259/ 1000; xent: 3.13; lr: 0.0001243;   0 docs/s;   2731 sec
+[2020-04-29 17:20:10,868 INFO] Step 260/ 1000; xent: 2.85; lr: 0.0001240;   0 docs/s;   2741 sec
+[2020-04-29 17:20:20,773 INFO] Step 261/ 1000; xent: 4.16; lr: 0.0001238;   0 docs/s;   2751 sec
+[2020-04-29 17:20:30,739 INFO] Step 262/ 1000; xent: 4.26; lr: 0.0001236;   0 docs/s;   2761 sec
+[2020-04-29 17:20:40,817 INFO] Step 263/ 1000; xent: 2.69; lr: 0.0001233;   0 docs/s;   2771 sec
+[2020-04-29 17:20:49,888 INFO] Step 264/ 1000; xent: 3.84; lr: 0.0001231;   0 docs/s;   2780 sec
+[2020-04-29 17:20:59,733 INFO] Step 265/ 1000; xent: 2.99; lr: 0.0001229;   0 docs/s;   2790 sec
+[2020-04-29 17:21:09,514 INFO] Step 266/ 1000; xent: 3.67; lr: 0.0001226;   0 docs/s;   2800 sec
+[2020-04-29 17:21:19,460 INFO] Step 267/ 1000; xent: 1.71; lr: 0.0001224;   0 docs/s;   2810 sec
+[2020-04-29 17:21:29,390 INFO] Step 268/ 1000; xent: 3.59; lr: 0.0001222;   0 docs/s;   2820 sec
+[2020-04-29 17:21:37,291 INFO] Step 269/ 1000; xent: 4.09; lr: 0.0001219;   1 docs/s;   2828 sec
+[2020-04-29 17:21:44,859 INFO] Step 270/ 1000; xent: 4.31; lr: 0.0001217;   1 docs/s;   2835 sec
+[2020-04-29 17:21:54,825 INFO] Step 271/ 1000; xent: 2.85; lr: 0.0001215;   0 docs/s;   2845 sec
+[2020-04-29 17:22:04,772 INFO] Step 272/ 1000; xent: 4.04; lr: 0.0001213;   0 docs/s;   2855 sec
+[2020-04-29 17:22:11,987 INFO] Step 273/ 1000; xent: 2.41; lr: 0.0001210;   1 docs/s;   2863 sec
+[2020-04-29 17:22:21,977 INFO] Step 274/ 1000; xent: 3.03; lr: 0.0001208;   0 docs/s;   2873 sec
+[2020-04-29 17:22:31,923 INFO] Step 275/ 1000; xent: 3.58; lr: 0.0001206;   0 docs/s;   2882 sec
+[2020-04-29 17:22:41,882 INFO] Step 276/ 1000; xent: 4.01; lr: 0.0001204;   0 docs/s;   2892 sec
+[2020-04-29 17:22:51,831 INFO] Step 277/ 1000; xent: 3.14; lr: 0.0001202;   0 docs/s;   2902 sec
+[2020-04-29 17:23:01,855 INFO] Step 278/ 1000; xent: 3.85; lr: 0.0001200;   0 docs/s;   2912 sec
+[2020-04-29 17:23:11,783 INFO] Step 279/ 1000; xent: 3.88; lr: 0.0001197;   0 docs/s;   2922 sec
+[2020-04-29 17:23:21,777 INFO] Step 280/ 1000; xent: 2.49; lr: 0.0001195;   0 docs/s;   2932 sec
+[2020-04-29 17:23:31,470 INFO] Step 281/ 1000; xent: 3.30; lr: 0.0001193;   0 docs/s;   2942 sec
+[2020-04-29 17:23:41,423 INFO] Step 282/ 1000; xent: 3.12; lr: 0.0001191;   0 docs/s;   2952 sec
+[2020-04-29 17:23:49,995 INFO] Step 283/ 1000; xent: 2.85; lr: 0.0001189;   0 docs/s;   2961 sec
+[2020-04-29 17:24:00,078 INFO] Step 284/ 1000; xent: 3.76; lr: 0.0001187;   0 docs/s;   2971 sec
+[2020-04-29 17:24:08,632 INFO] Step 285/ 1000; xent: 2.61; lr: 0.0001185;   0 docs/s;   2979 sec
+[2020-04-29 17:24:17,742 INFO] Step 286/ 1000; xent: 2.13; lr: 0.0001183;   0 docs/s;   2988 sec
+[2020-04-29 17:24:27,687 INFO] Step 287/ 1000; xent: 3.43; lr: 0.0001181;   0 docs/s;   2998 sec
+[2020-04-29 17:24:37,698 INFO] Step 288/ 1000; xent: 2.39; lr: 0.0001179;   0 docs/s;   3008 sec
+[2020-04-29 17:24:44,946 INFO] Step 289/ 1000; xent: 3.89; lr: 0.0001176;   1 docs/s;   3015 sec
+[2020-04-29 17:24:54,921 INFO] Step 290/ 1000; xent: 4.09; lr: 0.0001174;   0 docs/s;   3025 sec
+[2020-04-29 17:25:04,875 INFO] Step 291/ 1000; xent: 3.58; lr: 0.0001172;   0 docs/s;   3035 sec
+[2020-04-29 17:25:14,786 INFO] Step 292/ 1000; xent: 3.33; lr: 0.0001170;   0 docs/s;   3045 sec
+[2020-04-29 17:25:24,761 INFO] Step 293/ 1000; xent: 2.58; lr: 0.0001168;   0 docs/s;   3055 sec
+[2020-04-29 17:25:34,848 INFO] Step 294/ 1000; xent: 3.45; lr: 0.0001166;   0 docs/s;   3065 sec
+[2020-04-29 17:25:42,691 INFO] Step 295/ 1000; xent: 3.15; lr: 0.0001164;   1 docs/s;   3073 sec
+[2020-04-29 17:25:51,483 INFO] Step 296/ 1000; xent: 2.00; lr: 0.0001162;   0 docs/s;   3082 sec
+[2020-04-29 17:26:00,819 INFO] Step 297/ 1000; xent: 3.87; lr: 0.0001161;   0 docs/s;   3091 sec
+[2020-04-29 17:26:09,164 INFO] Step 298/ 1000; xent: 2.61; lr: 0.0001159;   0 docs/s;   3100 sec
+[2020-04-29 17:26:19,174 INFO] Step 299/ 1000; xent: 2.28; lr: 0.0001157;   0 docs/s;   3110 sec
+[2020-04-29 17:26:29,183 INFO] Step 300/ 1000; xent: 2.01; lr: 0.0001155;   0 docs/s;   3120 sec
+[2020-04-29 17:26:29,186 INFO] Saving checkpoint ../models/bert_large/model_step_300.pt
+[2020-04-29 17:27:21,505 INFO] Step 301/ 1000; xent: 2.32; lr: 0.0001153;   0 docs/s;   3172 sec
+[2020-04-29 17:27:31,517 INFO] Step 302/ 1000; xent: 3.88; lr: 0.0001151;   0 docs/s;   3182 sec
+[2020-04-29 17:27:41,411 INFO] Step 303/ 1000; xent: 2.56; lr: 0.0001149;   0 docs/s;   3192 sec
+[2020-04-29 17:27:50,465 INFO] Step 304/ 1000; xent: 4.22; lr: 0.0001147;   0 docs/s;   3201 sec
+[2020-04-29 17:27:59,217 INFO] Step 305/ 1000; xent: 2.80; lr: 0.0001145;   0 docs/s;   3210 sec
+[2020-04-29 17:28:09,210 INFO] Step 306/ 1000; xent: 3.53; lr: 0.0001143;   0 docs/s;   3220 sec
+[2020-04-29 17:28:19,192 INFO] Step 307/ 1000; xent: 3.33; lr: 0.0001141;   0 docs/s;   3230 sec
+[2020-04-29 17:28:29,123 INFO] Step 308/ 1000; xent: 2.53; lr: 0.0001140;   0 docs/s;   3240 sec
+[2020-04-29 17:28:37,783 INFO] Step 309/ 1000; xent: 2.96; lr: 0.0001138;   0 docs/s;   3248 sec
+[2020-04-29 17:28:47,611 INFO] Step 310/ 1000; xent: 3.65; lr: 0.0001136;   0 docs/s;   3258 sec
+[2020-04-29 17:28:57,557 INFO] Step 311/ 1000; xent: 3.08; lr: 0.0001134;   0 docs/s;   3268 sec
+[2020-04-29 17:29:07,474 INFO] Step 312/ 1000; xent: 2.75; lr: 0.0001132;   0 docs/s;   3278 sec
+[2020-04-29 17:29:14,531 INFO] Step 313/ 1000; xent: 3.22; lr: 0.0001130;   1 docs/s;   3285 sec
+[2020-04-29 17:29:24,463 INFO] Step 314/ 1000; xent: 4.35; lr: 0.0001129;   0 docs/s;   3295 sec
+[2020-04-29 17:29:34,347 INFO] Step 315/ 1000; xent: 4.17; lr: 0.0001127;   0 docs/s;   3305 sec
+[2020-04-29 17:29:44,285 INFO] Step 316/ 1000; xent: 2.59; lr: 0.0001125;   0 docs/s;   3315 sec
+[2020-04-29 17:29:54,173 INFO] Step 317/ 1000; xent: 3.24; lr: 0.0001123;   0 docs/s;   3325 sec
+[2020-04-29 17:30:04,138 INFO] Step 318/ 1000; xent: 2.48; lr: 0.0001122;   0 docs/s;   3335 sec
+[2020-04-29 17:30:14,053 INFO] Step 319/ 1000; xent: 3.82; lr: 0.0001120;   0 docs/s;   3345 sec
+[2020-04-29 17:30:23,984 INFO] Step 320/ 1000; xent: 1.82; lr: 0.0001118;   0 docs/s;   3355 sec
+[2020-04-29 17:30:33,927 INFO] Step 321/ 1000; xent: 3.04; lr: 0.0001116;   0 docs/s;   3364 sec
+[2020-04-29 17:30:42,307 INFO] Step 322/ 1000; xent: 3.86; lr: 0.0001115;   0 docs/s;   3373 sec
+[2020-04-29 17:30:52,252 INFO] Step 323/ 1000; xent: 2.54; lr: 0.0001113;   0 docs/s;   3383 sec
+[2020-04-29 17:31:02,237 INFO] Step 324/ 1000; xent: 3.27; lr: 0.0001111;   0 docs/s;   3393 sec
+[2020-04-29 17:31:12,249 INFO] Step 325/ 1000; xent: 3.40; lr: 0.0001109;   0 docs/s;   3403 sec
+[2020-04-29 17:31:22,149 INFO] Step 326/ 1000; xent: 2.11; lr: 0.0001108;   0 docs/s;   3413 sec
+[2020-04-29 17:31:32,158 INFO] Step 327/ 1000; xent: 2.54; lr: 0.0001106;   0 docs/s;   3423 sec
+[2020-04-29 17:31:42,182 INFO] Step 328/ 1000; xent: 2.06; lr: 0.0001104;   0 docs/s;   3433 sec
+[2020-04-29 17:31:52,148 INFO] Step 329/ 1000; xent: 3.68; lr: 0.0001103;   0 docs/s;   3443 sec
+[2020-04-29 17:32:00,990 INFO] Step 330/ 1000; xent: 2.25; lr: 0.0001101;   0 docs/s;   3452 sec
+[2020-04-29 17:32:10,713 INFO] Step 331/ 1000; xent: 3.55; lr: 0.0001099;   0 docs/s;   3461 sec
+[2020-04-29 17:32:20,681 INFO] Step 332/ 1000; xent: 3.38; lr: 0.0001098;   0 docs/s;   3471 sec
+[2020-04-29 17:32:30,661 INFO] Step 333/ 1000; xent: 4.18; lr: 0.0001096;   0 docs/s;   3481 sec
+[2020-04-29 17:32:38,693 INFO] Step 334/ 1000; xent: 2.83; lr: 0.0001094;   0 docs/s;   3489 sec
+[2020-04-29 17:32:48,656 INFO] Step 335/ 1000; xent: 2.81; lr: 0.0001093;   0 docs/s;   3499 sec
+[2020-04-29 17:32:58,664 INFO] Step 336/ 1000; xent: 3.40; lr: 0.0001091;   0 docs/s;   3509 sec
+[2020-04-29 17:33:08,680 INFO] Step 337/ 1000; xent: 2.36; lr: 0.0001089;   0 docs/s;   3519 sec
+[2020-04-29 17:33:18,709 INFO] Step 338/ 1000; xent: 4.16; lr: 0.0001088;   0 docs/s;   3529 sec
+[2020-04-29 17:33:28,754 INFO] Step 339/ 1000; xent: 3.12; lr: 0.0001086;   0 docs/s;   3539 sec
+[2020-04-29 17:33:38,708 INFO] Step 340/ 1000; xent: 3.39; lr: 0.0001085;   0 docs/s;   3549 sec
+[2020-04-29 17:33:46,858 INFO] Step 341/ 1000; xent: 2.52; lr: 0.0001083;   0 docs/s;   3557 sec
+[2020-04-29 17:33:54,519 INFO] Step 342/ 1000; xent: 3.18; lr: 0.0001081;   1 docs/s;   3565 sec
+[2020-04-29 17:34:04,530 INFO] Step 343/ 1000; xent: 4.54; lr: 0.0001080;   0 docs/s;   3575 sec
+[2020-04-29 17:34:13,863 INFO] Step 344/ 1000; xent: 3.18; lr: 0.0001078;   0 docs/s;   3584 sec
+[2020-04-29 17:34:23,131 INFO] Step 345/ 1000; xent: 3.49; lr: 0.0001077;   0 docs/s;   3594 sec
+[2020-04-29 17:34:33,106 INFO] Step 346/ 1000; xent: 2.77; lr: 0.0001075;   0 docs/s;   3604 sec
+[2020-04-29 17:34:43,093 INFO] Step 347/ 1000; xent: 2.73; lr: 0.0001074;   0 docs/s;   3614 sec
+[2020-04-29 17:34:53,055 INFO] Step 348/ 1000; xent: 3.87; lr: 0.0001072;   0 docs/s;   3624 sec
+[2020-04-29 17:35:01,975 INFO] Step 349/ 1000; xent: 3.42; lr: 0.0001071;   0 docs/s;   3633 sec
+[2020-04-29 17:35:11,955 INFO] Step 350/ 1000; xent: 2.29; lr: 0.0001069;   0 docs/s;   3642 sec
+[2020-04-29 17:35:11,957 INFO] Saving checkpoint ../models/bert_large/model_step_350.pt
+[2020-04-29 17:36:06,588 INFO] Step 351/ 1000; xent: 3.42; lr: 0.0001068;   0 docs/s;   3697 sec
+[2020-04-29 17:36:15,972 INFO] Step 352/ 1000; xent: 2.69; lr: 0.0001066;   0 docs/s;   3707 sec
+[2020-04-29 17:36:24,292 INFO] Step 353/ 1000; xent: 3.07; lr: 0.0001064;   0 docs/s;   3715 sec
+[2020-04-29 17:36:34,176 INFO] Step 354/ 1000; xent: 3.27; lr: 0.0001063;   0 docs/s;   3725 sec
+[2020-04-29 17:36:44,088 INFO] Step 355/ 1000; xent: 3.54; lr: 0.0001061;   0 docs/s;   3735 sec
+[2020-04-29 17:36:54,007 INFO] Step 356/ 1000; xent: 3.26; lr: 0.0001060;   0 docs/s;   3745 sec
+[2020-04-29 17:37:03,817 INFO] Step 357/ 1000; xent: 3.00; lr: 0.0001059;   0 docs/s;   3754 sec
+[2020-04-29 17:37:13,172 INFO] Step 358/ 1000; xent: 2.72; lr: 0.0001057;   0 docs/s;   3764 sec
+[2020-04-29 17:37:23,074 INFO] Step 359/ 1000; xent: 3.97; lr: 0.0001056;   0 docs/s;   3774 sec
+[2020-04-29 17:37:31,889 INFO] Step 360/ 1000; xent: 3.15; lr: 0.0001054;   0 docs/s;   3782 sec
+[2020-04-29 17:37:41,043 INFO] Step 361/ 1000; xent: 3.84; lr: 0.0001053;   0 docs/s;   3792 sec
+[2020-04-29 17:37:51,004 INFO] Step 362/ 1000; xent: 3.57; lr: 0.0001051;   0 docs/s;   3802 sec
+[2020-04-29 17:38:00,922 INFO] Step 363/ 1000; xent: 2.86; lr: 0.0001050;   0 docs/s;   3811 sec
+[2020-04-29 17:38:09,520 INFO] Step 364/ 1000; xent: 3.11; lr: 0.0001048;   0 docs/s;   3820 sec
+[2020-04-29 17:38:19,451 INFO] Step 365/ 1000; xent: 1.98; lr: 0.0001047;   0 docs/s;   3830 sec
+[2020-04-29 17:38:29,309 INFO] Step 366/ 1000; xent: 2.86; lr: 0.0001045;   0 docs/s;   3840 sec
+[2020-04-29 17:38:38,367 INFO] Step 367/ 1000; xent: 2.29; lr: 0.0001044;   0 docs/s;   3849 sec
+[2020-04-29 17:38:48,285 INFO] Step 368/ 1000; xent: 3.73; lr: 0.0001043;   0 docs/s;   3859 sec
+[2020-04-29 17:38:58,227 INFO] Step 369/ 1000; xent: 3.68; lr: 0.0001041;   0 docs/s;   3869 sec
+[2020-04-29 17:39:08,228 INFO] Step 370/ 1000; xent: 2.91; lr: 0.0001040;   0 docs/s;   3879 sec
+[2020-04-29 17:39:18,171 INFO] Step 371/ 1000; xent: 2.31; lr: 0.0001038;   0 docs/s;   3889 sec
+[2020-04-29 17:39:28,095 INFO] Step 372/ 1000; xent: 2.76; lr: 0.0001037;   0 docs/s;   3899 sec
+[2020-04-29 17:39:38,062 INFO] Step 373/ 1000; xent: 3.44; lr: 0.0001036;   0 docs/s;   3909 sec
+[2020-04-29 17:39:46,585 INFO] Step 374/ 1000; xent: 3.33; lr: 0.0001034;   0 docs/s;   3917 sec
+[2020-04-29 17:39:56,563 INFO] Step 375/ 1000; xent: 3.27; lr: 0.0001033;   0 docs/s;   3927 sec
+[2020-04-29 17:40:06,549 INFO] Step 376/ 1000; xent: 2.70; lr: 0.0001031;   0 docs/s;   3937 sec
+[2020-04-29 17:40:16,460 INFO] Step 377/ 1000; xent: 4.02; lr: 0.0001030;   0 docs/s;   3947 sec
+[2020-04-29 17:40:26,433 INFO] Step 378/ 1000; xent: 3.23; lr: 0.0001029;   0 docs/s;   3957 sec
+[2020-04-29 17:40:36,386 INFO] Step 379/ 1000; xent: 1.98; lr: 0.0001027;   0 docs/s;   3967 sec
+[2020-04-29 17:40:45,239 INFO] Step 380/ 1000; xent: 2.91; lr: 0.0001026;   0 docs/s;   3976 sec
+[2020-04-29 17:40:54,197 INFO] Step 381/ 1000; xent: 2.97; lr: 0.0001025;   0 docs/s;   3985 sec
+[2020-04-29 17:41:03,917 INFO] Step 382/ 1000; xent: 3.04; lr: 0.0001023;   0 docs/s;   3994 sec
+[2020-04-29 17:41:13,881 INFO] Step 383/ 1000; xent: 3.72; lr: 0.0001022;   0 docs/s;   4004 sec
+[2020-04-29 17:41:23,871 INFO] Step 384/ 1000; xent: 3.81; lr: 0.0001021;   0 docs/s;   4014 sec
+[2020-04-29 17:41:33,797 INFO] Step 385/ 1000; xent: 3.84; lr: 0.0001019;   0 docs/s;   4024 sec
+[2020-04-29 17:41:43,815 INFO] Step 386/ 1000; xent: 3.42; lr: 0.0001018;   0 docs/s;   4034 sec
+[2020-04-29 17:41:53,819 INFO] Step 387/ 1000; xent: 3.86; lr: 0.0001017;   0 docs/s;   4044 sec
+[2020-04-29 17:42:03,823 INFO] Step 388/ 1000; xent: 3.08; lr: 0.0001015;   0 docs/s;   4054 sec
+[2020-04-29 17:42:13,731 INFO] Step 389/ 1000; xent: 2.35; lr: 0.0001014;   0 docs/s;   4064 sec
+[2020-04-29 17:42:22,865 INFO] Step 390/ 1000; xent: 3.34; lr: 0.0001013;   0 docs/s;   4073 sec
+[2020-04-29 17:42:32,233 INFO] Step 391/ 1000; xent: 3.28; lr: 0.0001011;   0 docs/s;   4083 sec
+[2020-04-29 17:42:42,207 INFO] Step 392/ 1000; xent: 3.48; lr: 0.0001010;   0 docs/s;   4093 sec
+[2020-04-29 17:42:52,143 INFO] Step 393/ 1000; xent: 2.50; lr: 0.0001009;   0 docs/s;   4103 sec
+[2020-04-29 17:43:02,154 INFO] Step 394/ 1000; xent: 2.85; lr: 0.0001008;   0 docs/s;   4113 sec
+[2020-04-29 17:43:10,912 INFO] Step 395/ 1000; xent: 2.06; lr: 0.0001006;   0 docs/s;   4121 sec
+[2020-04-29 17:43:19,732 INFO] Step 396/ 1000; xent: 2.11; lr: 0.0001005;   0 docs/s;   4130 sec
+[2020-04-29 17:43:29,734 INFO] Step 397/ 1000; xent: 2.87; lr: 0.0001004;   0 docs/s;   4140 sec
+[2020-04-29 17:43:39,544 INFO] Step 398/ 1000; xent: 2.76; lr: 0.0001003;   0 docs/s;   4150 sec
+[2020-04-29 17:43:49,526 INFO] Step 399/ 1000; xent: 2.41; lr: 0.0001001;   0 docs/s;   4160 sec
+[2020-04-29 17:43:59,643 INFO] Step 400/ 1000; xent: 2.12; lr: 0.0001000;   0 docs/s;   4170 sec
+[2020-04-29 17:43:59,645 INFO] Saving checkpoint ../models/bert_large/model_step_400.pt
+[2020-04-29 17:44:56,566 INFO] Step 401/ 1000; xent: 3.38; lr: 0.0000999;   0 docs/s;   4227 sec
+[2020-04-29 17:45:07,226 INFO] Step 402/ 1000; xent: 3.96; lr: 0.0000998;   0 docs/s;   4238 sec
+[2020-04-29 17:45:16,236 INFO] Step 403/ 1000; xent: 4.59; lr: 0.0000996;   0 docs/s;   4247 sec
+[2020-04-29 17:45:26,129 INFO] Step 404/ 1000; xent: 3.79; lr: 0.0000995;   0 docs/s;   4257 sec
+[2020-04-29 17:45:35,359 INFO] Step 405/ 1000; xent: 3.24; lr: 0.0000994;   0 docs/s;   4266 sec
+[2020-04-29 17:45:45,396 INFO] Step 406/ 1000; xent: 3.36; lr: 0.0000993;   0 docs/s;   4276 sec
+[2020-04-29 17:45:55,421 INFO] Step 407/ 1000; xent: 3.34; lr: 0.0000991;   0 docs/s;   4286 sec
+[2020-04-29 17:46:04,196 INFO] Step 408/ 1000; xent: 4.04; lr: 0.0000990;   0 docs/s;   4295 sec
+[2020-04-29 17:46:14,103 INFO] Step 409/ 1000; xent: 3.03; lr: 0.0000989;   0 docs/s;   4305 sec
+[2020-04-29 17:46:23,500 INFO] Step 410/ 1000; xent: 1.87; lr: 0.0000988;   0 docs/s;   4314 sec
+[2020-04-29 17:46:33,434 INFO] Step 411/ 1000; xent: 3.81; lr: 0.0000987;   0 docs/s;   4324 sec
+[2020-04-29 17:46:43,314 INFO] Step 412/ 1000; xent: 2.45; lr: 0.0000985;   0 docs/s;   4334 sec
+[2020-04-29 17:46:53,231 INFO] Step 413/ 1000; xent: 3.56; lr: 0.0000984;   0 docs/s;   4344 sec
+[2020-04-29 17:47:02,740 INFO] Step 414/ 1000; xent: 3.13; lr: 0.0000983;   0 docs/s;   4353 sec
+[2020-04-29 17:47:12,624 INFO] Step 415/ 1000; xent: 3.09; lr: 0.0000982;   0 docs/s;   4363 sec
+[2020-04-29 17:47:20,368 INFO] Step 416/ 1000; xent: 2.73; lr: 0.0000981;   1 docs/s;   4371 sec
+[2020-04-29 17:47:27,676 INFO] Step 417/ 1000; xent: 2.85; lr: 0.0000979;   1 docs/s;   4378 sec
+[2020-04-29 17:47:35,589 INFO] Step 418/ 1000; xent: 2.67; lr: 0.0000978;   1 docs/s;   4386 sec
+[2020-04-29 17:47:45,525 INFO] Step 419/ 1000; xent: 4.27; lr: 0.0000977;   0 docs/s;   4396 sec
+[2020-04-29 17:47:55,474 INFO] Step 420/ 1000; xent: 3.05; lr: 0.0000976;   0 docs/s;   4406 sec
+[2020-04-29 17:48:04,155 INFO] Step 421/ 1000; xent: 3.09; lr: 0.0000975;   0 docs/s;   4415 sec
+[2020-04-29 17:48:14,097 INFO] Step 422/ 1000; xent: 3.81; lr: 0.0000974;   0 docs/s;   4425 sec
+[2020-04-29 17:48:24,035 INFO] Step 423/ 1000; xent: 2.29; lr: 0.0000972;   0 docs/s;   4435 sec
+[2020-04-29 17:48:31,162 INFO] Step 424/ 1000; xent: 3.24; lr: 0.0000971;   1 docs/s;   4442 sec
+[2020-04-29 17:48:39,664 INFO] Step 425/ 1000; xent: 1.92; lr: 0.0000970;   0 docs/s;   4450 sec
+[2020-04-29 17:48:49,557 INFO] Step 426/ 1000; xent: 2.09; lr: 0.0000969;   0 docs/s;   4460 sec
+[2020-04-29 17:48:59,566 INFO] Step 427/ 1000; xent: 4.04; lr: 0.0000968;   0 docs/s;   4470 sec
+[2020-04-29 17:49:09,560 INFO] Step 428/ 1000; xent: 2.49; lr: 0.0000967;   0 docs/s;   4480 sec
+[2020-04-29 17:49:19,524 INFO] Step 429/ 1000; xent: 4.99; lr: 0.0000966;   0 docs/s;   4490 sec
+[2020-04-29 17:49:29,295 INFO] Step 430/ 1000; xent: 3.07; lr: 0.0000964;   0 docs/s;   4500 sec
+[2020-04-29 17:49:39,284 INFO] Step 431/ 1000; xent: 2.87; lr: 0.0000963;   0 docs/s;   4510 sec
+[2020-04-29 17:49:49,101 INFO] Step 432/ 1000; xent: 3.12; lr: 0.0000962;   0 docs/s;   4520 sec
+[2020-04-29 17:49:57,398 INFO] Step 433/ 1000; xent: 2.38; lr: 0.0000961;   0 docs/s;   4528 sec
+[2020-04-29 17:50:06,690 INFO] Step 434/ 1000; xent: 2.76; lr: 0.0000960;   0 docs/s;   4537 sec
+[2020-04-29 17:50:16,590 INFO] Step 435/ 1000; xent: 2.33; lr: 0.0000959;   0 docs/s;   4547 sec
+[2020-04-29 17:50:26,595 INFO] Step 436/ 1000; xent: 2.73; lr: 0.0000958;   0 docs/s;   4557 sec
+[2020-04-29 17:50:36,555 INFO] Step 437/ 1000; xent: 3.23; lr: 0.0000957;   0 docs/s;   4567 sec
+[2020-04-29 17:50:45,599 INFO] Step 438/ 1000; xent: 3.82; lr: 0.0000956;   0 docs/s;   4576 sec
+[2020-04-29 17:50:54,652 INFO] Step 439/ 1000; xent: 3.18; lr: 0.0000955;   0 docs/s;   4585 sec
+[2020-04-29 17:51:04,639 INFO] Step 440/ 1000; xent: 4.75; lr: 0.0000953;   0 docs/s;   4595 sec
+[2020-04-29 17:51:14,610 INFO] Step 441/ 1000; xent: 3.51; lr: 0.0000952;   0 docs/s;   4605 sec
+[2020-04-29 17:51:23,666 INFO] Step 442/ 1000; xent: 2.90; lr: 0.0000951;   0 docs/s;   4614 sec
+[2020-04-29 17:51:33,628 INFO] Step 443/ 1000; xent: 2.91; lr: 0.0000950;   0 docs/s;   4624 sec
+[2020-04-29 17:51:42,832 INFO] Step 444/ 1000; xent: 4.05; lr: 0.0000949;   0 docs/s;   4633 sec
+[2020-04-29 17:51:50,895 INFO] Step 445/ 1000; xent: 2.85; lr: 0.0000948;   0 docs/s;   4641 sec
+[2020-04-29 17:52:00,856 INFO] Step 446/ 1000; xent: 4.00; lr: 0.0000947;   0 docs/s;   4651 sec
+[2020-04-29 17:52:10,752 INFO] Step 447/ 1000; xent: 4.52; lr: 0.0000946;   0 docs/s;   4661 sec
+[2020-04-29 17:52:20,739 INFO] Step 448/ 1000; xent: 2.95; lr: 0.0000945;   0 docs/s;   4671 sec
+[2020-04-29 17:52:30,070 INFO] Step 449/ 1000; xent: 3.19; lr: 0.0000944;   0 docs/s;   4681 sec
+[2020-04-29 17:52:39,267 INFO] Step 450/ 1000; xent: 3.32; lr: 0.0000943;   0 docs/s;   4690 sec
+[2020-04-29 17:52:39,270 INFO] Saving checkpoint ../models/bert_large/model_step_450.pt
+[2020-04-29 17:53:35,339 INFO] Step 451/ 1000; xent: 3.67; lr: 0.0000942;   0 docs/s;   4746 sec
+[2020-04-29 17:53:45,332 INFO] Step 452/ 1000; xent: 3.12; lr: 0.0000941;   0 docs/s;   4756 sec
+[2020-04-29 17:53:54,993 INFO] Step 453/ 1000; xent: 3.15; lr: 0.0000940;   0 docs/s;   4766 sec
+[2020-04-29 17:54:03,821 INFO] Step 454/ 1000; xent: 3.21; lr: 0.0000939;   0 docs/s;   4774 sec
+[2020-04-29 17:54:13,681 INFO] Step 455/ 1000; xent: 3.82; lr: 0.0000938;   0 docs/s;   4784 sec
+[2020-04-29 17:54:23,610 INFO] Step 456/ 1000; xent: 4.82; lr: 0.0000937;   0 docs/s;   4794 sec
+[2020-04-29 17:54:33,513 INFO] Step 457/ 1000; xent: 2.51; lr: 0.0000936;   0 docs/s;   4804 sec
+[2020-04-29 17:54:43,374 INFO] Step 458/ 1000; xent: 3.44; lr: 0.0000935;   0 docs/s;   4814 sec
+[2020-04-29 17:54:51,201 INFO] Step 459/ 1000; xent: 4.02; lr: 0.0000934;   1 docs/s;   4822 sec
+[2020-04-29 17:55:01,076 INFO] Step 460/ 1000; xent: 3.38; lr: 0.0000933;   0 docs/s;   4832 sec
+[2020-04-29 17:55:11,037 INFO] Step 461/ 1000; xent: 3.40; lr: 0.0000931;   0 docs/s;   4842 sec
+[2020-04-29 17:55:21,151 INFO] Step 462/ 1000; xent: 3.23; lr: 0.0000930;   0 docs/s;   4852 sec
+[2020-04-29 17:55:31,037 INFO] Step 463/ 1000; xent: 2.79; lr: 0.0000929;   0 docs/s;   4862 sec
+[2020-04-29 17:55:40,995 INFO] Step 464/ 1000; xent: 3.15; lr: 0.0000928;   0 docs/s;   4872 sec
+[2020-04-29 17:55:50,866 INFO] Step 465/ 1000; xent: 3.92; lr: 0.0000927;   0 docs/s;   4881 sec
+[2020-04-29 17:56:00,833 INFO] Step 466/ 1000; xent: 4.06; lr: 0.0000926;   0 docs/s;   4891 sec
+[2020-04-29 17:56:10,780 INFO] Step 467/ 1000; xent: 2.76; lr: 0.0000925;   0 docs/s;   4901 sec
+[2020-04-29 17:56:18,476 INFO] Step 468/ 1000; xent: 2.13; lr: 0.0000925;   1 docs/s;   4909 sec
+[2020-04-29 17:56:28,403 INFO] Step 469/ 1000; xent: 2.46; lr: 0.0000924;   0 docs/s;   4919 sec
+[2020-04-29 17:56:38,313 INFO] Step 470/ 1000; xent: 4.51; lr: 0.0000923;   0 docs/s;   4929 sec
+[2020-04-29 17:56:48,215 INFO] Step 471/ 1000; xent: 4.38; lr: 0.0000922;   0 docs/s;   4939 sec
+[2020-04-29 17:56:56,481 INFO] Step 472/ 1000; xent: 2.73; lr: 0.0000921;   0 docs/s;   4947 sec
+[2020-04-29 17:57:05,725 INFO] Step 473/ 1000; xent: 2.57; lr: 0.0000920;   0 docs/s;   4956 sec
+[2020-04-29 17:57:15,701 INFO] Step 474/ 1000; xent: 3.25; lr: 0.0000919;   0 docs/s;   4966 sec
+[2020-04-29 17:57:25,699 INFO] Step 475/ 1000; xent: 2.74; lr: 0.0000918;   0 docs/s;   4976 sec
+[2020-04-29 17:57:35,632 INFO] Step 476/ 1000; xent: 3.71; lr: 0.0000917;   0 docs/s;   4986 sec
+[2020-04-29 17:57:45,630 INFO] Step 477/ 1000; xent: 2.66; lr: 0.0000916;   0 docs/s;   4996 sec
+[2020-04-29 17:57:53,948 INFO] Step 478/ 1000; xent: 1.61; lr: 0.0000915;   0 docs/s;   5004 sec
+[2020-04-29 17:58:03,928 INFO] Step 479/ 1000; xent: 2.79; lr: 0.0000914;   0 docs/s;   5014 sec
+[2020-04-29 17:58:13,927 INFO] Step 480/ 1000; xent: 3.87; lr: 0.0000913;   0 docs/s;   5024 sec
+[2020-04-29 17:58:23,536 INFO] Step 481/ 1000; xent: 4.19; lr: 0.0000912;   0 docs/s;   5034 sec
+[2020-04-29 17:58:33,528 INFO] Step 482/ 1000; xent: 3.18; lr: 0.0000911;   0 docs/s;   5044 sec
+[2020-04-29 17:58:43,500 INFO] Step 483/ 1000; xent: 3.05; lr: 0.0000910;   0 docs/s;   5054 sec
+[2020-04-29 17:58:51,071 INFO] Step 484/ 1000; xent: 2.42; lr: 0.0000909;   1 docs/s;   5062 sec
+[2020-04-29 17:59:00,998 INFO] Step 485/ 1000; xent: 2.90; lr: 0.0000908;   0 docs/s;   5072 sec
+[2020-04-29 17:59:10,985 INFO] Step 486/ 1000; xent: 2.28; lr: 0.0000907;   0 docs/s;   5082 sec
+[2020-04-29 17:59:20,299 INFO] Step 487/ 1000; xent: 2.93; lr: 0.0000906;   0 docs/s;   5091 sec
+[2020-04-29 17:59:30,237 INFO] Step 488/ 1000; xent: 3.63; lr: 0.0000905;   0 docs/s;   5101 sec
+[2020-04-29 17:59:40,227 INFO] Step 489/ 1000; xent: 2.80; lr: 0.0000904;   0 docs/s;   5111 sec
+[2020-04-29 17:59:50,216 INFO] Step 490/ 1000; xent: 3.75; lr: 0.0000904;   0 docs/s;   5121 sec
+[2020-04-29 18:00:00,165 INFO] Step 491/ 1000; xent: 3.79; lr: 0.0000903;   0 docs/s;   5131 sec
+[2020-04-29 18:00:10,082 INFO] Step 492/ 1000; xent: 3.45; lr: 0.0000902;   0 docs/s;   5141 sec
+[2020-04-29 18:00:20,073 INFO] Step 493/ 1000; xent: 3.11; lr: 0.0000901;   0 docs/s;   5151 sec
+[2020-04-29 18:00:30,030 INFO] Step 494/ 1000; xent: 2.54; lr: 0.0000900;   0 docs/s;   5161 sec
+[2020-04-29 18:00:39,929 INFO] Step 495/ 1000; xent: 2.84; lr: 0.0000899;   0 docs/s;   5170 sec
+[2020-04-29 18:00:49,935 INFO] Step 496/ 1000; xent: 2.28; lr: 0.0000898;   0 docs/s;   5180 sec
+[2020-04-29 18:00:59,539 INFO] Step 497/ 1000; xent: 1.79; lr: 0.0000897;   0 docs/s;   5190 sec
+[2020-04-29 18:01:08,561 INFO] Step 498/ 1000; xent: 2.90; lr: 0.0000896;   0 docs/s;   5199 sec
+[2020-04-29 18:01:18,509 INFO] Step 499/ 1000; xent: 3.15; lr: 0.0000895;   0 docs/s;   5209 sec
+[2020-04-29 18:01:28,499 INFO] Step 500/ 1000; xent: 2.98; lr: 0.0000894;   0 docs/s;   5219 sec
+[2020-04-29 18:01:28,501 INFO] Saving checkpoint ../models/bert_large/model_step_500.pt
+[2020-04-29 18:02:23,781 INFO] Step 501/ 1000; xent: 3.26; lr: 0.0000894;   0 docs/s;   5274 sec
+[2020-04-29 18:02:34,416 INFO] Step 502/ 1000; xent: 2.98; lr: 0.0000893;   0 docs/s;   5285 sec
+[2020-04-29 18:02:44,307 INFO] Step 503/ 1000; xent: 2.87; lr: 0.0000892;   0 docs/s;   5295 sec
+[2020-04-29 18:02:54,218 INFO] Step 504/ 1000; xent: 3.63; lr: 0.0000891;   0 docs/s;   5305 sec
+[2020-04-29 18:03:03,349 INFO] Step 505/ 1000; xent: 4.12; lr: 0.0000890;   0 docs/s;   5314 sec
+[2020-04-29 18:03:13,288 INFO] Step 506/ 1000; xent: 4.07; lr: 0.0000889;   0 docs/s;   5324 sec
+[2020-04-29 18:03:23,213 INFO] Step 507/ 1000; xent: 3.04; lr: 0.0000888;   0 docs/s;   5334 sec
+[2020-04-29 18:03:33,151 INFO] Step 508/ 1000; xent: 4.11; lr: 0.0000887;   0 docs/s;   5344 sec
+[2020-04-29 18:03:43,036 INFO] Step 509/ 1000; xent: 3.27; lr: 0.0000886;   0 docs/s;   5354 sec
+[2020-04-29 18:03:52,942 INFO] Step 510/ 1000; xent: 3.28; lr: 0.0000886;   0 docs/s;   5363 sec
+[2020-04-29 18:04:02,326 INFO] Step 511/ 1000; xent: 4.17; lr: 0.0000885;   0 docs/s;   5373 sec
+[2020-04-29 18:04:11,602 INFO] Step 512/ 1000; xent: 3.91; lr: 0.0000884;   0 docs/s;   5382 sec
+[2020-04-29 18:04:21,489 INFO] Step 513/ 1000; xent: 2.49; lr: 0.0000883;   0 docs/s;   5392 sec
+[2020-04-29 18:04:31,429 INFO] Step 514/ 1000; xent: 3.61; lr: 0.0000882;   0 docs/s;   5402 sec
+[2020-04-29 18:04:41,291 INFO] Step 515/ 1000; xent: 3.55; lr: 0.0000881;   0 docs/s;   5412 sec
+[2020-04-29 18:04:49,512 INFO] Step 516/ 1000; xent: 3.18; lr: 0.0000880;   0 docs/s;   5420 sec
+[2020-04-29 18:04:59,464 INFO] Step 517/ 1000; xent: 1.95; lr: 0.0000880;   0 docs/s;   5430 sec
+[2020-04-29 18:05:09,341 INFO] Step 518/ 1000; xent: 3.96; lr: 0.0000879;   0 docs/s;   5440 sec
+[2020-04-29 18:05:19,377 INFO] Step 519/ 1000; xent: 2.59; lr: 0.0000878;   0 docs/s;   5450 sec
+[2020-04-29 18:05:29,332 INFO] Step 520/ 1000; xent: 2.51; lr: 0.0000877;   0 docs/s;   5460 sec
+[2020-04-29 18:05:39,322 INFO] Step 521/ 1000; xent: 3.14; lr: 0.0000876;   0 docs/s;   5470 sec
+[2020-04-29 18:05:49,289 INFO] Step 522/ 1000; xent: 3.06; lr: 0.0000875;   0 docs/s;   5480 sec
+[2020-04-29 18:05:58,779 INFO] Step 523/ 1000; xent: 2.38; lr: 0.0000875;   0 docs/s;   5489 sec
+[2020-04-29 18:06:06,853 INFO] Step 524/ 1000; xent: 3.36; lr: 0.0000874;   0 docs/s;   5497 sec
+[2020-04-29 18:06:16,275 INFO] Step 525/ 1000; xent: 1.94; lr: 0.0000873;   0 docs/s;   5507 sec
+[2020-04-29 18:06:25,091 INFO] Step 526/ 1000; xent: 3.95; lr: 0.0000872;   0 docs/s;   5516 sec
+[2020-04-29 18:06:35,079 INFO] Step 527/ 1000; xent: 1.79; lr: 0.0000871;   0 docs/s;   5526 sec
+[2020-04-29 18:06:45,072 INFO] Step 528/ 1000; xent: 3.05; lr: 0.0000870;   0 docs/s;   5536 sec
+[2020-04-29 18:06:52,304 INFO] Step 529/ 1000; xent: 1.91; lr: 0.0000870;   1 docs/s;   5543 sec
+[2020-04-29 18:07:02,325 INFO] Step 530/ 1000; xent: 2.67; lr: 0.0000869;   0 docs/s;   5553 sec
+[2020-04-29 18:07:12,338 INFO] Step 531/ 1000; xent: 2.65; lr: 0.0000868;   0 docs/s;   5563 sec
+[2020-04-29 18:07:22,334 INFO] Step 532/ 1000; xent: 2.05; lr: 0.0000867;   0 docs/s;   5573 sec
+[2020-04-29 18:07:32,156 INFO] Step 533/ 1000; xent: 3.48; lr: 0.0000866;   0 docs/s;   5583 sec
+[2020-04-29 18:07:42,129 INFO] Step 534/ 1000; xent: 3.37; lr: 0.0000865;   0 docs/s;   5593 sec
+[2020-04-29 18:07:50,293 INFO] Step 535/ 1000; xent: 3.32; lr: 0.0000865;   0 docs/s;   5601 sec
+[2020-04-29 18:08:00,286 INFO] Step 536/ 1000; xent: 3.25; lr: 0.0000864;   0 docs/s;   5611 sec
+[2020-04-29 18:08:10,275 INFO] Step 537/ 1000; xent: 4.27; lr: 0.0000863;   0 docs/s;   5621 sec
+[2020-04-29 18:08:19,290 INFO] Step 538/ 1000; xent: 3.52; lr: 0.0000862;   0 docs/s;   5630 sec
+[2020-04-29 18:08:29,238 INFO] Step 539/ 1000; xent: 3.81; lr: 0.0000861;   0 docs/s;   5640 sec
+[2020-04-29 18:08:39,240 INFO] Step 540/ 1000; xent: 3.37; lr: 0.0000861;   0 docs/s;   5650 sec
+[2020-04-29 18:08:49,157 INFO] Step 541/ 1000; xent: 3.22; lr: 0.0000860;   0 docs/s;   5660 sec
+[2020-04-29 18:08:56,602 INFO] Step 542/ 1000; xent: 2.42; lr: 0.0000859;   1 docs/s;   5667 sec
+[2020-04-29 18:09:04,619 INFO] Step 543/ 1000; xent: 2.40; lr: 0.0000858;   0 docs/s;   5675 sec
+[2020-04-29 18:09:14,544 INFO] Step 544/ 1000; xent: 3.76; lr: 0.0000857;   0 docs/s;   5685 sec
+[2020-04-29 18:09:23,951 INFO] Step 545/ 1000; xent: 4.42; lr: 0.0000857;   0 docs/s;   5694 sec
+[2020-04-29 18:09:32,290 INFO] Step 546/ 1000; xent: 4.25; lr: 0.0000856;   0 docs/s;   5703 sec
+[2020-04-29 18:09:39,604 INFO] Step 547/ 1000; xent: 2.95; lr: 0.0000855;   1 docs/s;   5710 sec
+[2020-04-29 18:09:48,289 INFO] Step 548/ 1000; xent: 2.64; lr: 0.0000854;   0 docs/s;   5719 sec
+[2020-04-29 18:09:58,298 INFO] Step 549/ 1000; xent: 3.97; lr: 0.0000854;   0 docs/s;   5729 sec
+[2020-04-29 18:10:08,289 INFO] Step 550/ 1000; xent: 3.54; lr: 0.0000853;   0 docs/s;   5739 sec
+[2020-04-29 18:10:08,291 INFO] Saving checkpoint ../models/bert_large/model_step_550.pt
+[2020-04-29 18:11:04,420 INFO] Step 551/ 1000; xent: 3.53; lr: 0.0000852;   0 docs/s;   5795 sec
+[2020-04-29 18:11:13,997 INFO] Step 552/ 1000; xent: 1.75; lr: 0.0000851;   0 docs/s;   5805 sec
+[2020-04-29 18:11:23,880 INFO] Step 553/ 1000; xent: 3.05; lr: 0.0000850;   0 docs/s;   5814 sec
+[2020-04-29 18:11:33,772 INFO] Step 554/ 1000; xent: 3.32; lr: 0.0000850;   0 docs/s;   5824 sec
+[2020-04-29 18:11:43,495 INFO] Step 555/ 1000; xent: 4.21; lr: 0.0000849;   0 docs/s;   5834 sec
+[2020-04-29 18:11:53,443 INFO] Step 556/ 1000; xent: 3.92; lr: 0.0000848;   0 docs/s;   5844 sec
+[2020-04-29 18:12:03,227 INFO] Step 557/ 1000; xent: 2.79; lr: 0.0000847;   0 docs/s;   5854 sec
+[2020-04-29 18:12:13,193 INFO] Step 558/ 1000; xent: 3.60; lr: 0.0000847;   0 docs/s;   5864 sec
+[2020-04-29 18:12:23,085 INFO] Step 559/ 1000; xent: 2.10; lr: 0.0000846;   0 docs/s;   5874 sec
+[2020-04-29 18:12:31,459 INFO] Step 560/ 1000; xent: 3.79; lr: 0.0000845;   0 docs/s;   5882 sec
+[2020-04-29 18:12:39,179 INFO] Step 561/ 1000; xent: 2.59; lr: 0.0000844;   1 docs/s;   5890 sec
+[2020-04-29 18:12:48,528 INFO] Step 562/ 1000; xent: 3.33; lr: 0.0000844;   0 docs/s;   5899 sec
+[2020-04-29 18:12:58,441 INFO] Step 563/ 1000; xent: 2.98; lr: 0.0000843;   0 docs/s;   5909 sec
+[2020-04-29 18:13:08,404 INFO] Step 564/ 1000; xent: 4.27; lr: 0.0000842;   0 docs/s;   5919 sec
+[2020-04-29 18:13:18,335 INFO] Step 565/ 1000; xent: 3.01; lr: 0.0000841;   0 docs/s;   5929 sec
+[2020-04-29 18:13:28,292 INFO] Step 566/ 1000; xent: 3.86; lr: 0.0000841;   0 docs/s;   5939 sec
+[2020-04-29 18:13:38,278 INFO] Step 567/ 1000; xent: 2.65; lr: 0.0000840;   0 docs/s;   5949 sec
+[2020-04-29 18:13:48,240 INFO] Step 568/ 1000; xent: 2.80; lr: 0.0000839;   0 docs/s;   5959 sec
+[2020-04-29 18:13:58,191 INFO] Step 569/ 1000; xent: 2.99; lr: 0.0000838;   0 docs/s;   5969 sec
+[2020-04-29 18:14:08,178 INFO] Step 570/ 1000; xent: 3.29; lr: 0.0000838;   0 docs/s;   5979 sec
+[2020-04-29 18:14:18,126 INFO] Step 571/ 1000; xent: 3.51; lr: 0.0000837;   0 docs/s;   5989 sec
+[2020-04-29 18:14:26,924 INFO] Step 572/ 1000; xent: 3.04; lr: 0.0000836;   0 docs/s;   5997 sec
+[2020-04-29 18:14:36,633 INFO] Step 573/ 1000; xent: 3.50; lr: 0.0000836;   0 docs/s;   6007 sec
+[2020-04-29 18:14:46,270 INFO] Step 574/ 1000; xent: 2.64; lr: 0.0000835;   0 docs/s;   6017 sec
+[2020-04-29 18:14:56,258 INFO] Step 575/ 1000; xent: 2.26; lr: 0.0000834;   0 docs/s;   6027 sec
+[2020-04-29 18:15:06,255 INFO] Step 576/ 1000; xent: 4.59; lr: 0.0000833;   0 docs/s;   6037 sec
+[2020-04-29 18:15:16,208 INFO] Step 577/ 1000; xent: 2.91; lr: 0.0000833;   0 docs/s;   6047 sec
+[2020-04-29 18:15:25,004 INFO] Step 578/ 1000; xent: 3.74; lr: 0.0000832;   0 docs/s;   6056 sec
+[2020-04-29 18:15:34,986 INFO] Step 579/ 1000; xent: 3.08; lr: 0.0000831;   0 docs/s;   6066 sec
+[2020-04-29 18:15:44,878 INFO] Step 580/ 1000; xent: 3.10; lr: 0.0000830;   0 docs/s;   6075 sec
+[2020-04-29 18:15:54,392 INFO] Step 581/ 1000; xent: 2.62; lr: 0.0000830;   0 docs/s;   6085 sec
+[2020-04-29 18:16:04,361 INFO] Step 582/ 1000; xent: 3.59; lr: 0.0000829;   0 docs/s;   6095 sec
+[2020-04-29 18:16:14,453 INFO] Step 583/ 1000; xent: 2.53; lr: 0.0000828;   0 docs/s;   6105 sec
+[2020-04-29 18:16:24,421 INFO] Step 584/ 1000; xent: 3.54; lr: 0.0000828;   0 docs/s;   6115 sec
+[2020-04-29 18:16:34,375 INFO] Step 585/ 1000; xent: 4.17; lr: 0.0000827;   0 docs/s;   6125 sec
+[2020-04-29 18:16:43,216 INFO] Step 586/ 1000; xent: 4.16; lr: 0.0000826;   0 docs/s;   6134 sec
+[2020-04-29 18:16:52,234 INFO] Step 587/ 1000; xent: 4.27; lr: 0.0000825;   0 docs/s;   6143 sec
+[2020-04-29 18:17:02,242 INFO] Step 588/ 1000; xent: 2.11; lr: 0.0000825;   0 docs/s;   6153 sec
+[2020-04-29 18:17:12,211 INFO] Step 589/ 1000; xent: 2.46; lr: 0.0000824;   0 docs/s;   6163 sec
+[2020-04-29 18:17:20,683 INFO] Step 590/ 1000; xent: 3.58; lr: 0.0000823;   0 docs/s;   6171 sec
+[2020-04-29 18:17:30,668 INFO] Step 591/ 1000; xent: 2.24; lr: 0.0000823;   0 docs/s;   6181 sec
+[2020-04-29 18:17:40,628 INFO] Step 592/ 1000; xent: 2.93; lr: 0.0000822;   0 docs/s;   6191 sec
+[2020-04-29 18:17:50,573 INFO] Step 593/ 1000; xent: 2.79; lr: 0.0000821;   0 docs/s;   6201 sec
+[2020-04-29 18:18:00,525 INFO] Step 594/ 1000; xent: 2.92; lr: 0.0000821;   0 docs/s;   6211 sec
+[2020-04-29 18:18:08,387 INFO] Step 595/ 1000; xent: 3.59; lr: 0.0000820;   1 docs/s;   6219 sec
+[2020-04-29 18:18:17,616 INFO] Step 596/ 1000; xent: 2.82; lr: 0.0000819;   0 docs/s;   6228 sec
+[2020-04-29 18:18:26,316 INFO] Step 597/ 1000; xent: 3.77; lr: 0.0000819;   0 docs/s;   6237 sec
+[2020-04-29 18:18:36,298 INFO] Step 598/ 1000; xent: 3.71; lr: 0.0000818;   0 docs/s;   6247 sec
+[2020-04-29 18:18:46,344 INFO] Step 599/ 1000; xent: 2.50; lr: 0.0000817;   0 docs/s;   6257 sec
+[2020-04-29 18:18:56,311 INFO] Step 600/ 1000; xent: 3.22; lr: 0.0000816;   0 docs/s;   6267 sec
+[2020-04-29 18:18:56,313 INFO] Saving checkpoint ../models/bert_large/model_step_600.pt
+[2020-04-29 18:19:53,123 INFO] Step 601/ 1000; xent: 3.19; lr: 0.0000816;   0 docs/s;   6324 sec
+[2020-04-29 18:20:03,769 INFO] Step 602/ 1000; xent: 2.20; lr: 0.0000815;   0 docs/s;   6334 sec
+[2020-04-29 18:20:13,704 INFO] Step 603/ 1000; xent: 2.69; lr: 0.0000814;   0 docs/s;   6344 sec
+[2020-04-29 18:20:23,622 INFO] Step 604/ 1000; xent: 2.15; lr: 0.0000814;   0 docs/s;   6354 sec
+[2020-04-29 18:20:33,477 INFO] Step 605/ 1000; xent: 2.95; lr: 0.0000813;   0 docs/s;   6364 sec
+[2020-04-29 18:20:43,401 INFO] Step 606/ 1000; xent: 3.65; lr: 0.0000812;   0 docs/s;   6374 sec
+[2020-04-29 18:20:53,290 INFO] Step 607/ 1000; xent: 3.94; lr: 0.0000812;   0 docs/s;   6384 sec
+[2020-04-29 18:21:03,136 INFO] Step 608/ 1000; xent: 1.94; lr: 0.0000811;   0 docs/s;   6394 sec
+[2020-04-29 18:21:11,190 INFO] Step 609/ 1000; xent: 2.23; lr: 0.0000810;   0 docs/s;   6402 sec
+[2020-04-29 18:21:21,112 INFO] Step 610/ 1000; xent: 5.10; lr: 0.0000810;   0 docs/s;   6412 sec
+[2020-04-29 18:21:31,061 INFO] Step 611/ 1000; xent: 3.50; lr: 0.0000809;   0 docs/s;   6422 sec
+[2020-04-29 18:21:40,959 INFO] Step 612/ 1000; xent: 2.51; lr: 0.0000808;   0 docs/s;   6431 sec
+[2020-04-29 18:21:50,854 INFO] Step 613/ 1000; xent: 2.67; lr: 0.0000808;   0 docs/s;   6441 sec
+[2020-04-29 18:22:00,791 INFO] Step 614/ 1000; xent: 2.45; lr: 0.0000807;   0 docs/s;   6451 sec
+[2020-04-29 18:22:10,721 INFO] Step 615/ 1000; xent: 4.20; lr: 0.0000806;   0 docs/s;   6461 sec
+[2020-04-29 18:22:20,650 INFO] Step 616/ 1000; xent: 3.08; lr: 0.0000806;   0 docs/s;   6471 sec
+[2020-04-29 18:22:30,631 INFO] Step 617/ 1000; xent: 3.52; lr: 0.0000805;   0 docs/s;   6481 sec
+[2020-04-29 18:22:39,326 INFO] Step 618/ 1000; xent: 3.48; lr: 0.0000805;   0 docs/s;   6490 sec
+[2020-04-29 18:22:48,465 INFO] Step 619/ 1000; xent: 2.90; lr: 0.0000804;   0 docs/s;   6499 sec
+[2020-04-29 18:22:58,443 INFO] Step 620/ 1000; xent: 3.43; lr: 0.0000803;   0 docs/s;   6509 sec
+[2020-04-29 18:23:08,392 INFO] Step 621/ 1000; xent: 3.52; lr: 0.0000803;   0 docs/s;   6519 sec
+[2020-04-29 18:23:18,365 INFO] Step 622/ 1000; xent: 2.32; lr: 0.0000802;   0 docs/s;   6529 sec
+[2020-04-29 18:23:26,940 INFO] Step 623/ 1000; xent: 2.36; lr: 0.0000801;   0 docs/s;   6537 sec
+[2020-04-29 18:23:36,910 INFO] Step 624/ 1000; xent: 2.32; lr: 0.0000801;   0 docs/s;   6547 sec
+[2020-04-29 18:23:46,874 INFO] Step 625/ 1000; xent: 2.41; lr: 0.0000800;   0 docs/s;   6557 sec
+[2020-04-29 18:23:56,127 INFO] Step 626/ 1000; xent: 3.19; lr: 0.0000799;   0 docs/s;   6567 sec
+[2020-04-29 18:24:06,056 INFO] Step 627/ 1000; xent: 3.20; lr: 0.0000799;   0 docs/s;   6577 sec
+[2020-04-29 18:24:16,066 INFO] Step 628/ 1000; xent: 3.99; lr: 0.0000798;   0 docs/s;   6587 sec
+[2020-04-29 18:24:25,749 INFO] Step 629/ 1000; xent: 3.59; lr: 0.0000797;   0 docs/s;   6596 sec
+[2020-04-29 18:24:34,865 INFO] Step 630/ 1000; xent: 2.48; lr: 0.0000797;   0 docs/s;   6605 sec
+[2020-04-29 18:24:44,839 INFO] Step 631/ 1000; xent: 2.99; lr: 0.0000796;   0 docs/s;   6615 sec
+[2020-04-29 18:24:54,665 INFO] Step 632/ 1000; xent: 4.21; lr: 0.0000796;   0 docs/s;   6625 sec
+[2020-04-29 18:25:03,727 INFO] Step 633/ 1000; xent: 4.19; lr: 0.0000795;   0 docs/s;   6634 sec
+[2020-04-29 18:25:13,723 INFO] Step 634/ 1000; xent: 2.67; lr: 0.0000794;   0 docs/s;   6644 sec
+[2020-04-29 18:25:23,690 INFO] Step 635/ 1000; xent: 2.79; lr: 0.0000794;   0 docs/s;   6654 sec
+[2020-04-29 18:25:33,648 INFO] Step 636/ 1000; xent: 2.77; lr: 0.0000793;   0 docs/s;   6664 sec
+[2020-04-29 18:25:43,623 INFO] Step 637/ 1000; xent: 3.78; lr: 0.0000792;   0 docs/s;   6674 sec
+[2020-04-29 18:25:53,568 INFO] Step 638/ 1000; xent: 1.21; lr: 0.0000792;   0 docs/s;   6684 sec
+[2020-04-29 18:26:03,565 INFO] Step 639/ 1000; xent: 2.54; lr: 0.0000791;   0 docs/s;   6694 sec
+[2020-04-29 18:26:13,559 INFO] Step 640/ 1000; xent: 4.04; lr: 0.0000791;   0 docs/s;   6704 sec
+[2020-04-29 18:26:23,160 INFO] Step 641/ 1000; xent: 5.04; lr: 0.0000790;   0 docs/s;   6714 sec
+[2020-04-29 18:26:33,202 INFO] Step 642/ 1000; xent: 4.20; lr: 0.0000789;   0 docs/s;   6724 sec
+[2020-04-29 18:26:43,176 INFO] Step 643/ 1000; xent: 1.73; lr: 0.0000789;   0 docs/s;   6734 sec
+[2020-04-29 18:26:53,170 INFO] Step 644/ 1000; xent: 1.85; lr: 0.0000788;   0 docs/s;   6744 sec
+[2020-04-29 18:27:03,182 INFO] Step 645/ 1000; xent: 3.47; lr: 0.0000787;   0 docs/s;   6754 sec
+[2020-04-29 18:27:13,132 INFO] Step 646/ 1000; xent: 4.11; lr: 0.0000787;   0 docs/s;   6764 sec
+[2020-04-29 18:27:23,129 INFO] Step 647/ 1000; xent: 3.54; lr: 0.0000786;   0 docs/s;   6774 sec
+[2020-04-29 18:27:32,815 INFO] Step 648/ 1000; xent: 3.10; lr: 0.0000786;   0 docs/s;   6783 sec
+[2020-04-29 18:27:42,759 INFO] Step 649/ 1000; xent: 2.49; lr: 0.0000785;   0 docs/s;   6793 sec
+[2020-04-29 18:27:52,718 INFO] Step 650/ 1000; xent: 2.62; lr: 0.0000784;   0 docs/s;   6803 sec
+[2020-04-29 18:27:52,721 INFO] Saving checkpoint ../models/bert_large/model_step_650.pt
+[2020-04-29 18:28:47,255 INFO] Step 651/ 1000; xent: 2.43; lr: 0.0000784;   0 docs/s;   6858 sec
+[2020-04-29 18:28:57,229 INFO] Step 652/ 1000; xent: 3.37; lr: 0.0000783;   0 docs/s;   6868 sec
+[2020-04-29 18:29:06,388 INFO] Step 653/ 1000; xent: 4.20; lr: 0.0000783;   0 docs/s;   6877 sec
+[2020-04-29 18:29:16,240 INFO] Step 654/ 1000; xent: 2.73; lr: 0.0000782;   0 docs/s;   6887 sec
+[2020-04-29 18:29:24,704 INFO] Step 655/ 1000; xent: 2.93; lr: 0.0000781;   0 docs/s;   6895 sec
+[2020-04-29 18:29:34,588 INFO] Step 656/ 1000; xent: 4.03; lr: 0.0000781;   0 docs/s;   6905 sec
+[2020-04-29 18:29:43,942 INFO] Step 657/ 1000; xent: 2.60; lr: 0.0000780;   0 docs/s;   6914 sec
+[2020-04-29 18:29:53,825 INFO] Step 658/ 1000; xent: 3.58; lr: 0.0000780;   0 docs/s;   6924 sec
+[2020-04-29 18:30:02,950 INFO] Step 659/ 1000; xent: 3.03; lr: 0.0000779;   0 docs/s;   6933 sec
+[2020-04-29 18:30:12,843 INFO] Step 660/ 1000; xent: 1.94; lr: 0.0000778;   0 docs/s;   6943 sec
+[2020-04-29 18:30:22,741 INFO] Step 661/ 1000; xent: 3.16; lr: 0.0000778;   0 docs/s;   6953 sec
+[2020-04-29 18:30:32,620 INFO] Step 662/ 1000; xent: 3.86; lr: 0.0000777;   0 docs/s;   6963 sec
+[2020-04-29 18:30:42,538 INFO] Step 663/ 1000; xent: 4.27; lr: 0.0000777;   0 docs/s;   6973 sec
+[2020-04-29 18:30:52,426 INFO] Step 664/ 1000; xent: 3.16; lr: 0.0000776;   0 docs/s;   6983 sec
+[2020-04-29 18:31:02,265 INFO] Step 665/ 1000; xent: 3.26; lr: 0.0000776;   0 docs/s;   6993 sec
+[2020-04-29 18:31:12,207 INFO] Step 666/ 1000; xent: 3.27; lr: 0.0000775;   0 docs/s;   7003 sec
+[2020-04-29 18:31:22,086 INFO] Step 667/ 1000; xent: 3.14; lr: 0.0000774;   0 docs/s;   7013 sec
+[2020-04-29 18:31:29,756 INFO] Step 668/ 1000; xent: 3.97; lr: 0.0000774;   1 docs/s;   7020 sec
+[2020-04-29 18:31:39,627 INFO] Step 669/ 1000; xent: 3.43; lr: 0.0000773;   0 docs/s;   7030 sec
+[2020-04-29 18:31:49,528 INFO] Step 670/ 1000; xent: 3.43; lr: 0.0000773;   0 docs/s;   7040 sec
+[2020-04-29 18:31:59,427 INFO] Step 671/ 1000; xent: 2.91; lr: 0.0000772;   0 docs/s;   7050 sec
+[2020-04-29 18:32:07,910 INFO] Step 672/ 1000; xent: 3.42; lr: 0.0000772;   0 docs/s;   7058 sec
+[2020-04-29 18:32:17,814 INFO] Step 673/ 1000; xent: 3.63; lr: 0.0000771;   0 docs/s;   7068 sec
+[2020-04-29 18:32:27,733 INFO] Step 674/ 1000; xent: 2.49; lr: 0.0000770;   0 docs/s;   7078 sec
+[2020-04-29 18:32:37,665 INFO] Step 675/ 1000; xent: 4.23; lr: 0.0000770;   0 docs/s;   7088 sec
+[2020-04-29 18:32:47,602 INFO] Step 676/ 1000; xent: 3.84; lr: 0.0000769;   0 docs/s;   7098 sec
+[2020-04-29 18:32:57,509 INFO] Step 677/ 1000; xent: 3.09; lr: 0.0000769;   0 docs/s;   7108 sec
+[2020-04-29 18:33:07,457 INFO] Step 678/ 1000; xent: 3.51; lr: 0.0000768;   0 docs/s;   7118 sec
+[2020-04-29 18:33:15,834 INFO] Step 679/ 1000; xent: 3.59; lr: 0.0000768;   0 docs/s;   7126 sec
+[2020-04-29 18:33:25,287 INFO] Step 680/ 1000; xent: 3.66; lr: 0.0000767;   0 docs/s;   7136 sec
+[2020-04-29 18:33:33,704 INFO] Step 681/ 1000; xent: 3.39; lr: 0.0000766;   0 docs/s;   7144 sec
+[2020-04-29 18:33:41,880 INFO] Step 682/ 1000; xent: 3.99; lr: 0.0000766;   0 docs/s;   7152 sec
+[2020-04-29 18:33:50,159 INFO] Step 683/ 1000; xent: 2.79; lr: 0.0000765;   0 docs/s;   7161 sec
+[2020-04-29 18:34:00,034 INFO] Step 684/ 1000; xent: 3.43; lr: 0.0000765;   0 docs/s;   7171 sec
+[2020-04-29 18:34:09,906 INFO] Step 685/ 1000; xent: 3.41; lr: 0.0000764;   0 docs/s;   7180 sec
+[2020-04-29 18:34:19,872 INFO] Step 686/ 1000; xent: 4.06; lr: 0.0000764;   0 docs/s;   7190 sec
+[2020-04-29 18:34:27,812 INFO] Step 687/ 1000; xent: 2.24; lr: 0.0000763;   1 docs/s;   7198 sec
+[2020-04-29 18:34:37,764 INFO] Step 688/ 1000; xent: 4.29; lr: 0.0000762;   0 docs/s;   7208 sec
+[2020-04-29 18:34:47,642 INFO] Step 689/ 1000; xent: 2.76; lr: 0.0000762;   0 docs/s;   7218 sec
+[2020-04-29 18:34:54,893 INFO] Step 690/ 1000; xent: 2.44; lr: 0.0000761;   1 docs/s;   7225 sec
+[2020-04-29 18:35:04,769 INFO] Step 691/ 1000; xent: 3.64; lr: 0.0000761;   0 docs/s;   7235 sec
+[2020-04-29 18:35:14,700 INFO] Step 692/ 1000; xent: 2.69; lr: 0.0000760;   0 docs/s;   7245 sec
+[2020-04-29 18:35:24,548 INFO] Step 693/ 1000; xent: 2.91; lr: 0.0000760;   0 docs/s;   7255 sec
+[2020-04-29 18:35:34,478 INFO] Step 694/ 1000; xent: 2.86; lr: 0.0000759;   0 docs/s;   7265 sec
+[2020-04-29 18:35:44,400 INFO] Step 695/ 1000; xent: 2.56; lr: 0.0000759;   0 docs/s;   7275 sec
+[2020-04-29 18:35:54,288 INFO] Step 696/ 1000; xent: 2.09; lr: 0.0000758;   0 docs/s;   7285 sec
+[2020-04-29 18:36:03,281 INFO] Step 697/ 1000; xent: 3.04; lr: 0.0000758;   0 docs/s;   7294 sec
+[2020-04-29 18:36:12,505 INFO] Step 698/ 1000; xent: 3.41; lr: 0.0000757;   0 docs/s;   7303 sec
+[2020-04-29 18:36:22,418 INFO] Step 699/ 1000; xent: 3.51; lr: 0.0000756;   0 docs/s;   7313 sec
+[2020-04-29 18:36:32,271 INFO] Step 700/ 1000; xent: 3.32; lr: 0.0000756;   0 docs/s;   7323 sec
+[2020-04-29 18:36:32,317 INFO] Saving checkpoint ../models/bert_large/model_step_700.pt
+[2020-04-29 18:37:26,971 INFO] Step 701/ 1000; xent: 3.72; lr: 0.0000755;   0 docs/s;   7378 sec
+[2020-04-29 18:37:36,004 INFO] Step 702/ 1000; xent: 2.49; lr: 0.0000755;   0 docs/s;   7387 sec
+[2020-04-29 18:37:45,848 INFO] Step 703/ 1000; xent: 4.45; lr: 0.0000754;   0 docs/s;   7396 sec
+[2020-04-29 18:37:53,142 INFO] Step 704/ 1000; xent: 2.94; lr: 0.0000754;   1 docs/s;   7404 sec
+[2020-04-29 18:38:03,065 INFO] Step 705/ 1000; xent: 2.95; lr: 0.0000753;   0 docs/s;   7414 sec
+[2020-04-29 18:38:12,928 INFO] Step 706/ 1000; xent: 3.07; lr: 0.0000753;   0 docs/s;   7423 sec
+[2020-04-29 18:38:22,740 INFO] Step 707/ 1000; xent: 2.56; lr: 0.0000752;   0 docs/s;   7433 sec
+[2020-04-29 18:38:31,594 INFO] Step 708/ 1000; xent: 2.78; lr: 0.0000752;   0 docs/s;   7442 sec
+[2020-04-29 18:38:41,460 INFO] Step 709/ 1000; xent: 3.70; lr: 0.0000751;   0 docs/s;   7452 sec
+[2020-04-29 18:38:51,359 INFO] Step 710/ 1000; xent: 3.61; lr: 0.0000751;   0 docs/s;   7462 sec
+[2020-04-29 18:39:01,238 INFO] Step 711/ 1000; xent: 3.05; lr: 0.0000750;   0 docs/s;   7472 sec
+[2020-04-29 18:39:10,612 INFO] Step 712/ 1000; xent: 4.33; lr: 0.0000750;   0 docs/s;   7481 sec
+[2020-04-29 18:39:20,502 INFO] Step 713/ 1000; xent: 2.41; lr: 0.0000749;   0 docs/s;   7491 sec
+[2020-04-29 18:39:30,406 INFO] Step 714/ 1000; xent: 3.79; lr: 0.0000748;   0 docs/s;   7501 sec
+[2020-04-29 18:39:40,304 INFO] Step 715/ 1000; xent: 3.27; lr: 0.0000748;   0 docs/s;   7511 sec
+[2020-04-29 18:39:50,216 INFO] Step 716/ 1000; xent: 3.11; lr: 0.0000747;   0 docs/s;   7521 sec
+[2020-04-29 18:40:00,111 INFO] Step 717/ 1000; xent: 3.11; lr: 0.0000747;   0 docs/s;   7531 sec
+[2020-04-29 18:40:10,027 INFO] Step 718/ 1000; xent: 4.03; lr: 0.0000746;   0 docs/s;   7541 sec
+[2020-04-29 18:40:19,919 INFO] Step 719/ 1000; xent: 2.78; lr: 0.0000746;   0 docs/s;   7550 sec
+[2020-04-29 18:40:29,809 INFO] Step 720/ 1000; xent: 3.41; lr: 0.0000745;   0 docs/s;   7560 sec
+[2020-04-29 18:40:39,321 INFO] Step 721/ 1000; xent: 3.27; lr: 0.0000745;   0 docs/s;   7570 sec
+[2020-04-29 18:40:49,247 INFO] Step 722/ 1000; xent: 1.90; lr: 0.0000744;   0 docs/s;   7580 sec
+[2020-04-29 18:40:59,003 INFO] Step 723/ 1000; xent: 2.27; lr: 0.0000744;   0 docs/s;   7590 sec
+[2020-04-29 18:41:07,780 INFO] Step 724/ 1000; xent: 4.09; lr: 0.0000743;   0 docs/s;   7598 sec
+[2020-04-29 18:41:17,706 INFO] Step 725/ 1000; xent: 3.16; lr: 0.0000743;   0 docs/s;   7608 sec
+[2020-04-29 18:41:27,619 INFO] Step 726/ 1000; xent: 1.85; lr: 0.0000742;   0 docs/s;   7618 sec
+[2020-04-29 18:41:37,424 INFO] Step 727/ 1000; xent: 3.48; lr: 0.0000742;   0 docs/s;   7628 sec
+[2020-04-29 18:41:45,196 INFO] Step 728/ 1000; xent: 4.21; lr: 0.0000741;   1 docs/s;   7636 sec
+[2020-04-29 18:41:53,828 INFO] Step 729/ 1000; xent: 3.03; lr: 0.0000741;   0 docs/s;   7644 sec
+[2020-04-29 18:42:03,754 INFO] Step 730/ 1000; xent: 1.91; lr: 0.0000740;   0 docs/s;   7654 sec
+[2020-04-29 18:42:13,582 INFO] Step 731/ 1000; xent: 3.38; lr: 0.0000740;   0 docs/s;   7664 sec
+[2020-04-29 18:42:23,478 INFO] Step 732/ 1000; xent: 2.08; lr: 0.0000739;   0 docs/s;   7674 sec
+[2020-04-29 18:42:33,370 INFO] Step 733/ 1000; xent: 2.67; lr: 0.0000739;   0 docs/s;   7684 sec
+[2020-04-29 18:42:43,267 INFO] Step 734/ 1000; xent: 2.95; lr: 0.0000738;   0 docs/s;   7694 sec
+[2020-04-29 18:42:53,167 INFO] Step 735/ 1000; xent: 3.49; lr: 0.0000738;   0 docs/s;   7704 sec
+[2020-04-29 18:43:01,478 INFO] Step 736/ 1000; xent: 2.24; lr: 0.0000737;   0 docs/s;   7712 sec
+[2020-04-29 18:43:11,343 INFO] Step 737/ 1000; xent: 2.98; lr: 0.0000737;   0 docs/s;   7722 sec
+[2020-04-29 18:43:19,755 INFO] Step 738/ 1000; xent: 1.97; lr: 0.0000736;   0 docs/s;   7730 sec
+[2020-04-29 18:43:27,398 INFO] Step 739/ 1000; xent: 2.53; lr: 0.0000736;   1 docs/s;   7738 sec
+[2020-04-29 18:43:36,889 INFO] Step 740/ 1000; xent: 3.36; lr: 0.0000735;   0 docs/s;   7747 sec
+[2020-04-29 18:43:46,769 INFO] Step 741/ 1000; xent: 2.22; lr: 0.0000735;   0 docs/s;   7757 sec
+[2020-04-29 18:43:56,653 INFO] Step 742/ 1000; xent: 3.63; lr: 0.0000734;   0 docs/s;   7767 sec
+[2020-04-29 18:44:06,535 INFO] Step 743/ 1000; xent: 3.20; lr: 0.0000734;   0 docs/s;   7777 sec
+[2020-04-29 18:44:16,433 INFO] Step 744/ 1000; xent: 3.60; lr: 0.0000733;   0 docs/s;   7787 sec
+[2020-04-29 18:44:26,312 INFO] Step 745/ 1000; xent: 2.77; lr: 0.0000733;   0 docs/s;   7797 sec
+[2020-04-29 18:44:36,208 INFO] Step 746/ 1000; xent: 2.79; lr: 0.0000732;   0 docs/s;   7807 sec
+[2020-04-29 18:44:46,086 INFO] Step 747/ 1000; xent: 3.20; lr: 0.0000732;   0 docs/s;   7817 sec
+[2020-04-29 18:44:56,001 INFO] Step 748/ 1000; xent: 4.00; lr: 0.0000731;   0 docs/s;   7827 sec
+[2020-04-29 18:45:05,866 INFO] Step 749/ 1000; xent: 3.00; lr: 0.0000731;   0 docs/s;   7836 sec
+[2020-04-29 18:45:15,808 INFO] Step 750/ 1000; xent: 3.80; lr: 0.0000730;   0 docs/s;   7846 sec
+[2020-04-29 18:45:15,810 INFO] Saving checkpoint ../models/bert_large/model_step_750.pt
+[2020-04-29 18:46:05,158 INFO] Step 751/ 1000; xent: 3.19; lr: 0.0000730;   0 docs/s;   7896 sec
+[2020-04-29 18:46:15,131 INFO] Step 752/ 1000; xent: 2.46; lr: 0.0000729;   0 docs/s;   7906 sec
+[2020-04-29 18:46:24,935 INFO] Step 753/ 1000; xent: 2.13; lr: 0.0000729;   0 docs/s;   7915 sec
+[2020-04-29 18:46:33,715 INFO] Step 754/ 1000; xent: 4.32; lr: 0.0000728;   0 docs/s;   7924 sec
+[2020-04-29 18:46:41,580 INFO] Step 755/ 1000; xent: 3.59; lr: 0.0000728;   1 docs/s;   7932 sec
+[2020-04-29 18:46:51,517 INFO] Step 756/ 1000; xent: 2.53; lr: 0.0000727;   0 docs/s;   7942 sec
+[2020-04-29 18:47:01,469 INFO] Step 757/ 1000; xent: 2.63; lr: 0.0000727;   0 docs/s;   7952 sec
+[2020-04-29 18:47:11,424 INFO] Step 758/ 1000; xent: 2.80; lr: 0.0000726;   0 docs/s;   7962 sec
+[2020-04-29 18:47:21,322 INFO] Step 759/ 1000; xent: 2.67; lr: 0.0000726;   0 docs/s;   7972 sec
+[2020-04-29 18:47:30,331 INFO] Step 760/ 1000; xent: 1.76; lr: 0.0000725;   0 docs/s;   7981 sec
+[2020-04-29 18:47:40,225 INFO] Step 761/ 1000; xent: 3.41; lr: 0.0000725;   0 docs/s;   7991 sec
+[2020-04-29 18:47:50,228 INFO] Step 762/ 1000; xent: 2.87; lr: 0.0000725;   0 docs/s;   8001 sec
+[2020-04-29 18:48:00,127 INFO] Step 763/ 1000; xent: 3.33; lr: 0.0000724;   0 docs/s;   8011 sec
+[2020-04-29 18:48:10,050 INFO] Step 764/ 1000; xent: 2.95; lr: 0.0000724;   0 docs/s;   8021 sec
+[2020-04-29 18:48:19,066 INFO] Step 765/ 1000; xent: 3.57; lr: 0.0000723;   0 docs/s;   8030 sec
+[2020-04-29 18:48:28,949 INFO] Step 766/ 1000; xent: 1.85; lr: 0.0000723;   0 docs/s;   8039 sec
+[2020-04-29 18:48:38,911 INFO] Step 767/ 1000; xent: 3.70; lr: 0.0000722;   0 docs/s;   8049 sec
+[2020-04-29 18:48:46,954 INFO] Step 768/ 1000; xent: 2.98; lr: 0.0000722;   0 docs/s;   8057 sec
+[2020-04-29 18:48:56,861 INFO] Step 769/ 1000; xent: 2.22; lr: 0.0000721;   0 docs/s;   8067 sec
+[2020-04-29 18:49:06,784 INFO] Step 770/ 1000; xent: 3.33; lr: 0.0000721;   0 docs/s;   8077 sec
+[2020-04-29 18:49:16,749 INFO] Step 771/ 1000; xent: 2.57; lr: 0.0000720;   0 docs/s;   8087 sec
+[2020-04-29 18:49:26,498 INFO] Step 772/ 1000; xent: 2.83; lr: 0.0000720;   0 docs/s;   8097 sec
+[2020-04-29 18:49:36,126 INFO] Step 773/ 1000; xent: 3.99; lr: 0.0000719;   0 docs/s;   8107 sec
+[2020-04-29 18:49:46,114 INFO] Step 774/ 1000; xent: 3.60; lr: 0.0000719;   0 docs/s;   8117 sec
+[2020-04-29 18:49:56,005 INFO] Step 775/ 1000; xent: 1.41; lr: 0.0000718;   0 docs/s;   8127 sec
+[2020-04-29 18:50:04,984 INFO] Step 776/ 1000; xent: 3.43; lr: 0.0000718;   0 docs/s;   8136 sec
+[2020-04-29 18:50:14,940 INFO] Step 777/ 1000; xent: 3.70; lr: 0.0000717;   0 docs/s;   8145 sec
+[2020-04-29 18:50:24,950 INFO] Step 778/ 1000; xent: 2.97; lr: 0.0000717;   0 docs/s;   8155 sec
+[2020-04-29 18:50:34,875 INFO] Step 779/ 1000; xent: 4.20; lr: 0.0000717;   0 docs/s;   8165 sec
+[2020-04-29 18:50:44,820 INFO] Step 780/ 1000; xent: 3.65; lr: 0.0000716;   0 docs/s;   8175 sec
+[2020-04-29 18:50:53,558 INFO] Step 781/ 1000; xent: 2.49; lr: 0.0000716;   0 docs/s;   8184 sec
+[2020-04-29 18:51:03,504 INFO] Step 782/ 1000; xent: 4.40; lr: 0.0000715;   0 docs/s;   8194 sec
+[2020-04-29 18:51:13,420 INFO] Step 783/ 1000; xent: 2.41; lr: 0.0000715;   0 docs/s;   8204 sec
+[2020-04-29 18:51:23,223 INFO] Step 784/ 1000; xent: 3.96; lr: 0.0000714;   0 docs/s;   8214 sec
+[2020-04-29 18:51:32,934 INFO] Step 785/ 1000; xent: 3.15; lr: 0.0000714;   0 docs/s;   8223 sec
+[2020-04-29 18:51:42,897 INFO] Step 786/ 1000; xent: 3.02; lr: 0.0000713;   0 docs/s;   8233 sec
+[2020-04-29 18:51:52,764 INFO] Step 787/ 1000; xent: 3.89; lr: 0.0000713;   0 docs/s;   8243 sec
+[2020-04-29 18:52:02,536 INFO] Step 788/ 1000; xent: 3.52; lr: 0.0000712;   0 docs/s;   8253 sec
+[2020-04-29 18:52:12,456 INFO] Step 789/ 1000; xent: 2.61; lr: 0.0000712;   0 docs/s;   8263 sec
+[2020-04-29 18:52:21,133 INFO] Step 790/ 1000; xent: 2.17; lr: 0.0000712;   0 docs/s;   8272 sec
+[2020-04-29 18:52:29,922 INFO] Step 791/ 1000; xent: 2.57; lr: 0.0000711;   0 docs/s;   8280 sec
+[2020-04-29 18:52:39,214 INFO] Step 792/ 1000; xent: 3.13; lr: 0.0000711;   0 docs/s;   8290 sec
+[2020-04-29 18:52:49,119 INFO] Step 793/ 1000; xent: 3.88; lr: 0.0000710;   0 docs/s;   8300 sec
+[2020-04-29 18:52:59,007 INFO] Step 794/ 1000; xent: 3.42; lr: 0.0000710;   0 docs/s;   8310 sec
+[2020-04-29 18:53:08,967 INFO] Step 795/ 1000; xent: 1.74; lr: 0.0000709;   0 docs/s;   8319 sec
+[2020-04-29 18:53:18,616 INFO] Step 796/ 1000; xent: 3.30; lr: 0.0000709;   0 docs/s;   8329 sec
+[2020-04-29 18:53:26,112 INFO] Step 797/ 1000; xent: 3.23; lr: 0.0000708;   1 docs/s;   8337 sec
+[2020-04-29 18:53:33,249 INFO] Step 798/ 1000; xent: 3.00; lr: 0.0000708;   1 docs/s;   8344 sec
+[2020-04-29 18:53:42,826 INFO] Step 799/ 1000; xent: 2.84; lr: 0.0000708;   0 docs/s;   8353 sec
+[2020-04-29 18:53:52,735 INFO] Step 800/ 1000; xent: 3.05; lr: 0.0000707;   0 docs/s;   8363 sec
+[2020-04-29 18:53:52,790 INFO] Saving checkpoint ../models/bert_large/model_step_800.pt
+[2020-04-29 18:54:53,231 INFO] Step 801/ 1000; xent: 3.50; lr: 0.0000707;   0 docs/s;   8424 sec
+[2020-04-29 18:55:04,793 INFO] Step 802/ 1000; xent: 3.85; lr: 0.0000706;   0 docs/s;   8435 sec
+[2020-04-29 18:55:15,009 INFO] Step 803/ 1000; xent: 3.49; lr: 0.0000706;   0 docs/s;   8446 sec
+[2020-04-29 18:55:24,952 INFO] Step 804/ 1000; xent: 3.63; lr: 0.0000705;   0 docs/s;   8455 sec
+[2020-04-29 18:55:34,859 INFO] Step 805/ 1000; xent: 3.49; lr: 0.0000705;   0 docs/s;   8465 sec
+[2020-04-29 18:55:44,858 INFO] Step 806/ 1000; xent: 3.72; lr: 0.0000704;   0 docs/s;   8475 sec
+[2020-04-29 18:55:54,841 INFO] Step 807/ 1000; xent: 4.19; lr: 0.0000704;   0 docs/s;   8485 sec
+[2020-04-29 18:56:05,755 INFO] Step 808/ 1000; xent: 4.46; lr: 0.0000704;   0 docs/s;   8496 sec
+[2020-04-29 18:56:15,803 INFO] Step 809/ 1000; xent: 2.74; lr: 0.0000703;   0 docs/s;   8506 sec
+[2020-04-29 18:56:25,751 INFO] Step 810/ 1000; xent: 2.85; lr: 0.0000703;   0 docs/s;   8516 sec
+[2020-04-29 18:56:35,705 INFO] Step 811/ 1000; xent: 4.36; lr: 0.0000702;   0 docs/s;   8526 sec
+[2020-04-29 18:56:45,726 INFO] Step 812/ 1000; xent: 3.04; lr: 0.0000702;   0 docs/s;   8536 sec
+[2020-04-29 18:56:55,736 INFO] Step 813/ 1000; xent: 1.04; lr: 0.0000701;   0 docs/s;   8546 sec
+[2020-04-29 18:57:05,702 INFO] Step 814/ 1000; xent: 2.75; lr: 0.0000701;   0 docs/s;   8556 sec
+[2020-04-29 18:57:15,672 INFO] Step 815/ 1000; xent: 2.21; lr: 0.0000701;   0 docs/s;   8566 sec
+[2020-04-29 18:57:25,655 INFO] Step 816/ 1000; xent: 3.99; lr: 0.0000700;   0 docs/s;   8576 sec
+[2020-04-29 18:57:35,659 INFO] Step 817/ 1000; xent: 1.77; lr: 0.0000700;   0 docs/s;   8586 sec
+[2020-04-29 18:57:44,232 INFO] Step 818/ 1000; xent: 3.02; lr: 0.0000699;   0 docs/s;   8595 sec
+[2020-04-29 18:57:51,694 INFO] Step 819/ 1000; xent: 2.31; lr: 0.0000699;   1 docs/s;   8602 sec
+[2020-04-29 18:58:01,690 INFO] Step 820/ 1000; xent: 2.42; lr: 0.0000698;   0 docs/s;   8612 sec
+[2020-04-29 18:58:10,329 INFO] Step 821/ 1000; xent: 3.02; lr: 0.0000698;   0 docs/s;   8621 sec
+[2020-04-29 18:58:20,315 INFO] Step 822/ 1000; xent: 2.60; lr: 0.0000698;   0 docs/s;   8631 sec
+[2020-04-29 18:58:30,325 INFO] Step 823/ 1000; xent: 3.44; lr: 0.0000697;   0 docs/s;   8641 sec
+[2020-04-29 18:58:40,309 INFO] Step 824/ 1000; xent: 2.96; lr: 0.0000697;   0 docs/s;   8651 sec
+[2020-04-29 18:58:50,321 INFO] Step 825/ 1000; xent: 2.81; lr: 0.0000696;   0 docs/s;   8661 sec
+[2020-04-29 18:59:00,322 INFO] Step 826/ 1000; xent: 2.28; lr: 0.0000696;   0 docs/s;   8671 sec
+[2020-04-29 18:59:09,247 INFO] Step 827/ 1000; xent: 3.92; lr: 0.0000695;   0 docs/s;   8680 sec
+[2020-04-29 18:59:19,254 INFO] Step 828/ 1000; xent: 3.69; lr: 0.0000695;   0 docs/s;   8690 sec
+[2020-04-29 18:59:29,261 INFO] Step 829/ 1000; xent: 2.34; lr: 0.0000695;   0 docs/s;   8700 sec
+[2020-04-29 18:59:39,252 INFO] Step 830/ 1000; xent: 3.37; lr: 0.0000694;   0 docs/s;   8710 sec
+[2020-04-29 18:59:49,309 INFO] Step 831/ 1000; xent: 3.47; lr: 0.0000694;   0 docs/s;   8720 sec
+[2020-04-29 18:59:58,659 INFO] Step 832/ 1000; xent: 3.77; lr: 0.0000693;   0 docs/s;   8729 sec
+[2020-04-29 19:00:08,615 INFO] Step 833/ 1000; xent: 2.71; lr: 0.0000693;   0 docs/s;   8739 sec
+[2020-04-29 19:00:18,635 INFO] Step 834/ 1000; xent: 3.40; lr: 0.0000693;   0 docs/s;   8749 sec
+[2020-04-29 19:00:28,261 INFO] Step 835/ 1000; xent: 3.41; lr: 0.0000692;   0 docs/s;   8759 sec
+[2020-04-29 19:00:35,756 INFO] Step 836/ 1000; xent: 2.89; lr: 0.0000692;   1 docs/s;   8766 sec
+[2020-04-29 19:00:45,752 INFO] Step 837/ 1000; xent: 2.62; lr: 0.0000691;   0 docs/s;   8776 sec
+[2020-04-29 19:00:55,703 INFO] Step 838/ 1000; xent: 3.49; lr: 0.0000691;   0 docs/s;   8786 sec
+[2020-04-29 19:01:05,755 INFO] Step 839/ 1000; xent: 2.32; lr: 0.0000690;   0 docs/s;   8796 sec
+[2020-04-29 19:01:15,745 INFO] Step 840/ 1000; xent: 2.85; lr: 0.0000690;   0 docs/s;   8806 sec
+[2020-04-29 19:01:25,537 INFO] Step 841/ 1000; xent: 3.61; lr: 0.0000690;   0 docs/s;   8816 sec
+[2020-04-29 19:01:35,514 INFO] Step 842/ 1000; xent: 3.90; lr: 0.0000689;   0 docs/s;   8826 sec
+[2020-04-29 19:01:43,881 INFO] Step 843/ 1000; xent: 3.43; lr: 0.0000689;   0 docs/s;   8834 sec
+[2020-04-29 19:01:53,906 INFO] Step 844/ 1000; xent: 3.42; lr: 0.0000688;   0 docs/s;   8844 sec
+[2020-04-29 19:02:03,894 INFO] Step 845/ 1000; xent: 3.09; lr: 0.0000688;   0 docs/s;   8854 sec
+[2020-04-29 19:02:13,817 INFO] Step 846/ 1000; xent: 2.60; lr: 0.0000688;   0 docs/s;   8864 sec
+[2020-04-29 19:02:23,043 INFO] Step 847/ 1000; xent: 2.71; lr: 0.0000687;   0 docs/s;   8874 sec
+[2020-04-29 19:02:33,042 INFO] Step 848/ 1000; xent: 2.84; lr: 0.0000687;   0 docs/s;   8884 sec
+[2020-04-29 19:02:42,531 INFO] Step 849/ 1000; xent: 2.72; lr: 0.0000686;   0 docs/s;   8893 sec
+[2020-04-29 19:02:52,588 INFO] Step 850/ 1000; xent: 3.51; lr: 0.0000686;   0 docs/s;   8903 sec
+[2020-04-29 19:02:52,590 INFO] Saving checkpoint ../models/bert_large/model_step_850.pt
+[2020-04-29 19:51:16,720 INFO] Device ID -1
+[2020-04-29 19:51:16,734 INFO] Device cpu
+[2020-04-29 19:51:16,756 INFO] Loading checkpoint from 850
+[2020-04-29 19:51:44,570 INFO] Device ID -1
+[2020-04-29 19:51:44,570 INFO] Device cpu
+[2020-04-29 19:51:44,570 INFO] Loading checkpoint from model_step_850.pt
+[2020-04-29 19:52:43,759 INFO] Device ID -1
+[2020-04-29 19:52:43,759 INFO] Device cpu
+[2020-04-29 19:52:43,759 INFO] Loading checkpoint from ../models/bert_large/model_step_850.pt
+[2020-04-29 19:52:56,758 INFO] Device ID -1
+[2020-04-29 19:52:56,758 INFO] Device cpu
+[2020-04-29 19:52:56,758 INFO] Loading checkpoint from ../models/bert_large
+[2020-04-29 19:53:08,941 INFO] Device ID -1
+[2020-04-29 19:53:08,941 INFO] Device cpu
+[2020-04-29 19:53:08,942 INFO] Loading checkpoint from ../models/bert_large/model_step_850.pt
+[2020-04-29 19:53:22,002 INFO] Device ID -1
+[2020-04-29 19:53:22,002 INFO] Device cpu
+[2020-04-29 19:53:22,002 INFO] Loading checkpoint from ../models/bert_large/model_step_800.pt
+[2020-04-29 19:53:37,548 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-config.json from cache at ../temp/6dfaed860471b03ab5b9acb6153bea82b6632fb9bbe514d3fff050fe1319ee6d.788fed32bb8481a9b15ce726d41c53d5d5066b04c667e34ce3a7a3826d1573d8
+[2020-04-29 19:53:37,564 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-29 19:53:38,763 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-pytorch_model.bin from cache at ../temp/54da47087cc86ce75324e4dc9bbb5f66c6e83a7c6bd23baea8b489acc8d09aa4.4d5343a4b979c4beeaadef17a0453d1bb183dd9b084f58b84c7cc781df343ae6
+[2020-04-29 20:01:40,569 INFO] Device ID -1
+[2020-04-29 20:01:40,593 INFO] Device cpu
+[2020-04-29 20:01:40,614 INFO] Loading checkpoint from ../models/bert_large/model_step_800.pt
+[2020-04-29 20:01:47,212 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-config.json from cache at ../temp/6dfaed860471b03ab5b9acb6153bea82b6632fb9bbe514d3fff050fe1319ee6d.788fed32bb8481a9b15ce726d41c53d5d5066b04c667e34ce3a7a3826d1573d8
+[2020-04-29 20:01:47,222 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-29 20:01:48,452 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-pytorch_model.bin from cache at ../temp/54da47087cc86ce75324e4dc9bbb5f66c6e83a7c6bd23baea8b489acc8d09aa4.4d5343a4b979c4beeaadef17a0453d1bb183dd9b084f58b84c7cc781df343ae6
+[2020-04-29 20:03:23,696 INFO] Device ID -1
+[2020-04-29 20:03:23,697 INFO] Device cpu
+[2020-04-29 20:03:23,697 INFO] Loading checkpoint from ../models/bert_large/model_step_800.pt
+[2020-04-29 20:03:28,805 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-config.json from cache at ../temp/6dfaed860471b03ab5b9acb6153bea82b6632fb9bbe514d3fff050fe1319ee6d.788fed32bb8481a9b15ce726d41c53d5d5066b04c667e34ce3a7a3826d1573d8
+[2020-04-29 20:03:28,806 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2020-04-29 20:03:30,020 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-pytorch_model.bin from cache at ../temp/54da47087cc86ce75324e4dc9bbb5f66c6e83a7c6bd23baea8b489acc8d09aa4.4d5343a4b979c4beeaadef17a0453d1bb183dd9b084f58b84c7cc781df343ae6
+[2020-04-29 20:03:36,980 INFO] ExtSummarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 1024, padding_idx=0)
+        (position_embeddings): Embedding(512, 1024)
+        (token_type_embeddings): Embedding(2, 1024)
+        (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (12): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (13): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (14): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (15): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (16): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (17): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (18): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (19): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (20): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (21): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (22): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (23): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=1024, out_features=1024, bias=True)
+                (key): Linear(in_features=1024, out_features=1024, bias=True)
+                (value): Linear(in_features=1024, out_features=1024, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=1024, out_features=1024, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=1024, out_features=4096, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=4096, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([1024]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=1024, out_features=1024, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (ext_layer): ExtTransformerEncoder(
+    (pos_emb): PositionalEncoding(
+      (dropout): Dropout(p=0.1)
+    )
+    (transformer_inter): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=1024, out_features=1024, bias=True)
+          (linear_values): Linear(in_features=1024, out_features=1024, bias=True)
+          (linear_query): Linear(in_features=1024, out_features=1024, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=1024, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=1024, bias=True)
+          (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1)
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=1024, out_features=1024, bias=True)
+          (linear_values): Linear(in_features=1024, out_features=1024, bias=True)
+          (linear_query): Linear(in_features=1024, out_features=1024, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=1024, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=1024, bias=True)
+          (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1)
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+    )
+    (dropout): Dropout(p=0.1)
+    (layer_norm): LayerNorm(torch.Size([1024]), eps=1e-06, elementwise_affine=True)
+    (wo): Linear(in_features=1024, out_features=1, bias=True)
+    (sigmoid): Sigmoid()
+  )
+)
+[2020-04-29 20:03:37,429 INFO] * number of parameters: 351944705
+[2020-04-29 20:03:37,429 INFO] Start training...
+[2020-04-29 20:03:38,138 INFO] Loading train dataset from ../bert_data/cnndm.train.123.bert.pt, number of examples: 2001
+[2020-04-29 20:03:50,253 INFO] Step 801/ 1000; xent: 3.61; lr: 0.0000707;   0 docs/s;     12 sec
+[2020-04-29 20:04:30,527 INFO] Step 802/ 1000; xent: 4.14; lr: 0.0000706;   0 docs/s;     52 sec
+[2020-04-29 20:05:21,448 INFO] Step 803/ 1000; xent: 1.91; lr: 0.0000706;   0 docs/s;    103 sec
+[2020-04-29 20:05:31,467 INFO] Step 804/ 1000; xent: 4.47; lr: 0.0000705;   0 docs/s;    113 sec
+[2020-04-29 20:05:41,414 INFO] Step 805/ 1000; xent: 5.11; lr: 0.0000705;   0 docs/s;    123 sec
+[2020-04-29 20:05:51,500 INFO] Step 806/ 1000; xent: 1.85; lr: 0.0000704;   0 docs/s;    133 sec
+[2020-04-29 20:06:01,361 INFO] Step 807/ 1000; xent: 3.86; lr: 0.0000704;   0 docs/s;    143 sec
+[2020-04-29 20:06:11,134 INFO] Step 808/ 1000; xent: 3.22; lr: 0.0000704;   0 docs/s;    153 sec
+[2020-04-29 20:06:20,931 INFO] Step 809/ 1000; xent: 3.39; lr: 0.0000703;   0 docs/s;    163 sec
+[2020-04-29 20:06:30,768 INFO] Step 810/ 1000; xent: 3.65; lr: 0.0000703;   0 docs/s;    173 sec
+[2020-04-29 20:06:40,549 INFO] Step 811/ 1000; xent: 3.86; lr: 0.0000702;   0 docs/s;    182 sec
+[2020-04-29 20:06:49,563 INFO] Step 812/ 1000; xent: 3.27; lr: 0.0000702;   0 docs/s;    191 sec
+[2020-04-29 20:06:59,360 INFO] Step 813/ 1000; xent: 4.08; lr: 0.0000701;   0 docs/s;    201 sec
+[2020-04-29 20:07:07,130 INFO] Step 814/ 1000; xent: 2.99; lr: 0.0000701;   1 docs/s;    209 sec
+[2020-04-29 20:07:16,824 INFO] Step 815/ 1000; xent: 1.73; lr: 0.0000701;   0 docs/s;    219 sec
+[2020-04-29 20:07:26,556 INFO] Step 816/ 1000; xent: 4.21; lr: 0.0000700;   0 docs/s;    228 sec
+[2020-04-29 20:07:36,319 INFO] Step 817/ 1000; xent: 3.10; lr: 0.0000700;   0 docs/s;    238 sec
+[2020-04-29 20:07:45,995 INFO] Step 818/ 1000; xent: 2.97; lr: 0.0000699;   0 docs/s;    248 sec
+[2020-04-29 20:07:55,825 INFO] Step 819/ 1000; xent: 3.66; lr: 0.0000699;   0 docs/s;    258 sec
+[2020-04-29 20:08:05,639 INFO] Step 820/ 1000; xent: 3.83; lr: 0.0000698;   0 docs/s;    268 sec
+[2020-04-29 20:08:15,391 INFO] Step 821/ 1000; xent: 2.94; lr: 0.0000698;   0 docs/s;    277 sec
+[2020-04-29 20:08:25,209 INFO] Step 822/ 1000; xent: 3.44; lr: 0.0000698;   0 docs/s;    287 sec
+[2020-04-29 20:08:35,004 INFO] Step 823/ 1000; xent: 3.23; lr: 0.0000697;   0 docs/s;    297 sec
+[2020-04-29 20:08:44,874 INFO] Step 824/ 1000; xent: 3.72; lr: 0.0000697;   0 docs/s;    307 sec
+[2020-04-29 20:08:54,689 INFO] Step 825/ 1000; xent: 2.73; lr: 0.0000696;   0 docs/s;    317 sec
+[2020-04-29 20:09:04,501 INFO] Step 826/ 1000; xent: 2.49; lr: 0.0000696;   0 docs/s;    326 sec
+[2020-04-29 20:09:14,309 INFO] Step 827/ 1000; xent: 3.76; lr: 0.0000695;   0 docs/s;    336 sec
+[2020-04-29 20:09:22,492 INFO] Step 828/ 1000; xent: 2.70; lr: 0.0000695;   0 docs/s;    344 sec
+[2020-04-29 20:09:32,307 INFO] Step 829/ 1000; xent: 3.69; lr: 0.0000695;   0 docs/s;    354 sec
+[2020-04-29 20:09:42,155 INFO] Step 830/ 1000; xent: 3.27; lr: 0.0000694;   0 docs/s;    364 sec
+[2020-04-29 20:09:52,020 INFO] Step 831/ 1000; xent: 3.20; lr: 0.0000694;   0 docs/s;    374 sec
+[2020-04-29 20:10:01,820 INFO] Step 832/ 1000; xent: 3.76; lr: 0.0000693;   0 docs/s;    384 sec
+[2020-04-29 20:10:09,714 INFO] Step 833/ 1000; xent: 2.94; lr: 0.0000693;   1 docs/s;    392 sec
+[2020-04-29 20:10:19,141 INFO] Step 834/ 1000; xent: 3.81; lr: 0.0000693;   0 docs/s;    401 sec
+[2020-04-29 20:10:28,953 INFO] Step 835/ 1000; xent: 3.41; lr: 0.0000692;   0 docs/s;    411 sec
+[2020-04-29 20:10:38,836 INFO] Step 836/ 1000; xent: 2.44; lr: 0.0000692;   0 docs/s;    421 sec
+[2020-04-29 20:10:48,058 INFO] Step 837/ 1000; xent: 2.95; lr: 0.0000691;   0 docs/s;    430 sec
+[2020-04-29 20:10:57,899 INFO] Step 838/ 1000; xent: 3.20; lr: 0.0000691;   0 docs/s;    440 sec
+[2020-04-29 20:11:07,684 INFO] Step 839/ 1000; xent: 4.34; lr: 0.0000690;   0 docs/s;    450 sec
+[2020-04-29 20:11:17,584 INFO] Step 840/ 1000; xent: 3.55; lr: 0.0000690;   0 docs/s;    459 sec
+[2020-04-29 20:11:27,467 INFO] Step 841/ 1000; xent: 3.65; lr: 0.0000690;   0 docs/s;    469 sec
+[2020-04-29 20:11:37,334 INFO] Step 842/ 1000; xent: 2.61; lr: 0.0000689;   0 docs/s;    479 sec
+[2020-04-29 20:11:46,711 INFO] Step 843/ 1000; xent: 2.11; lr: 0.0000689;   0 docs/s;    489 sec
+[2020-04-29 20:11:56,647 INFO] Step 844/ 1000; xent: 4.05; lr: 0.0000688;   0 docs/s;    499 sec
+[2020-04-29 20:12:04,348 INFO] Step 845/ 1000; xent: 2.25; lr: 0.0000688;   1 docs/s;    506 sec
+[2020-04-29 20:12:14,242 INFO] Step 846/ 1000; xent: 3.09; lr: 0.0000688;   0 docs/s;    516 sec
+[2020-04-29 20:12:23,891 INFO] Step 847/ 1000; xent: 4.33; lr: 0.0000687;   0 docs/s;    526 sec
+[2020-04-29 20:12:33,836 INFO] Step 848/ 1000; xent: 3.29; lr: 0.0000687;   0 docs/s;    536 sec
+[2020-04-29 20:12:43,812 INFO] Step 849/ 1000; xent: 2.63; lr: 0.0000686;   0 docs/s;    546 sec
+[2020-04-29 20:12:53,795 INFO] Step 850/ 1000; xent: 4.37; lr: 0.0000686;   0 docs/s;    556 sec
+[2020-04-29 20:13:03,659 INFO] Step 851/ 1000; xent: 3.45; lr: 0.0000686;   0 docs/s;    566 sec
+[2020-04-29 20:13:13,640 INFO] Step 852/ 1000; xent: 3.47; lr: 0.0000685;   0 docs/s;    576 sec
+[2020-04-29 20:13:22,417 INFO] Step 853/ 1000; xent: 3.45; lr: 0.0000685;   0 docs/s;    584 sec
+[2020-04-29 20:13:32,377 INFO] Step 854/ 1000; xent: 2.94; lr: 0.0000684;   0 docs/s;    594 sec
+[2020-04-29 20:13:42,340 INFO] Step 855/ 1000; xent: 2.19; lr: 0.0000684;   0 docs/s;    604 sec
+[2020-04-29 20:13:52,028 INFO] Step 856/ 1000; xent: 3.64; lr: 0.0000684;   0 docs/s;    614 sec
+[2020-04-29 20:14:01,988 INFO] Step 857/ 1000; xent: 3.55; lr: 0.0000683;   0 docs/s;    624 sec
+[2020-04-29 20:14:11,985 INFO] Step 858/ 1000; xent: 2.08; lr: 0.0000683;   0 docs/s;    634 sec
+[2020-04-29 20:14:21,886 INFO] Step 859/ 1000; xent: 2.46; lr: 0.0000682;   0 docs/s;    644 sec
+[2020-04-29 20:14:31,962 INFO] Step 860/ 1000; xent: 4.28; lr: 0.0000682;   0 docs/s;    654 sec
+[2020-04-29 20:14:41,908 INFO] Step 861/ 1000; xent: 1.68; lr: 0.0000682;   0 docs/s;    664 sec
+[2020-04-29 20:14:51,889 INFO] Step 862/ 1000; xent: 3.67; lr: 0.0000681;   0 docs/s;    674 sec
+[2020-04-29 20:15:01,883 INFO] Step 863/ 1000; xent: 3.92; lr: 0.0000681;   0 docs/s;    684 sec
+[2020-04-29 20:15:11,874 INFO] Step 864/ 1000; xent: 3.42; lr: 0.0000680;   0 docs/s;    694 sec
+[2020-04-29 20:15:21,796 INFO] Step 865/ 1000; xent: 3.35; lr: 0.0000680;   0 docs/s;    704 sec
+[2020-04-29 20:15:31,310 INFO] Step 866/ 1000; xent: 3.47; lr: 0.0000680;   0 docs/s;    713 sec
+[2020-04-29 20:15:41,516 INFO] Step 867/ 1000; xent: 2.69; lr: 0.0000679;   0 docs/s;    723 sec
+[2020-04-29 20:15:51,690 INFO] Step 868/ 1000; xent: 4.21; lr: 0.0000679;   0 docs/s;    734 sec
+[2020-04-29 20:16:01,717 INFO] Step 869/ 1000; xent: 2.88; lr: 0.0000678;   0 docs/s;    744 sec
+[2020-04-29 20:16:11,786 INFO] Step 870/ 1000; xent: 3.27; lr: 0.0000678;   0 docs/s;    754 sec
+[2020-04-29 20:16:21,762 INFO] Step 871/ 1000; xent: 3.33; lr: 0.0000678;   0 docs/s;    764 sec
+[2020-04-29 20:16:31,774 INFO] Step 872/ 1000; xent: 4.05; lr: 0.0000677;   0 docs/s;    774 sec
+[2020-04-29 20:16:40,356 INFO] Step 873/ 1000; xent: 3.25; lr: 0.0000677;   0 docs/s;    782 sec
+[2020-04-29 20:16:50,306 INFO] Step 874/ 1000; xent: 3.72; lr: 0.0000677;   0 docs/s;    792 sec
+[2020-04-29 20:17:00,344 INFO] Step 875/ 1000; xent: 3.08; lr: 0.0000676;   0 docs/s;    802 sec
+[2020-04-29 20:17:10,528 INFO] Step 876/ 1000; xent: 2.85; lr: 0.0000676;   0 docs/s;    812 sec
+[2020-04-29 20:17:20,636 INFO] Step 877/ 1000; xent: 3.36; lr: 0.0000675;   0 docs/s;    822 sec
+[2020-04-29 20:17:30,632 INFO] Step 878/ 1000; xent: 2.78; lr: 0.0000675;   0 docs/s;    832 sec
+[2020-04-29 20:17:38,586 INFO] Step 879/ 1000; xent: 3.22; lr: 0.0000675;   1 docs/s;    840 sec
+[2020-04-29 20:17:48,571 INFO] Step 880/ 1000; xent: 4.17; lr: 0.0000674;   0 docs/s;    850 sec
+[2020-04-29 20:17:56,813 INFO] Step 881/ 1000; xent: 1.83; lr: 0.0000674;   0 docs/s;    859 sec
+[2020-04-29 20:18:06,791 INFO] Step 882/ 1000; xent: 2.68; lr: 0.0000673;   0 docs/s;    869 sec
+[2020-04-29 20:18:16,680 INFO] Step 883/ 1000; xent: 2.81; lr: 0.0000673;   0 docs/s;    879 sec
+[2020-04-29 20:18:27,790 INFO] Step 884/ 1000; xent: 3.92; lr: 0.0000673;   0 docs/s;    890 sec
+[2020-04-29 20:18:37,719 INFO] Step 885/ 1000; xent: 3.72; lr: 0.0000672;   0 docs/s;    900 sec
+[2020-04-29 20:18:46,202 INFO] Step 886/ 1000; xent: 2.81; lr: 0.0000672;   0 docs/s;    908 sec
+[2020-04-29 20:18:56,195 INFO] Step 887/ 1000; xent: 4.11; lr: 0.0000672;   0 docs/s;    918 sec
+[2020-04-29 20:19:06,310 INFO] Step 888/ 1000; xent: 3.48; lr: 0.0000671;   0 docs/s;    928 sec
+[2020-04-29 20:19:16,361 INFO] Step 889/ 1000; xent: 3.94; lr: 0.0000671;   0 docs/s;    938 sec
+[2020-04-29 20:19:26,368 INFO] Step 890/ 1000; xent: 3.96; lr: 0.0000670;   0 docs/s;    948 sec
+[2020-04-29 20:19:36,397 INFO] Step 891/ 1000; xent: 2.90; lr: 0.0000670;   0 docs/s;    958 sec
+[2020-04-29 20:19:46,416 INFO] Step 892/ 1000; xent: 4.38; lr: 0.0000670;   0 docs/s;    968 sec
+[2020-04-29 20:19:56,339 INFO] Step 893/ 1000; xent: 3.62; lr: 0.0000669;   0 docs/s;    978 sec
+[2020-04-29 20:20:06,385 INFO] Step 894/ 1000; xent: 3.81; lr: 0.0000669;   0 docs/s;    988 sec
+[2020-04-29 20:20:16,412 INFO] Step 895/ 1000; xent: 3.44; lr: 0.0000669;   0 docs/s;    998 sec
+[2020-04-29 20:20:25,648 INFO] Step 896/ 1000; xent: 2.91; lr: 0.0000668;   0 docs/s;   1008 sec
+[2020-04-29 20:20:35,701 INFO] Step 897/ 1000; xent: 4.36; lr: 0.0000668;   0 docs/s;   1018 sec
+[2020-04-29 20:20:45,240 INFO] Step 898/ 1000; xent: 2.34; lr: 0.0000667;   0 docs/s;   1027 sec
+[2020-04-29 20:20:55,273 INFO] Step 899/ 1000; xent: 3.26; lr: 0.0000667;   0 docs/s;   1037 sec
+[2020-04-29 20:21:04,582 INFO] Step 900/ 1000; xent: 3.79; lr: 0.0000667;   0 docs/s;   1046 sec
+[2020-04-29 20:21:04,779 INFO] Saving checkpoint ../models/bert_large/model_step_900.pt
+[2020-04-29 20:22:16,992 INFO] Step 901/ 1000; xent: 2.31; lr: 0.0000666;   0 docs/s;   1119 sec
+[2020-04-29 20:22:25,853 INFO] Step 902/ 1000; xent: 2.16; lr: 0.0000666;   0 docs/s;   1128 sec
+[2020-04-29 20:22:33,167 INFO] Step 903/ 1000; xent: 3.12; lr: 0.0000666;   1 docs/s;   1135 sec
+[2020-04-29 20:22:40,987 INFO] Step 904/ 1000; xent: 3.06; lr: 0.0000665;   1 docs/s;   1143 sec
+[2020-04-29 20:22:50,979 INFO] Step 905/ 1000; xent: 3.54; lr: 0.0000665;   0 docs/s;   1153 sec
+[2020-04-29 20:23:00,933 INFO] Step 906/ 1000; xent: 3.48; lr: 0.0000664;   0 docs/s;   1163 sec
+[2020-04-29 20:23:09,386 INFO] Step 907/ 1000; xent: 2.69; lr: 0.0000664;   0 docs/s;   1171 sec
+[2020-04-29 20:23:19,420 INFO] Step 908/ 1000; xent: 3.72; lr: 0.0000664;   0 docs/s;   1181 sec
+[2020-04-29 20:23:29,371 INFO] Step 909/ 1000; xent: 3.52; lr: 0.0000663;   0 docs/s;   1191 sec
+[2020-04-29 20:23:39,276 INFO] Step 910/ 1000; xent: 2.83; lr: 0.0000663;   0 docs/s;   1201 sec
+[2020-04-29 20:23:49,235 INFO] Step 911/ 1000; xent: 4.01; lr: 0.0000663;   0 docs/s;   1211 sec
+[2020-04-29 20:23:59,260 INFO] Step 912/ 1000; xent: 2.75; lr: 0.0000662;   0 docs/s;   1221 sec
+[2020-04-29 20:24:08,151 INFO] Step 913/ 1000; xent: 2.30; lr: 0.0000662;   0 docs/s;   1230 sec
+[2020-04-29 20:24:18,142 INFO] Step 914/ 1000; xent: 2.64; lr: 0.0000662;   0 docs/s;   1240 sec
+[2020-04-29 20:24:28,070 INFO] Step 915/ 1000; xent: 3.61; lr: 0.0000661;   0 docs/s;   1250 sec
+[2020-04-29 20:24:38,108 INFO] Step 916/ 1000; xent: 3.54; lr: 0.0000661;   0 docs/s;   1260 sec
+[2020-04-29 20:24:48,134 INFO] Step 917/ 1000; xent: 2.67; lr: 0.0000660;   0 docs/s;   1270 sec
+[2020-04-29 20:24:58,188 INFO] Step 918/ 1000; xent: 3.19; lr: 0.0000660;   0 docs/s;   1280 sec
+[2020-04-29 20:25:08,128 INFO] Step 919/ 1000; xent: 3.92; lr: 0.0000660;   0 docs/s;   1290 sec
+[2020-04-29 20:25:18,150 INFO] Step 920/ 1000; xent: 2.82; lr: 0.0000659;   0 docs/s;   1300 sec
+[2020-04-29 20:25:26,880 INFO] Step 921/ 1000; xent: 2.47; lr: 0.0000659;   0 docs/s;   1309 sec
+[2020-04-29 20:25:36,897 INFO] Step 922/ 1000; xent: 3.37; lr: 0.0000659;   0 docs/s;   1319 sec
+[2020-04-29 20:25:47,041 INFO] Step 923/ 1000; xent: 3.71; lr: 0.0000658;   0 docs/s;   1329 sec
+[2020-04-29 20:25:57,009 INFO] Step 924/ 1000; xent: 3.26; lr: 0.0000658;   0 docs/s;   1339 sec
+[2020-04-29 20:26:06,994 INFO] Step 925/ 1000; xent: 2.17; lr: 0.0000658;   0 docs/s;   1349 sec
+[2020-04-29 20:26:17,023 INFO] Step 926/ 1000; xent: 2.53; lr: 0.0000657;   0 docs/s;   1359 sec
+[2020-04-29 20:26:26,985 INFO] Step 927/ 1000; xent: 3.38; lr: 0.0000657;   0 docs/s;   1369 sec
+[2020-04-29 20:26:37,031 INFO] Step 928/ 1000; xent: 3.66; lr: 0.0000657;   0 docs/s;   1379 sec
+[2020-04-29 20:26:47,036 INFO] Step 929/ 1000; xent: 3.08; lr: 0.0000656;   0 docs/s;   1389 sec
+[2020-04-29 20:26:54,918 INFO] Step 930/ 1000; xent: 3.44; lr: 0.0000656;   1 docs/s;   1397 sec
+[2020-04-29 20:27:04,120 INFO] Step 931/ 1000; xent: 3.78; lr: 0.0000655;   0 docs/s;   1406 sec
+[2020-04-29 20:27:14,087 INFO] Step 932/ 1000; xent: 3.64; lr: 0.0000655;   0 docs/s;   1416 sec
+[2020-04-29 20:27:24,093 INFO] Step 933/ 1000; xent: 2.91; lr: 0.0000655;   0 docs/s;   1426 sec
+[2020-04-29 20:27:32,398 INFO] Step 934/ 1000; xent: 2.58; lr: 0.0000654;   0 docs/s;   1434 sec
+[2020-04-29 20:27:39,341 INFO] Step 935/ 1000; xent: 3.10; lr: 0.0000654;   1 docs/s;   1441 sec
+[2020-04-29 20:27:49,339 INFO] Step 936/ 1000; xent: 3.44; lr: 0.0000654;   0 docs/s;   1451 sec
+[2020-04-29 20:27:58,768 INFO] Step 937/ 1000; xent: 2.78; lr: 0.0000653;   0 docs/s;   1461 sec
+[2020-04-29 20:28:08,465 INFO] Step 938/ 1000; xent: 2.55; lr: 0.0000653;   0 docs/s;   1470 sec
+[2020-04-29 20:28:18,429 INFO] Step 939/ 1000; xent: 3.61; lr: 0.0000653;   0 docs/s;   1480 sec
+[2020-04-29 20:28:28,452 INFO] Step 940/ 1000; xent: 4.14; lr: 0.0000652;   0 docs/s;   1490 sec
+[2020-04-29 20:28:38,449 INFO] Step 941/ 1000; xent: 3.63; lr: 0.0000652;   0 docs/s;   1500 sec
+[2020-04-29 20:28:48,415 INFO] Step 942/ 1000; xent: 3.04; lr: 0.0000652;   0 docs/s;   1510 sec
+[2020-04-29 20:28:58,410 INFO] Step 943/ 1000; xent: 1.96; lr: 0.0000651;   0 docs/s;   1520 sec
+[2020-04-29 20:29:07,205 INFO] Step 944/ 1000; xent: 1.98; lr: 0.0000651;   0 docs/s;   1529 sec
+[2020-04-29 20:29:17,125 INFO] Step 945/ 1000; xent: 3.54; lr: 0.0000651;   0 docs/s;   1539 sec
+[2020-04-29 20:29:27,263 INFO] Step 946/ 1000; xent: 2.98; lr: 0.0000650;   0 docs/s;   1549 sec
+[2020-04-29 20:29:37,092 INFO] Step 947/ 1000; xent: 2.41; lr: 0.0000650;   0 docs/s;   1559 sec
+[2020-04-29 20:29:47,136 INFO] Step 948/ 1000; xent: 3.27; lr: 0.0000650;   0 docs/s;   1569 sec
+[2020-04-29 20:29:57,111 INFO] Step 949/ 1000; xent: 2.15; lr: 0.0000649;   0 docs/s;   1579 sec
+[2020-04-29 20:30:05,521 INFO] Step 950/ 1000; xent: 2.40; lr: 0.0000649;   0 docs/s;   1587 sec
+[2020-04-29 20:30:15,459 INFO] Step 951/ 1000; xent: 3.92; lr: 0.0000649;   0 docs/s;   1597 sec
+[2020-04-29 20:30:25,499 INFO] Step 952/ 1000; xent: 2.53; lr: 0.0000648;   0 docs/s;   1607 sec
+[2020-04-29 20:30:35,486 INFO] Step 953/ 1000; xent: 2.46; lr: 0.0000648;   0 docs/s;   1617 sec
+[2020-04-29 20:30:45,619 INFO] Step 954/ 1000; xent: 4.89; lr: 0.0000648;   0 docs/s;   1627 sec
+[2020-04-29 20:30:54,082 INFO] Step 955/ 1000; xent: 2.52; lr: 0.0000647;   0 docs/s;   1636 sec
+[2020-04-29 20:31:04,060 INFO] Step 956/ 1000; xent: 2.15; lr: 0.0000647;   0 docs/s;   1646 sec
+[2020-04-29 20:31:14,152 INFO] Step 957/ 1000; xent: 4.18; lr: 0.0000647;   0 docs/s;   1656 sec
+[2020-04-29 20:31:24,151 INFO] Step 958/ 1000; xent: 2.78; lr: 0.0000646;   0 docs/s;   1666 sec
+[2020-04-29 20:31:34,250 INFO] Step 959/ 1000; xent: 3.01; lr: 0.0000646;   0 docs/s;   1676 sec
+[2020-04-29 20:31:44,354 INFO] Step 960/ 1000; xent: 4.25; lr: 0.0000645;   0 docs/s;   1686 sec
+[2020-04-29 20:31:54,423 INFO] Step 961/ 1000; xent: 4.84; lr: 0.0000645;   0 docs/s;   1696 sec
+[2020-04-29 20:32:04,427 INFO] Step 962/ 1000; xent: 3.15; lr: 0.0000645;   0 docs/s;   1706 sec
+[2020-04-29 20:32:14,446 INFO] Step 963/ 1000; xent: 3.70; lr: 0.0000644;   0 docs/s;   1716 sec
+[2020-04-29 20:32:24,620 INFO] Step 964/ 1000; xent: 3.79; lr: 0.0000644;   0 docs/s;   1726 sec
+[2020-04-29 20:32:34,653 INFO] Step 965/ 1000; xent: 2.84; lr: 0.0000644;   0 docs/s;   1737 sec
+[2020-04-29 20:32:43,920 INFO] Step 966/ 1000; xent: 3.09; lr: 0.0000643;   0 docs/s;   1746 sec
+[2020-04-29 20:32:54,006 INFO] Step 967/ 1000; xent: 3.24; lr: 0.0000643;   0 docs/s;   1756 sec
+[2020-04-29 20:33:04,091 INFO] Step 968/ 1000; xent: 3.56; lr: 0.0000643;   0 docs/s;   1766 sec
+[2020-04-29 20:33:14,292 INFO] Step 969/ 1000; xent: 2.48; lr: 0.0000642;   0 docs/s;   1776 sec
+[2020-04-29 20:33:23,627 INFO] Step 970/ 1000; xent: 3.82; lr: 0.0000642;   0 docs/s;   1785 sec
+[2020-04-29 20:33:33,652 INFO] Step 971/ 1000; xent: 3.44; lr: 0.0000642;   0 docs/s;   1796 sec
+[2020-04-29 20:33:43,681 INFO] Step 972/ 1000; xent: 2.87; lr: 0.0000642;   0 docs/s;   1806 sec
+[2020-04-29 20:33:53,773 INFO] Step 973/ 1000; xent: 4.35; lr: 0.0000641;   0 docs/s;   1816 sec
+[2020-04-29 20:34:03,807 INFO] Step 974/ 1000; xent: 3.63; lr: 0.0000641;   0 docs/s;   1826 sec
+[2020-04-29 20:34:14,049 INFO] Step 975/ 1000; xent: 3.78; lr: 0.0000641;   0 docs/s;   1836 sec
+[2020-04-29 20:34:24,161 INFO] Step 976/ 1000; xent: 2.74; lr: 0.0000640;   0 docs/s;   1846 sec
+[2020-04-29 20:34:33,450 INFO] Step 977/ 1000; xent: 3.89; lr: 0.0000640;   0 docs/s;   1855 sec
+[2020-04-29 20:34:43,482 INFO] Step 978/ 1000; xent: 2.72; lr: 0.0000640;   0 docs/s;   1865 sec
+[2020-04-29 20:34:53,583 INFO] Step 979/ 1000; xent: 2.32; lr: 0.0000639;   0 docs/s;   1875 sec
+[2020-04-29 20:35:02,766 INFO] Step 980/ 1000; xent: 2.47; lr: 0.0000639;   0 docs/s;   1885 sec
+[2020-04-29 20:35:12,089 INFO] Step 981/ 1000; xent: 2.69; lr: 0.0000639;   0 docs/s;   1894 sec
+[2020-04-29 20:35:22,226 INFO] Step 982/ 1000; xent: 5.97; lr: 0.0000638;   0 docs/s;   1904 sec
+[2020-04-29 20:35:32,402 INFO] Step 983/ 1000; xent: 3.05; lr: 0.0000638;   0 docs/s;   1914 sec
+[2020-04-29 20:35:43,186 INFO] Step 984/ 1000; xent: 2.85; lr: 0.0000638;   0 docs/s;   1925 sec
+[2020-04-29 20:35:51,994 INFO] Step 985/ 1000; xent: 3.62; lr: 0.0000637;   0 docs/s;   1934 sec
+[2020-04-29 20:36:02,048 INFO] Step 986/ 1000; xent: 4.04; lr: 0.0000637;   0 docs/s;   1944 sec
+[2020-04-29 20:36:12,107 INFO] Step 987/ 1000; xent: 4.10; lr: 0.0000637;   0 docs/s;   1954 sec
+[2020-04-29 20:36:22,177 INFO] Step 988/ 1000; xent: 3.85; lr: 0.0000636;   0 docs/s;   1964 sec
+[2020-04-29 20:36:32,272 INFO] Step 989/ 1000; xent: 3.60; lr: 0.0000636;   0 docs/s;   1974 sec
+[2020-04-29 20:36:41,654 INFO] Step 990/ 1000; xent: 2.97; lr: 0.0000636;   0 docs/s;   1984 sec
+[2020-04-29 20:36:51,711 INFO] Step 991/ 1000; xent: 3.02; lr: 0.0000635;   0 docs/s;   1994 sec
+[2020-04-29 20:37:01,876 INFO] Step 992/ 1000; xent: 4.00; lr: 0.0000635;   0 docs/s;   2004 sec
+[2020-04-29 20:37:11,345 INFO] Step 993/ 1000; xent: 2.39; lr: 0.0000635;   0 docs/s;   2013 sec
+[2020-04-29 20:37:20,448 INFO] Step 994/ 1000; xent: 4.79; lr: 0.0000634;   0 docs/s;   2022 sec
+[2020-04-29 20:37:30,481 INFO] Step 995/ 1000; xent: 3.61; lr: 0.0000634;   0 docs/s;   2032 sec
+[2020-04-29 20:37:39,209 INFO] Step 996/ 1000; xent: 2.78; lr: 0.0000634;   0 docs/s;   2041 sec
+[2020-04-29 20:37:48,910 INFO] Step 997/ 1000; xent: 1.67; lr: 0.0000633;   0 docs/s;   2051 sec
+[2020-04-29 20:37:59,013 INFO] Step 998/ 1000; xent: 2.14; lr: 0.0000633;   0 docs/s;   2061 sec
+[2020-04-29 20:38:07,096 INFO] Step 999/ 1000; xent: 1.78; lr: 0.0000633;   0 docs/s;   2069 sec
+[2020-04-29 20:38:17,184 INFO] Step 1000/ 1000; xent: 2.41; lr: 0.0000632;   0 docs/s;   2079 sec
+[2020-04-29 20:38:17,187 INFO] Saving checkpoint ../models/bert_large/model_step_1000.pt
+[2020-04-29 20:39:06,686 INFO] Loading train dataset from ../bert_data/cnndm.train.141.bert.pt, number of examples: 1999
